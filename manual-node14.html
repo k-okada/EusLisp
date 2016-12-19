@@ -111,7 +111,7 @@ This is useful for debugging.
  <BR>
 <BR> <P>
 
-<A NAME="18768"></A>
+<A NAME="18782"></A>
 <B>identity</B> <EM>obj </EM>[function]
 
 <DL COMPACT>
@@ -131,7 +131,7 @@ of many generic sequence functions.
 
 <P>
 
-<A NAME="18788"></A>
+<A NAME="18802"></A>
 <B>eval</B> <EM>form [environment] </EM>[function]
 
 <DL COMPACT>
@@ -147,7 +147,7 @@ if <B>*evalhook*</B> is set to some function that accept form and environment.
 
 <P>
 
-<A NAME="18800"></A>
+<A NAME="18814"></A>
 <B>apply</B> <EM>func &amp;rest args </EM>[function]
 
 <DL COMPACT>
@@ -169,7 +169,7 @@ funcall, except that apply has one more arguments than funcall.
 
 <P>
 
-<A NAME="18816"></A>
+<A NAME="18830"></A>
 <B>funcall</B> <EM>func &amp;rest args </EM>[function]
 
 <DL COMPACT>
@@ -185,7 +185,7 @@ the <EM>func</EM> requests.
 
 <P>
 
-<A NAME="18830"></A>
+<A NAME="18844"></A>
 <B>quote</B> <EM>obj </EM>[special]
 
 <DL COMPACT>
@@ -198,7 +198,7 @@ the <EM>func</EM> requests.
 
 <P>
 
-<A NAME="18841"></A>
+<A NAME="18855"></A>
 <B>function</B> <EM>func </EM>[special]
 
 <DL COMPACT>
@@ -212,7 +212,7 @@ If <EM>func</EM> is a symbol, its function definition is retrieved.
 
 <P>
 
-<A NAME="18852"></A>
+<A NAME="18866"></A>
 <B>evalhook</B> <EM>hookfunc form [env] </EM>[function]
 
 <DL COMPACT>
@@ -225,7 +225,7 @@ If <EM>func</EM> is a symbol, its function definition is retrieved.
 
 <P>
 
-<A NAME="18865"></A>
+<A NAME="18879"></A>
 <B>eval-dynamic</B> <EM>variable </EM>[function]
 
 <DL COMPACT>
@@ -239,7 +239,7 @@ finds the value of <EM>variable</EM> (symbol) on the stack.
 
 <P>
 
-<A NAME="18876"></A>
+<A NAME="18890"></A>
 <B>macroexpand</B> <EM>form </EM>[function]
 
 <DL COMPACT>
@@ -255,7 +255,7 @@ expansion is repeated until non macro call results.
 
 <P>
 
-<A NAME="18888"></A>
+<A NAME="18902"></A>
 <B>eval-when</B> <EM>situation {form}* </EM>[special]
 
 <DL COMPACT>
@@ -284,7 +284,7 @@ are evaluated when their source code is loaded.
 
 <P>
 
-<A NAME="18909"></A>
+<A NAME="18923"></A>
 <B>the</B> <EM>type form </EM>[special]
 
 <DL COMPACT>
@@ -298,7 +298,7 @@ are evaluated when their source code is loaded.
 
 <P>
 
-<A NAME="18922"></A>
+<A NAME="18936"></A>
 <B>declare</B> <EM>declaration* </EM>[special]
 
 <DL COMPACT>
@@ -313,8 +313,8 @@ Declarations are important to let the compiler produce faster code.
 </DD>
 <DT></DT>
 <DD>type declares the type of variables; <TT>(type integer count)</TT>;
-valid type specifiers are <A NAME="18955"></A><EM>i</EM>nteger, <A NAME="18957"></A><EM>:</EM>integer <A NAME="18959"></A><EM>f</EM>ixnum,
-<A NAME="18961"></A><EM>:</EM>float and  <A NAME="18963"></A><EM>f</EM>loat. The <B>type</B> keyword may be omitted
+valid type specifiers are <A NAME="18969"></A><EM>i</EM>nteger, <A NAME="18971"></A><EM>:</EM>integer <A NAME="18973"></A><EM>f</EM>ixnum,
+<A NAME="18975"></A><EM>:</EM>float and  <A NAME="18977"></A><EM>f</EM>loat. The <B>type</B> keyword may be omitted
 if type specifier is either one listed here. So <TT>(integer count)</TT>
 is a correct declaration. Other types (classes) such as <EM>float-vector</EM>,
 <EM>integer-vector</EM>, etc. need to be preceded by <B>type</B>, as
@@ -344,7 +344,7 @@ is a correct declaration. Other types (classes) such as <EM>float-vector</EM>,
 <BR>
 <BR>
 
-<A NAME="18965"></A>
+<A NAME="18979"></A>
 <B>proclaim</B> <EM>proclamation </EM>[function]
 
 <DL COMPACT>
@@ -361,7 +361,7 @@ is evaluated.
 
 <P>
 
-<A NAME="18977"></A>
+<A NAME="18991"></A>
 <B>warn</B> <EM>format-string &amp;rest args </EM>[function]
 
 <DL COMPACT>
@@ -374,7 +374,7 @@ prints warning-message given as <EM>format-string</EM> and <EM>args</EM> to
 <BR>
 <BR>
 
-<A NAME="18989"></A>
+<A NAME="19003"></A>
 <B>error</B> <EM>format-string &amp;rest args </EM>[function]
 
 <DL COMPACT>
@@ -402,7 +402,7 @@ error handler for each thread.
 <P>
 
  <BR>
-<BR> <A NAME="19003"></A>
+<BR> <A NAME="19017"></A>
 <B>install-error-handler</B> <EM>handler </EM>[function]
 
 <DL COMPACT>
@@ -524,7 +524,7 @@ use <B>unix:signal</B> function to set user-defined signal handlers.
  <BR>
 <BR> <P>
 
-<A NAME="19014"></A>
+<A NAME="19028"></A>
 <B>-</B> [variable]
 
 <DL COMPACT>
@@ -535,7 +535,7 @@ use <B>unix:signal</B> function to set user-defined signal handlers.
 <BR>
 <BR>
 
-<A NAME="19024"></A>
+<A NAME="19038"></A>
 <B>+</B> [variable]
 
 <DL COMPACT>
@@ -546,7 +546,7 @@ use <B>unix:signal</B> function to set user-defined signal handlers.
 <BR>
 <BR>
 
-<A NAME="19034"></A>
+<A NAME="19048"></A>
 <B>++</B> [variable]
 
 <DL COMPACT>
@@ -557,7 +557,7 @@ use <B>unix:signal</B> function to set user-defined signal handlers.
 <BR>
 <BR>
 
-<A NAME="19044"></A>
+<A NAME="19058"></A>
 <B>+++</B> [variable]
 
 <DL COMPACT>
@@ -568,7 +568,7 @@ use <B>unix:signal</B> function to set user-defined signal handlers.
 <BR>
 <BR>
 
-<A NAME="19054"></A>
+<A NAME="19068"></A>
 <B>*</B> [variable]
 
 <DL COMPACT>
@@ -579,7 +579,7 @@ use <B>unix:signal</B> function to set user-defined signal handlers.
 <BR>
 <BR>
 
-<A NAME="19064"></A>
+<A NAME="19078"></A>
 <B>**</B> [variable]
 
 <DL COMPACT>
@@ -590,7 +590,7 @@ use <B>unix:signal</B> function to set user-defined signal handlers.
 <BR>
 <BR>
 
-<A NAME="19074"></A>
+<A NAME="19088"></A>
 <B>***</B> [variable]
 
 <DL COMPACT>
@@ -601,7 +601,7 @@ use <B>unix:signal</B> function to set user-defined signal handlers.
 <BR>
 <BR>
 
-<A NAME="19084"></A>
+<A NAME="19098"></A>
 <B>*prompt-string*</B> [variable]
 
 <DL COMPACT>
@@ -613,7 +613,7 @@ use <B>unix:signal</B> function to set user-defined signal handlers.
 <BR>
 <BR>
 
-<A NAME="19095"></A>
+<A NAME="19109"></A>
 <B>*program-name*</B> [variable]
 
 <DL COMPACT>
@@ -628,7 +628,7 @@ or user-saved euslisp.
 
 <P>
 
-<A NAME="19105"></A>
+<A NAME="19119"></A>
 <B>eustop</B> <EM>&amp;rest argv </EM>[function]
 
 <DL COMPACT>
@@ -641,7 +641,7 @@ or user-saved euslisp.
 
 <P>
 
-<A NAME="19115"></A>
+<A NAME="19129"></A>
 <B>eussig</B> <EM>sig code </EM>[function]
 
 <DL COMPACT>
@@ -656,7 +656,7 @@ another toplevel loop.
 
 <P>
 
-<A NAME="19126"></A>
+<A NAME="19140"></A>
 <B>sigint-handler</B> <EM>sig code </EM>[function]
 
 <DL COMPACT>
@@ -671,7 +671,7 @@ It enters a new top level session.
 
 <P>
 
-<A NAME="19136"></A>
+<A NAME="19150"></A>
 <B>euserror</B> <EM>code message &amp;rest arg </EM>[function]
 
 <DL COMPACT>
@@ -686,7 +686,7 @@ prints <EM>message</EM> and enters a new error session.
 
 <P>
 
-<A NAME="19147"></A>
+<A NAME="19161"></A>
 <B>reset</B> [function]
 
 <DL COMPACT>
@@ -700,7 +700,7 @@ quits error loop and goes back to the outermost eustop session.
 
 <P>
 
-<A NAME="19157"></A>
+<A NAME="19171"></A>
 <B>exit</B> <EM>&amp;optional termination-code </EM>[function]
 
 <DL COMPACT>
@@ -715,7 +715,7 @@ as the process status code (0..255).
 
 <P>
 
-<A NAME="19168"></A>
+<A NAME="19182"></A>
 <B>*top-selector*</B> [variable]
 
 <DL COMPACT>
@@ -730,7 +730,7 @@ inputs from multiple streams.
 
 <P>
 
-<A NAME="19178"></A>
+<A NAME="19192"></A>
 <B>h</B> [function]
 
 <DL COMPACT>
@@ -742,7 +742,7 @@ with associated sequence numbers.
 <BR>
 <BR>
 
-<A NAME="19189"></A>
+<A NAME="19203"></A>
 <B>!</B> <EM>&amp;optional (seq 0) </EM>[function]
 
 <DL COMPACT>
@@ -768,7 +768,7 @@ is returned.
 <BR>
 <BR>
 
-<A NAME="19203"></A>
+<A NAME="19217"></A>
 <B>new-history</B> <EM>depth </EM>[function]
 
 <DL COMPACT>
@@ -908,7 +908,7 @@ or use <TT>adb</TT>.
  <BR>
 <BR> <P>
 
-<A NAME="19217"></A>
+<A NAME="19231"></A>
 <B>euscomp</B> <EM>{filename}* </EM>[unix-command]
 
 <DL COMPACT>
@@ -922,7 +922,7 @@ Invokes EusLisp compiler.
 
 <P>
 
-<A NAME="19227"></A>
+<A NAME="19241"></A>
 <BR>
 <IMG
  WIDTH="688" HEIGHT="111" ALIGN="BOTTOM" BORDER="0"
@@ -954,7 +954,7 @@ EusLisp core during the make stage.
 
 <P>
 
-<A NAME="19248"></A>
+<A NAME="19262"></A>
 <B>compile</B> <EM>funcname </EM>[function]
 
 <DL COMPACT>
@@ -970,7 +970,7 @@ Temporary files are deleted.
 
 <P>
 
-<A NAME="19261"></A>
+<A NAME="19275"></A>
 <B>compile-file-if-src-newer</B> <EM>srcfile &amp;key compiler-options </EM>[function]
 
 <DL COMPACT>
@@ -986,7 +986,7 @@ the ".o" suffix.
 
 <P>
 
-<A NAME="19272"></A>
+<A NAME="19286"></A>
 <B>*optimize*</B> [variable]
 
 <DL COMPACT>
@@ -999,7 +999,7 @@ the ".o" suffix.
 
 <P>
 
-<A NAME="19282"></A>
+<A NAME="19296"></A>
 <B>*verbose*</B> [variable]
 
 <DL COMPACT>
@@ -1014,7 +1014,7 @@ and the time required for the compilation are displayed.
 
 <P>
 
-<A NAME="19292"></A>
+<A NAME="19306"></A>
 <B>*safety*</B> [variable]
 
 <DL COMPACT>
@@ -1036,7 +1036,7 @@ Program Loading</A>
  <BR>
 <BR> <P>
 
-<A NAME="19302"></A>
+<A NAME="19316"></A>
 <BR>
 <IMG
  WIDTH="464" HEIGHT="129" ALIGN="BOTTOM" BORDER="0"
@@ -1129,7 +1129,7 @@ in loading.
 
 <P>
 
-<A NAME="19337"></A>
+<A NAME="19351"></A>
 <B>load-files</B> <EM>&amp;rest files </EM>[function]
 
 <DL COMPACT>
@@ -1143,7 +1143,7 @@ with setting <TT>:verbose</TT> to T.
 
 <P>
 
-<A NAME="19349"></A>
+<A NAME="19363"></A>
 <B>*modules*</B> [variable]
 
 <DL COMPACT>
@@ -1155,7 +1155,7 @@ have been loaded so far.
 <BR>
 <BR>
 
-<A NAME="19359"></A>
+<A NAME="19373"></A>
 <B>provide</B> <EM>module-name </EM>[function]
 
 <DL COMPACT>
@@ -1169,7 +1169,7 @@ of files that compose a complete modules.
 <BR>
 <BR>
 
-<A NAME="19373"></A>
+<A NAME="19387"></A>
 <B>require</B> <EM>module-name &amp;optional file </EM>[function]
 
 <DL COMPACT>
@@ -1196,7 +1196,7 @@ Then if you load "C", "A" module is not loaded and "C" is added to
 
 <P>
 
-<A NAME="19395"></A>
+<A NAME="19409"></A>
 <BR>
 <IMG
  WIDTH="577" HEIGHT="73" ALIGN="BOTTOM" BORDER="0"
@@ -1222,7 +1222,7 @@ Then if you load "C", "A" module is not loaded and "C" is added to
 
 <P>
 
-<A NAME="19406"></A>
+<A NAME="19420"></A>
 <B>system:txtload</B> <EM>fname </EM>[function]
 
 <DL COMPACT>
@@ -1244,7 +1244,7 @@ Debugging Aid</A>
  <BR>
 <BR> <P>
 
-<A NAME="19417"></A>
+<A NAME="19431"></A>
 <B>describe</B> <EM>obj &amp;optional (stream *standard-output*) </EM>[function]
 
 <DL COMPACT>
@@ -1258,7 +1258,7 @@ Debugging Aid</A>
 
 <P>
 
-<A NAME="19428"></A>
+<A NAME="19442"></A>
 <B>describe-list</B> <EM>list &amp;optional (stream *standard-output*) </EM>[function]
 
 <DL COMPACT>
@@ -1272,7 +1272,7 @@ Debugging Aid</A>
 
 <P>
 
-<A NAME="19440"></A>
+<A NAME="19454"></A>
 <B>inspect</B> <EM>obj </EM>[macro]
 
 <DL COMPACT>
@@ -1289,7 +1289,7 @@ Use '?' command to see the subcommand menu.
 
 <P>
 
-<A NAME="19452"></A>
+<A NAME="19466"></A>
 <B>more</B> <EM>&amp;rest forms </EM>[function]
 
 <DL COMPACT>
@@ -1307,7 +1307,7 @@ functions like <B>describe</B>.
 
 <P>
 
-<A NAME="19464"></A>
+<A NAME="19478"></A>
 <B>break</B> <EM>&amp;optional (prompt ":: ") </EM>[function]
 
 <DL COMPACT>
@@ -1324,7 +1324,7 @@ To end break, type control-D.
 
 <P>
 
-<A NAME="19474"></A>
+<A NAME="19488"></A>
 <B>help</B> <EM>topic </EM>[function]
 
 <DL COMPACT>
@@ -1348,7 +1348,7 @@ when the 'help' is invoked to save memory if unnecessary.
 
 <P>
 
-<A NAME="19489"></A>
+<A NAME="19503"></A>
 <B>apropos</B> <EM>key </EM>[function]
 
 <DL COMPACT>
@@ -1365,7 +1365,7 @@ It prints all the symbols whose symbol-names include the
 
 <P>
 
-<A NAME="19501"></A>
+<A NAME="19515"></A>
 <B>apropos-list</B> <EM>key </EM>[function]
 
 <DL COMPACT>
@@ -1380,7 +1380,7 @@ result as a list.
 
 <P>
 
-<A NAME="19512"></A>
+<A NAME="19526"></A>
 <B>constants</B> <EM>&amp;optional (string  "") (pkg *package*) </EM>[function]
 
 <DL COMPACT>
@@ -1395,7 +1395,7 @@ lists every symbol in pkg which has defined constant and matches with
 
 <P>
 
-<A NAME="19523"></A>
+<A NAME="19537"></A>
 <B>variables</B> <EM>&amp;optional (string  "") (pkg *package*) </EM>[function]
 
 <DL COMPACT>
@@ -1410,7 +1410,7 @@ lists every symbol in pkg which has global value assigned and matches with
 
 <P>
 
-<A NAME="19534"></A>
+<A NAME="19548"></A>
 <B>functions</B> <EM>&amp;optional (string  "") (pkg *package*) </EM>[function]
 
 <DL COMPACT>
@@ -1425,7 +1425,7 @@ lists every symbol in pkg which has global function defined and matches with
 
 <P>
 
-<A NAME="19545"></A>
+<A NAME="19559"></A>
 <B>btrace</B> <EM>&amp;optional (depth 10) </EM>[function]
 
 <DL COMPACT>
@@ -1437,7 +1437,7 @@ prints call history of <EM>depth</EM> levels.
 <BR>
 <BR>
 
-<A NAME="19556"></A>
+<A NAME="19570"></A>
 <B>step-hook</B> <EM>form env </EM>[function]
 
 <DL COMPACT>
@@ -1448,7 +1448,7 @@ prints call history of <EM>depth</EM> levels.
 <BR>
 <BR>
 
-<A NAME="19567"></A>
+<A NAME="19581"></A>
 <B>step</B> <EM>form </EM>[function]
 
 <DL COMPACT>
@@ -1463,7 +1463,7 @@ or special forms.
 
 <P>
 
-<A NAME="19579"></A>
+<A NAME="19593"></A>
 <B>trace</B> <EM>&amp;rest functions </EM>[function]
 
 <DL COMPACT>
@@ -1478,7 +1478,7 @@ Each time functions are called, their arguments and results are prited.
 
 <P>
 
-<A NAME="19590"></A>
+<A NAME="19604"></A>
 <B>untrace</B> <EM>&amp;rest functions </EM>[function]
 
 <DL COMPACT>
@@ -1491,7 +1491,7 @@ Each time functions are called, their arguments and results are prited.
 
 <P>
 
-<A NAME="19600"></A>
+<A NAME="19614"></A>
 <B>timing</B> <EM>count &amp;rest forms </EM>[macro]
 
 <DL COMPACT>
@@ -1506,7 +1506,7 @@ execution of forms.
 
 <P>
 
-<A NAME="19611"></A>
+<A NAME="19625"></A>
 <B>time</B> <EM>function </EM>[macro]
 
 <DL COMPACT>
@@ -1520,7 +1520,7 @@ begins measurement of time elapsed by <EM>function</EM>.
 
 <P>
 
-<A NAME="19622"></A>
+<A NAME="19636"></A>
 <B>sys:list-all-catchers</B> [function]
 
 <DL COMPACT>
@@ -1534,7 +1534,7 @@ returns a list of all <B>catch</B> tags.
 
 <P>
 
-<A NAME="19633"></A>
+<A NAME="19647"></A>
 <B>sys:list-all-instances</B> <EM>aclass [scan-sub] </EM>[function]
 
 <DL COMPACT>
@@ -1550,7 +1550,7 @@ listed, otherwise, instances of <EM>aclass</EM> or its subclasses are collected.
 
 <P>
 
-<A NAME="19646"></A>
+<A NAME="19660"></A>
 <B>sys:list-all-bindings</B> [function]
 
 <DL COMPACT>
@@ -1564,7 +1564,7 @@ and returns a list of all the accessible value bindings.
 
 <P>
 
-<A NAME="19656"></A>
+<A NAME="19670"></A>
 <B>sys:list-all-special-bindings</B> [function]
 
 <DL COMPACT>
@@ -1597,7 +1597,7 @@ structures of 3D models that have mutual references.
 <P>
 
  <BR>
-<BR> <A NAME="19666"></A>
+<BR> <A NAME="19680"></A>
 <B>dump-object</B> <EM>file &amp;rest objects </EM>[function]
 
 <DL COMPACT>
@@ -1608,7 +1608,7 @@ structures of 3D models that have mutual references.
 <BR>
 <BR>
 
-<A NAME="19677"></A>
+<A NAME="19691"></A>
 <B>dump-structure</B> <EM>file &amp;rest objects </EM>[function]
 
 <DL COMPACT>
@@ -1622,7 +1622,7 @@ dumps objects to <EM>file</EM> in a format as they can be read back again.
 
 <P>
 
-<A NAME="19688"></A>
+<A NAME="19702"></A>
 <B>dump-loadable-structure</B> <EM>file &amp;rest symbols </EM>[function]
 
 <DL COMPACT>
@@ -1672,7 +1672,7 @@ point.
 <P>
 
  <BR>
-<BR> <A NAME="19699"></A>
+<BR> <A NAME="19713"></A>
 <B>save</B> <EM>path &amp;optional (symbol-file "") starter </EM>[function]
 
 <DL COMPACT>
@@ -1713,7 +1713,7 @@ When EusLisp is invoked from Unix, execution is initiated by the toplevel
 function bound to <B>*toplevel*</B>.
 This function is <TT>eustop</TT> in <TT>eus</TT> and <TT>xtop</TT> in <TT>eusx</TT>.
 You can change this toplevel function by specifying your own 
-function to the third argument to <B>save</B>. <A NAME="18683"></A>
+function to the third argument to <B>save</B>. <A NAME="18697"></A>
 
 <P>
 The toplevel function should be programmed to accept arbitrary number of
@@ -1756,7 +1756,7 @@ Miscelaneous Functions</A>
 </H2>
 
  <BR>
-<BR> <A NAME="19715"></A>
+<BR> <A NAME="19729"></A>
 <B>lisp-implementation-type</B> [function]
 
 <DL COMPACT>
@@ -1767,7 +1767,7 @@ Miscelaneous Functions</A>
 <BR>
 <BR>
 
-<A NAME="19726"></A>
+<A NAME="19740"></A>
 <B>lisp-implementation-version</B> [function]
 
 <DL COMPACT>
