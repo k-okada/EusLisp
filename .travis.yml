@@ -88,6 +88,7 @@ after_deploy:
   - git rm -f doc/{latex,jlatex,html}/*{pdf,ps,dvi,html,png}
   - git add doc/{latex,jlatex}/*.{pdf,ps,dvi} doc/html/*.{html,png}
   - git status
+  - git branch
   - git commit -m "Build documents from $TRAVIS_TAG@$TRAVIS_COMMIT" doc/
   - git push https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG.git $TRAVIS_BRANCH
   # send html to gh-pages
