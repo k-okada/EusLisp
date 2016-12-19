@@ -95,7 +95,7 @@ after_deploy:
   - git status
   - git branch
   - git commit -m "Build documents from $TRAVIS_TAG@$TRAVIS_COMMIT" doc/
-  - git push https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG.git $(git name-rev --name-only $(git rev-parse $TRAVIS_BRANCH))
+  - git push https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG.git $(git rev-parse --abbrev-ref HEAD)
   # send html to gh-pages
   - git clone --branch gh-pages https://github.com/$TRAVIS_REPO_SLUG gh-pages
   - cd gh-pages
