@@ -84,6 +84,8 @@ after_deploy:
   # set user info
   - git config --global user.email k-okada@jsk.t.u--tokyo.ac.jp
   - git config --global user.name "Kei Okada"
+  # recover from detached
+  - git checkout $(git name-rev --name-only $(git rev-parse EusLisp-dummy))
   # send doc to current repo
   - git rm -f doc/{latex,jlatex,html}/*{pdf,ps,dvi,html,png}
   - git add doc/{latex,jlatex}/*.{pdf,ps,dvi} doc/html/*.{html,png}
