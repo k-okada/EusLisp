@@ -176,7 +176,7 @@ from the X server and delivers them to each window where the event happened.
  <BR>
 <BR> <P>
 
-<A NAME="47515"></A>
+<A NAME="47511"></A>
 <B>event</B> [variable]
 
 <DL COMPACT>
@@ -190,7 +190,7 @@ event structure.
 
 <P>
 
-<A NAME="47525"></A>
+<A NAME="47521"></A>
 <B>next-event</B> [function]
 
 <DL COMPACT>
@@ -206,7 +206,7 @@ NIL if there is no pending event.
 
 <P>
 
-<A NAME="47536"></A>
+<A NAME="47532"></A>
 <B>event-type</B> <EM>event </EM>[function]
 
 <DL COMPACT>
@@ -254,7 +254,7 @@ structure. The event-type keywords are:
 
 <P>
 
-<A NAME="47580"></A>
+<A NAME="47576"></A>
 <B>event-window</B> <EM>event </EM>[function]
 
 <DL COMPACT>
@@ -268,7 +268,7 @@ returns the window object where the <EM>event</EM> occurred.
 
 <P>
 
-<A NAME="47591"></A>
+<A NAME="47587"></A>
 <B>event-x</B> <EM>event </EM>[function]
 
 <DL COMPACT>
@@ -281,7 +281,7 @@ out of the <EM>event</EM>.
 <BR>
 <BR>
 
-<A NAME="47603"></A>
+<A NAME="47599"></A>
 <B>event-y</B> <EM>event </EM>[function]
 
 <DL COMPACT>
@@ -294,7 +294,7 @@ out of the <EM>event</EM>.
 <BR>
 <BR>
 
-<A NAME="47615"></A>
+<A NAME="47611"></A>
 <B>event-width</B> <EM>event </EM>[function]
 
 <DL COMPACT>
@@ -307,7 +307,7 @@ which represents the width parameter at the <TT>:configureNotify</TT> event.
 <BR>
 <BR>
 
-<A NAME="47627"></A>
+<A NAME="47623"></A>
 <B>event-height</B> <EM>event </EM>[function]
 
 <DL COMPACT>
@@ -320,7 +320,7 @@ which represents the height parameter at the <TT>:configureNotify</TT> event.
 <BR>
 <BR>
 
-<A NAME="47639"></A>
+<A NAME="47635"></A>
 <B>event-state</B> <EM>event </EM>[function]
 
 <DL COMPACT>
@@ -336,7 +336,7 @@ For example, if left mouse button is pressed while shift key is down,
 <BR>
 <BR>
 
-<A NAME="47652"></A>
+<A NAME="47648"></A>
 <B>display-events</B> [function]
 
 <DL COMPACT>
@@ -350,7 +350,7 @@ For example, if left mouse button is pressed while shift key is down,
 
 <P>
 
-<A NAME="47663"></A>
+<A NAME="47659"></A>
 <B>window-main-loop</B> <EM>&amp;rest forms </EM>[macro]
 
 <DL COMPACT>
@@ -372,7 +372,7 @@ evaluates them each time event arrival is checked.
 
 <P>
 
-<A NAME="47677"></A>
+<A NAME="47673"></A>
 <B>window-main-thread</B> [function]
 
 <DL COMPACT>
@@ -400,7 +400,7 @@ Panel</A>
 
  <BR>
 <BR> <BR> 
-<A NAME="47691"></A>
+<A NAME="47687"></A>
 <BIG CLASS="XLARGE"><B>panel </B></BIG> [class]  <PRE><TT>
   :super   <B>xwindow</B> 
 <BR>  :slots 		 (pos items fontid
@@ -428,7 +428,7 @@ Application windows should be defined as subclasses of the <TT>Panel</TT>.
 
 <P>
 
-<A NAME="47709"></A>
+<A NAME="47705"></A>
 <BR>
 <IMG
  WIDTH="614" HEIGHT="54" ALIGN="BOTTOM" BORDER="0"
@@ -457,7 +457,7 @@ for each panel-item.
 
 <P>
 
-<A NAME="47725"></A>
+<A NAME="47721"></A>
 <B>:items</B> [method]
 
 <DL COMPACT>
@@ -468,7 +468,7 @@ for each panel-item.
 <BR>
 <BR>
 
-<A NAME="47735"></A>
+<A NAME="47731"></A>
 <B>:locate-item</B> <EM>item &amp;optional x y </EM>[method]
 
 <DL COMPACT>
@@ -488,7 +488,7 @@ as shown in <B>Fig.</B> <A HREF="#panellayout">17</A>.
 
 <P>
 
-<DIV ALIGN="CENTER"><A NAME="panellayout"></A><A NAME="47437"></A>
+<DIV ALIGN="CENTER"><A NAME="panellayout"></A><A NAME="47433"></A>
 <TABLE>
 <CAPTION ALIGN="BOTTOM"><STRONG>Figure 17:</STRONG>
 Item lay-out in panel</CAPTION>
@@ -505,7 +505,7 @@ Item lay-out in panel</CAPTION>
 
 <P>
 
-<A NAME="47756"></A>
+<A NAME="47752"></A>
 <BR>
 <IMG
  WIDTH="423" HEIGHT="302" ALIGN="BOTTOM" BORDER="0"
@@ -536,7 +536,7 @@ the corresponding event.
 
 <P>
 
-<A NAME="47776"></A>
+<A NAME="47772"></A>
 <B>:delete-items</B> [method]
 
 <DL COMPACT>
@@ -547,7 +547,7 @@ the corresponding event.
 <BR>
 <BR>
 
-<A NAME="47786"></A>
+<A NAME="47782"></A>
 <BR>
 <IMG
  WIDTH="552" HEIGHT="54" ALIGN="BOTTOM" BORDER="0"
@@ -577,7 +577,7 @@ User applications should override these methods.
 <P>
 
  <BR>
-<BR> <A NAME="47798"></A>
+<BR> <A NAME="47794"></A>
 <B>:quit</B> <EM>&amp;rest a </EM>[method]
 
 <DL COMPACT>
@@ -589,7 +589,7 @@ throws <TT>:window-main-loop</TT> and terminates event processing.
 <BR>
 <BR>
 
-<A NAME="47809"></A>
+<A NAME="47805"></A>
 <B>:KeyPress</B> <EM>event </EM>[method]
 
 <DL COMPACT>
@@ -600,7 +600,7 @@ throws <TT>:window-main-loop</TT> and terminates event processing.
 <BR>
 <BR>
 
-<A NAME="47819"></A>
+<A NAME="47815"></A>
 <B>:KeyRelease</B> <EM>event </EM>[method]
 
 <DL COMPACT>
@@ -611,7 +611,7 @@ throws <TT>:window-main-loop</TT> and terminates event processing.
 <BR>
 <BR>
 
-<A NAME="47829"></A>
+<A NAME="47825"></A>
 <B>:ButtonPress</B> <EM>event </EM>[method]
 
 <DL COMPACT>
@@ -622,7 +622,7 @@ throws <TT>:window-main-loop</TT> and terminates event processing.
 <BR>
 <BR>
 
-<A NAME="47839"></A>
+<A NAME="47835"></A>
 <B>:ButtonRelease</B> <EM>event </EM>[method]
 
 <DL COMPACT>
@@ -633,7 +633,7 @@ throws <TT>:window-main-loop</TT> and terminates event processing.
 <BR>
 <BR>
 
-<A NAME="47849"></A>
+<A NAME="47845"></A>
 <B>:MotionNotify</B> <EM>event </EM>[method]
 
 <DL COMPACT>
@@ -644,7 +644,7 @@ throws <TT>:window-main-loop</TT> and terminates event processing.
 <BR>
 <BR>
 
-<A NAME="47859"></A>
+<A NAME="47855"></A>
 <B>:EnterNotify</B> <EM>event </EM>[method]
 
 <DL COMPACT>
@@ -655,7 +655,7 @@ throws <TT>:window-main-loop</TT> and terminates event processing.
 <BR>
 <BR>
 
-<A NAME="47869"></A>
+<A NAME="47865"></A>
 <B>:LeaveNotify</B> <EM>event </EM>[method]
 
 <DL COMPACT>
@@ -676,7 +676,7 @@ Subpanels (menu-panel and menubar-panel)</A>
 
  <BR>
 <BR> <BR> 
-<A NAME="47880"></A>
+<A NAME="47876"></A>
 <BIG CLASS="XLARGE"><B>menu-panel </B></BIG> [class]  <PRE><TT>
   :super   <B>panel</B> 
 <BR>  :slots 		  (items item-dots item-height
@@ -725,7 +725,7 @@ with the menu-button-item by <TT>(instance menu-button-item :create
 
 <P>
 
-<A NAME="47911"></A>
+<A NAME="47907"></A>
 <BR>
 <IMG
  WIDTH="552" HEIGHT="54" ALIGN="BOTTOM" BORDER="0"
@@ -751,7 +751,7 @@ new menu-item is added.
 
 <P>
 
-<A NAME="47922"></A>
+<A NAME="47918"></A>
 <B>:create-item</B> <EM>class label receiver method  &amp;rest mesg </EM>[method]
 
 <DL COMPACT>
@@ -768,7 +768,7 @@ when the mouse button is released on the item.
 
 <P>
 	<BR> 
-<A NAME="47935"></A>
+<A NAME="47931"></A>
 <BIG CLASS="XLARGE"><B>menubar-panel </B></BIG> [class]  <PRE><TT>
   :super   <B>panel</B> 
 <BR>  :slots 		 
@@ -806,7 +806,7 @@ in a forked process.
 
 <P>
 
-<DIV ALIGN="CENTER"><A NAME="47052"></A>
+<DIV ALIGN="CENTER"><A NAME="47048"></A>
 <TABLE>
 <CAPTION ALIGN="BOTTOM"><STRONG>Figure 18:</STRONG>
 FilePanel window</CAPTION>
@@ -843,7 +843,7 @@ by the window manager.
 
 <P>
 
-<DIV ALIGN="CENTER"><A NAME="textviewpanel"></A><A NAME="47445"></A>
+<DIV ALIGN="CENTER"><A NAME="textviewpanel"></A><A NAME="47441"></A>
 <TABLE>
 <CAPTION ALIGN="BOTTOM"><STRONG>Figure 19:</STRONG>
 TextViewPanel window</CAPTION>
@@ -908,7 +908,7 @@ Panel Items</A>
 
  <BR>
 <BR> <BR> 
-<A NAME="47956"></A>
+<A NAME="47952"></A>
 <BIG CLASS="XLARGE"><B>panel-item </B></BIG> [class]  <PRE><TT>
   :super   <B>xwindow</B> 
 <BR>  :slots 		 (pos notify-object notify-method
@@ -931,7 +931,7 @@ event occurs.
 
 <P>
 
-<A NAME="47976"></A>
+<A NAME="47972"></A>
 <B>:notify</B> <EM>&amp;rest args </EM>[method]
 
 <DL COMPACT>
@@ -974,7 +974,7 @@ the slider-item object, the new x and y values.
 
 <P>
 
-<A NAME="47991"></A>
+<A NAME="47987"></A>
 <BR>
 <IMG
  WIDTH="317" HEIGHT="317" ALIGN="BOTTOM" BORDER="0"
@@ -1002,7 +1002,7 @@ via <TT>send-super</TT>.
 
 <P>
 	<BR> 
-<A NAME="48004"></A>
+<A NAME="48000"></A>
 <BIG CLASS="XLARGE"><B>button-item </B></BIG> [class]  <PRE><TT>
   :super   <B>panel-item</B> 
 <BR>  :slots 		 
@@ -1024,7 +1024,7 @@ with the panel-item object as the only argument.
 
 <P>
 
-<A NAME="48024"></A>
+<A NAME="48020"></A>
 <B>:draw-label</B> <EM>&amp;optional (state :top) (color bg-color) (border 2) (offset) </EM>[method]
 
 <DL COMPACT>
@@ -1038,7 +1038,7 @@ draws button-item's label.
 
 <P>
 
-<A NAME="48034"></A>
+<A NAME="48030"></A>
 <BR>
 <IMG
  WIDTH="634" HEIGHT="54" ALIGN="BOTTOM" BORDER="0"
@@ -1071,7 +1071,7 @@ the parent window, i.e. a panel.
 
 <P>
 
-<A NAME="48045"></A>
+<A NAME="48041"></A>
 <B>:ButtonPress</B> <EM>event </EM>[method]
 
 <DL COMPACT>
@@ -1085,7 +1085,7 @@ changes the background color to gray, as if the button.
 
 <P>
 
-<A NAME="48055"></A>
+<A NAME="48051"></A>
 <B>:ButtonRelease</B> <EM>event </EM>[method]
 
 <DL COMPACT>
@@ -1099,7 +1099,7 @@ changes <EM>event</EM>'s background color to normal.
 
 <P>
 	<BR> 
-<A NAME="48067"></A>
+<A NAME="48063"></A>
 <BIG CLASS="XLARGE"><B>menu-button-item </B></BIG> [class]  <PRE><TT>
   :super   <B>button-item</B> 
 <BR>  :slots 		 (items item-dots item-labels
@@ -1128,7 +1128,7 @@ one of the menu items.
 
 <P>
 
-<A NAME="48089"></A>
+<A NAME="48085"></A>
 <BR>
 <IMG
  WIDTH="554" HEIGHT="111" ALIGN="BOTTOM" BORDER="0"
@@ -1154,7 +1154,7 @@ one of the menu items.
 
 <P>
 
-<A NAME="48102"></A>
+<A NAME="48098"></A>
 <B>:ButtonPress</B> <EM>event </EM>[method]
 
 <DL COMPACT>
@@ -1169,7 +1169,7 @@ and exposes the associated menu-panel below the button.
 
 <P>
 
-<A NAME="48112"></A>
+<A NAME="48108"></A>
 <B>:ButtonRelease</B> <EM>event </EM>[method]
 
 <DL COMPACT>
@@ -1184,7 +1184,7 @@ and reverts the appearance of the button.
 
 <P>
 	<BR> 
-<A NAME="48124"></A>
+<A NAME="48120"></A>
 <BIG CLASS="XLARGE"><B>bitmap-button-item </B></BIG> [class]  <PRE><TT>
   :super   <B>button-item</B> 
 <BR>  :slots 		 (pixmap-id bitmap-width bitmap-height) 
@@ -1207,7 +1207,7 @@ from a bitmap-file when the button is created.
 
 <P>
 
-<A NAME="48145"></A>
+<A NAME="48141"></A>
 <B>:draw-label</B> <EM>&amp;optional (state :flat) (color bg-color) (border 2) </EM>[method]
 
 <DL COMPACT>
@@ -1220,7 +1220,7 @@ draws a bitmap/pixmap on the button.
 <BR>
 <BR>
 
-<A NAME="48155"></A>
+<A NAME="48151"></A>
 <BR>
 <IMG
  WIDTH="552" HEIGHT="73" ALIGN="BOTTOM" BORDER="0"
@@ -1244,7 +1244,7 @@ of <TT>button-item</TT>.
 <BR>
 <BR>
 
-<A NAME="48169"></A>
+<A NAME="48165"></A>
 <B>:draw-label</B> <EM>&amp;optional (state :flat) (color bg-color) (border 2) </EM>[method]
 
 <DL COMPACT>
@@ -1257,7 +1257,7 @@ draw a bitmap/pixmap on the button.
 <BR>
 <BR>
 
-<A NAME="48179"></A>
+<A NAME="48175"></A>
 <B>:create-bitmap-from-file</B> <EM>fname </EM>[method]
 
 <DL COMPACT>
@@ -1272,7 +1272,7 @@ and stores its id in <EM>pixmap-id</EM>.
 
 <P>
 	<BR> 
-<A NAME="48192"></A>
+<A NAME="48188"></A>
 <BIG CLASS="XLARGE"><B>choice-item </B></BIG> [class]  <PRE><TT>
   :super   <B>button-item</B> 
 <BR>  :slots 		  (choice-list active-choice transient-choice 
@@ -1295,7 +1295,7 @@ the same time.
 
 <P>
 
-<A NAME="48211"></A>
+<A NAME="48207"></A>
 <BR>
 <IMG
  WIDTH="552" HEIGHT="54" ALIGN="BOTTOM" BORDER="0"
@@ -1323,7 +1323,7 @@ is invoked with the choice-item object and the index of the choice selected.
 <BR>
 <BR>
 
-<A NAME="48225"></A>
+<A NAME="48221"></A>
 <B>:value</B> <EM>&amp;optional (new-choice) (invocation) </EM>[method]
 
 <DL COMPACT>
@@ -1341,7 +1341,7 @@ is invoked.
 
 <P>
 
-<A NAME="48240"></A>
+<A NAME="48236"></A>
 <B>:draw-active-button</B> <EM>&amp;optional
 (old-choice active-choice) (new-choice active-choice) </EM>[method]
 
@@ -1355,7 +1355,7 @@ draw active button.
 <BR>
 <BR>
 
-<A NAME="48250"></A>
+<A NAME="48246"></A>
 <B>:buttonPress</B> <EM>event </EM>[method]
 
 <DL COMPACT>
@@ -1371,7 +1371,7 @@ No further action is taken until the mouse button is released.
 
 <P>
 
-<A NAME="48261"></A>
+<A NAME="48257"></A>
 <B>:buttonRelease</B> <EM>event </EM>[method]
 
 <DL COMPACT>
@@ -1388,7 +1388,7 @@ the <EM>active-choice</EM> is updated and
 
 <P>
 	<BR> 
-<A NAME="48275"></A>
+<A NAME="48271"></A>
 <BIG CLASS="XLARGE"><B>slider-item </B></BIG> [class]  <PRE><TT>
   :super   <B>panel-item</B> 
 <BR>  :slots 		 (min-value max-value value
@@ -1418,7 +1418,7 @@ is invoked with the slider-item object and the new value as the arguments.
 
 <P>
 
-<A NAME="48298"></A>
+<A NAME="48294"></A>
 <BR>
 <IMG
  WIDTH="552" HEIGHT="92" ALIGN="BOTTOM" BORDER="0"
@@ -1447,7 +1447,7 @@ in the <EM>value-format</EM>.
 
 <P>
 
-<A NAME="48313"></A>
+<A NAME="48309"></A>
 <B>:value</B> <EM>&amp;optional newval invocation </EM>[method]
 
 <DL COMPACT>
@@ -1465,7 +1465,7 @@ If <EM>invocation</EM> is also specified non nil,
 
 <P>
 	<BR> 
-<A NAME="48329"></A>
+<A NAME="48325"></A>
 <BIG CLASS="XLARGE"><B>joystick-item </B></BIG> [class]  <PRE><TT>
   :super   <B>panel-item</B> 
 <BR>  :slots 		  (stick-size min-x min-y max-x max-y
@@ -1493,7 +1493,7 @@ on the coaxial chart that looks like a web (Fig. <A HREF="#panelitem">20</A>).
 
 <P>
 
-<A NAME="48348"></A>
+<A NAME="48344"></A>
 <BR>
 <IMG
  WIDTH="670" HEIGHT="73" ALIGN="BOTTOM" BORDER="0"
@@ -1524,7 +1524,7 @@ Otherwise, the joystick remains at the released position.
 
 <P>
 
-<A NAME="48361"></A>
+<A NAME="48357"></A>
 <B>:value</B> <EM>&amp;optional (newx) (newy) (invocation) </EM>[method]
 
 <DL COMPACT>
@@ -1575,7 +1575,7 @@ appear in a panel.
 
 <P>
 
-<DIV ALIGN="CENTER"><A NAME="panelitem"></A><A NAME="47468"></A>
+<DIV ALIGN="CENTER"><A NAME="panelitem"></A><A NAME="47464"></A>
 <TABLE>
 <CAPTION ALIGN="BOTTOM"><STRONG>Figure 20:</STRONG>
 Panel items created in a panel</CAPTION>
@@ -1594,7 +1594,7 @@ Panel items created in a panel</CAPTION>
 
  <BR>
 <BR> <BR> 
-<A NAME="48378"></A>
+<A NAME="48374"></A>
 <BIG CLASS="XLARGE"><B>text-item </B></BIG> [class]  <PRE><TT>
   :super   <B>panel-item</B> 
 <BR>  :slots 		 (textwin) 
@@ -1625,7 +1625,7 @@ the <EM>notify-object</EM>'s <EM>notify-method</EM>.
 
 <P>
 
-<A NAME="48403"></A>
+<A NAME="48399"></A>
 <BR>
 <IMG
  WIDTH="264" HEIGHT="226" ALIGN="BOTTOM" BORDER="0"
@@ -1651,7 +1651,7 @@ visible portion is restricted to the <EM>columns</EM> characters.
 
 <P>
 
-<A NAME="48415"></A>
+<A NAME="48411"></A>
 <B>:getstring</B> [method]
 
 <DL COMPACT>
@@ -1672,7 +1672,7 @@ Canvas</A>
 
  <BR>
 <BR> <BR> 
-<A NAME="48426"></A>
+<A NAME="48422"></A>
 <BIG CLASS="XLARGE"><B>canvas </B></BIG> [class]  <PRE><TT>
   :super   <B>xwindow</B> 
 <BR>  :slots 		 (topleft bottomright) 
@@ -1709,7 +1709,7 @@ and <TT>ScrollTextWindow</TT>.
 
  <BR>
 <BR> <BR> 
-<A NAME="48446"></A>
+<A NAME="48442"></A>
 <BIG CLASS="XLARGE"><B>textWindow </B></BIG> [class]  <PRE><TT>
   :super   <B>xwindow</B> 
 <BR>  :slots 		 (fontid 
@@ -1755,7 +1755,7 @@ the mouse pointer.
 
 <P>
 
-<A NAME="48465"></A>
+<A NAME="48461"></A>
 <B>:init</B> <EM>id </EM>[method]
 
 <DL COMPACT>
@@ -1769,7 +1769,7 @@ initializes <EM>id</EM>th text-window.
 
 <P>
 
-<A NAME="48476"></A>
+<A NAME="48472"></A>
 <BR>
 <IMG
  WIDTH="708" HEIGHT="54" ALIGN="BOTTOM" BORDER="0"
@@ -1798,7 +1798,7 @@ is typed in.
 
 <P>
 
-<A NAME="48493"></A>
+<A NAME="48489"></A>
 <B>:cursor</B> <EM>flag </EM>[method]
 
 <DL COMPACT>
@@ -1818,7 +1818,7 @@ whenever the character at the cursor is updated.
 
 <P>
 
-<A NAME="48514"></A>
+<A NAME="48510"></A>
 <B>:clear</B> [method]
 
 <DL COMPACT>
@@ -1832,7 +1832,7 @@ clears text-window.
 
 <P>
 
-<A NAME="48524"></A>
+<A NAME="48520"></A>
 <B>:clear-eol</B> <EM>&amp;optional (r win-row) (c win-col) (csr :on) </EM>[method]
 
 <DL COMPACT>
@@ -1848,7 +1848,7 @@ addressed by r and <EM>c</EM>, including the character at the cursor.
 
 <P>
 
-<A NAME="48536"></A>
+<A NAME="48532"></A>
 <B>:clear-lines</B> <EM>lines &amp;optional (r win-row) </EM>[method]
 
 <DL COMPACT>
@@ -1862,7 +1862,7 @@ clears multiple lines after <EM>r</EM>-th row.
 
 <P>
 
-<A NAME="48547"></A>
+<A NAME="48543"></A>
 <B>:clear-eos</B> <EM>&amp;optional (r win-row) (c win-col) </EM>[method]
 
 <DL COMPACT>
@@ -1877,7 +1877,7 @@ till the end-of-the-screen.
 
 <P>
 
-<A NAME="48559"></A>
+<A NAME="48555"></A>
 <B>:win-row-max</B> [method]
 
 <DL COMPACT>
@@ -1891,7 +1891,7 @@ displayable in this window.
 
 <P>
 
-<A NAME="48569"></A>
+<A NAME="48565"></A>
 <B>:win-col-max</B> [method]
 
 <DL COMPACT>
@@ -1905,7 +1905,7 @@ displayable in this window.
 
 <P>
 
-<A NAME="48579"></A>
+<A NAME="48575"></A>
 <B>:xy</B> <EM>&amp;optional (r win-row) (c win-col) </EM>[method]
 
 <DL COMPACT>
@@ -1920,7 +1920,7 @@ addressed by <EM>r</EM> and <EM>c</EM>.
 
 <P>
 
-<A NAME="48591"></A>
+<A NAME="48587"></A>
 <B>:goto</B> <EM>r c &amp;optional (cursor :on) </EM>[method]
 
 <DL COMPACT>
@@ -1935,7 +1935,7 @@ moves the cursor to <EM>r</EM>-th row and <EM>c</EM>-th column.
 
 <P>
 
-<A NAME="48603"></A>
+<A NAME="48599"></A>
 <B>:goback</B> <EM>&amp;optional (csr :on) </EM>[method]
 
 <DL COMPACT>
@@ -1949,7 +1949,7 @@ moves the cursor backward by one.
 
 <P>
 
-<A NAME="48613"></A>
+<A NAME="48609"></A>
 <B>:advance</B> <EM>&amp;optional (n 1) </EM>[method]
 
 <DL COMPACT>
@@ -1963,7 +1963,7 @@ moves the cursor forward by <EM>n</EM> characters.
 
 <P>
 
-<A NAME="48624"></A>
+<A NAME="48620"></A>
 <B>:scroll</B> <EM>&amp;optional (n 1) </EM>[method]
 
 <DL COMPACT>
@@ -1977,7 +1977,7 @@ scroll textwindow vertically by <EM>n</EM> lines.
 
 <P>
 
-<A NAME="48635"></A>
+<A NAME="48631"></A>
 <B>:horizontal-scroll</B> <EM>&amp;optional (n 1) </EM>[method]
 
 <DL COMPACT>
@@ -1991,7 +1991,7 @@ horizontally scrolls the text by <EM>n</EM> columns.
 
 <P>
 
-<A NAME="48646"></A>
+<A NAME="48642"></A>
 <B>:newline</B> [method]
 
 <DL COMPACT>
@@ -2005,7 +2005,7 @@ moves cursor to the beginning of the next line.
 
 <P>
 
-<A NAME="48656"></A>
+<A NAME="48652"></A>
 <B>:putch</B> <EM>ch </EM>[method]
 
 <DL COMPACT>
@@ -2020,7 +2020,7 @@ The rest of the line is moved forward by one.
 
 <P>
 
-<A NAME="48667"></A>
+<A NAME="48663"></A>
 <B>:putstring</B> <EM>str &amp;optional (e (length str)) </EM>[method]
 
 <DL COMPACT>
@@ -2034,7 +2034,7 @@ places <EM>str</EM> at the cursor position.
 
 <P>
 
-<A NAME="48678"></A>
+<A NAME="48674"></A>
 <B>:event-row</B> <EM>event </EM>[method]
 
 <DL COMPACT>
@@ -2045,7 +2045,7 @@ places <EM>str</EM> at the cursor position.
 <BR>
 <BR>
 
-<A NAME="48688"></A>
+<A NAME="48684"></A>
 <B>:event-col</B> <EM>event </EM>[method]
 
 <DL COMPACT>
@@ -2060,7 +2060,7 @@ returns the text cursor position designated by <SPAN CLASS="MATH"><IMG
 <BR>
 <BR>
 
-<A NAME="48699"></A>
+<A NAME="48695"></A>
 <B>:KeyPress</B> <EM>event </EM>[method]
 
 <DL COMPACT>
@@ -2075,7 +2075,7 @@ If the character is newline, notification is sent to the <EM>notify-object</EM>.
 
 <P>
 	<BR> 
-<A NAME="48711"></A>
+<A NAME="48707"></A>
 <BIG CLASS="XLARGE"><B>textWindowStream </B></BIG> [class]  <PRE><TT>
   :super   <B>stream</B> 
 <BR>  :slots 		 (textwin) 
@@ -2096,7 +2096,7 @@ As usual file streams, the output data are buffered.
 
 <P>
 
-<A NAME="48730"></A>
+<A NAME="48726"></A>
 <B>:flush</B> [method]
 
 <DL COMPACT>
@@ -2112,7 +2112,7 @@ automatically calls this method.
 
 <P>
 
-<A NAME="48741"></A>
+<A NAME="48737"></A>
 <B>make-text-window-stream</B> <EM>xwin </EM>[function]
 
 <DL COMPACT>
@@ -2126,7 +2126,7 @@ makes text-window-stream and returns the stream object.
 
 <P>
 	<BR> 
-<A NAME="48752"></A>
+<A NAME="48748"></A>
 <BIG CLASS="XLARGE"><B>BufferTextWindow </B></BIG> [class]  <PRE><TT>
   :super   <B>TextWindow</B> 
 <BR>  :slots 		 (linebuf expbuf max-line-length row col) 
@@ -2149,7 +2149,7 @@ which have several, often only one, lines of text.
 
 <P>
 
-<A NAME="48770"></A>
+<A NAME="48766"></A>
 <B>:line</B> <EM>n </EM>[method]
 
 <DL COMPACT>
@@ -2163,7 +2163,7 @@ string.
 
 <P>
 
-<A NAME="48781"></A>
+<A NAME="48777"></A>
 <B>:nlines</B> [method]
 
 <DL COMPACT>
@@ -2174,7 +2174,7 @@ string.
 <BR>
 <BR>
 
-<A NAME="48791"></A>
+<A NAME="48787"></A>
 <B>:all-lines</B> [method]
 
 <DL COMPACT>
@@ -2185,7 +2185,7 @@ string.
 <BR>
 <BR>
 
-<A NAME="48801"></A>
+<A NAME="48797"></A>
 <B>:refresh-line</B> <EM>&amp;optional (r win-row) (c win-col) </EM>[method]
 
 <DL COMPACT>
@@ -2197,7 +2197,7 @@ redraws the <EM>r</EM>-th line after the <EM>c</EM>-th column.
 <BR>
 <BR>
 
-<A NAME="48813"></A>
+<A NAME="48809"></A>
 <B>:refresh</B> <EM>&amp;optional (start 0) </EM>[method]
 
 <DL COMPACT>
@@ -2209,7 +2209,7 @@ redraws the lines after the <EM>start</EM>-th line inclusively.
 <BR>
 <BR>
 
-<A NAME="48824"></A>
+<A NAME="48820"></A>
 <B>:insert-string</B> <EM>string </EM>[method]
 
 <DL COMPACT>
@@ -2221,7 +2221,7 @@ inserts <EM>string</EM> at the cursor position.
 <BR>
 <BR>
 
-<A NAME="48835"></A>
+<A NAME="48831"></A>
 <B>:insert</B> <EM>ch </EM>[method]
 
 <DL COMPACT>
@@ -2232,7 +2232,7 @@ inserts <EM>string</EM> at the cursor position.
 <BR>
 <BR>
 
-<A NAME="48845"></A>
+<A NAME="48841"></A>
 <B>:delete</B> <EM>n </EM>[method]
 
 <DL COMPACT>
@@ -2245,7 +2245,7 @@ inserts <EM>string</EM> at the cursor position.
 
 <P>
 
-<A NAME="48856"></A>
+<A NAME="48852"></A>
 <B>expand-tab</B> <EM>src &amp;optional (offset 0) </EM>[function]
 
 <DL COMPACT>
@@ -2261,7 +2261,7 @@ position.
 
 <P>
 	<BR> 
-<A NAME="48868"></A>
+<A NAME="48864"></A>
 <BIG CLASS="XLARGE"><B>ScrollTextWindow </B></BIG> [class]  <PRE><TT>
   :super   <B>BufferTextWindow</B> 
 <BR>  :slots 		 (top-row top-col   ;display-starting position 
@@ -2289,7 +2289,7 @@ By clicking, a line can be selected.
 
 <P>
 
-<A NAME="48888"></A>
+<A NAME="48884"></A>
 <B>:create</B> <EM>&amp;rest args
            &amp;key (scroll-bar nil)
                 (horizontal-scroll-bar nil)
@@ -2306,7 +2306,7 @@ When scroll-bars are needed, specify T to each keyword argument.
 
 <P>
 
-<A NAME="48898"></A>
+<A NAME="48894"></A>
 <B>:locate</B> <EM>n </EM>[method]
 
 <DL COMPACT>
@@ -2318,7 +2318,7 @@ line at the top of the window.
 <BR>
 <BR>
 
-<A NAME="48909"></A>
+<A NAME="48905"></A>
 <B>:display-selection</B> <EM>selection </EM>[method]
 
 <DL COMPACT>
@@ -2333,7 +2333,7 @@ highlighted.
 
 <P>
 
-<A NAME="48920"></A>
+<A NAME="48916"></A>
 <B>:selection</B> [method]
 
 <DL COMPACT>
@@ -2346,7 +2346,7 @@ highlighted.
 
 <P>
 
-<A NAME="48930"></A>
+<A NAME="48926"></A>
 <B>:read-file</B> <EM>fname </EM>[method]
 
 <DL COMPACT>
@@ -2361,7 +2361,7 @@ The cursor is put at the beginning of the screen.
 
 <P>
 
-<A NAME="48942"></A>
+<A NAME="48938"></A>
 <B>:display-string</B> <EM>strings </EM>[method]
 
 <DL COMPACT>
@@ -2376,7 +2376,7 @@ and displayed in the window.
 
 <P>
 
-<A NAME="48954"></A>
+<A NAME="48950"></A>
 <B>:scroll</B> <EM>n </EM>[method]
 
 <DL COMPACT>
@@ -2387,7 +2387,7 @@ and displayed in the window.
 <BR>
 <BR>
 
-<A NAME="48965"></A>
+<A NAME="48961"></A>
 <B>:horizontal-scroll</B> <EM>n </EM>[method]
 
 <DL COMPACT>
@@ -2398,7 +2398,7 @@ and displayed in the window.
 <BR>
 <BR>
 
-<A NAME="48976"></A>
+<A NAME="48972"></A>
 <B>:buttonRelease</B> <EM>event </EM>[method]
 
 <DL COMPACT>
@@ -2412,7 +2412,7 @@ If notification is specified when the window is created,
 <BR>
 <BR>
 
-<A NAME="48988"></A>
+<A NAME="48984"></A>
 <B>:resize</B> <EM>w h </EM>[method]
 
 <DL COMPACT>
@@ -2441,7 +2441,7 @@ The same message is sent to scroll-bars if attached.
 </DIV>
 <!--End of Navigation Panel-->
 <ADDRESS>
-
+Travis CI User
 2016-12-19
 </ADDRESS>
 </BODY>

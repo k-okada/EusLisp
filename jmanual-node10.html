@@ -88,7 +88,7 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
  <BR>
 <BR> <P>
 
-<A NAME="10348"></A>
+<A NAME="10354"></A>
 <B>elt</B> <EM>sequence pos </EM>[関数]
 
 <DL COMPACT>
@@ -106,7 +106,7 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <P>
 
-<A NAME="10365"></A>
+<A NAME="10371"></A>
 <B>length</B> <EM>sequence </EM>[関数]
 
 <DL COMPACT>
@@ -129,13 +129,25 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <P>
 
-<A NAME="10382"></A>
+<A NAME="10388"></A>
 <B>subseq</B> <EM>sequence start [end] </EM>[関数]
 
 <DL COMPACT>
 <DT> 
 <DD> 
-<EM>sequence</EM>の<EM>start</EM>番目から(<EM>end</EM><SPAN CLASS="MATH">4#4</SPAN>1)番目までをそっくりコピーした
+<EM>sequence</EM>の<EM>start</EM>番目から(<EM>end</EM><SPAN CLASS="MATH"><IMG
+ WIDTH="408" HEIGHT="874" BORDER="0"
+ SRC="jmanual-img4.png"
+ ALT="\begin{figure}\small
+\begin{verbatim}object
+cons
+queue
+propertied-object
+s...
+...h-table
+surrounding-box
+stereo-viewing\end{verbatim}
+\normalsize\end{figure}"></SPAN>1)番目までをそっくりコピーした
 列を作る。
 <EM>end</EM>は、デフォルト値として<EM>sequence</EM>の長さをとる。
 </DD>
@@ -145,7 +157,7 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <P>
 
-<A NAME="10397"></A>
+<A NAME="10403"></A>
 <B>copy-seq</B> <EM>sequence </EM>[関数]
 
 <DL COMPACT>
@@ -163,7 +175,7 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <P>
 
-<A NAME="10411"></A>
+<A NAME="10417"></A>
 <B>reverse</B> <EM>sequence </EM>[関数]
 
 <DL COMPACT>
@@ -178,7 +190,7 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <P>
 
-<A NAME="10423"></A>
+<A NAME="10429"></A>
 <B>nreverse</B> <EM>sequence </EM>[関数]
 
 <DL COMPACT>
@@ -193,7 +205,7 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <P>
 
-<A NAME="10437"></A>
+<A NAME="10443"></A>
 <B>concatenate</B> <EM>result-type {sequence}* </EM>[関数]
 
 <DL COMPACT>
@@ -212,7 +224,7 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <P>
 
-<A NAME="10452"></A>
+<A NAME="10458"></A>
 <B>coerce</B> <EM>sequence result-type </EM>[関数]
 
 <DL COMPACT>
@@ -234,7 +246,7 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <P>
 
-<A NAME="10472"></A>
+<A NAME="10478"></A>
 <B>map</B> <EM>result-type function seq &amp;rest more-seqs </EM>[関数]
 
 <DL COMPACT>
@@ -243,7 +255,7 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 <EM>function</EM>は、<EM>seq</EM>と<EM>more-seqs</EM>のそれぞれのN番目(<!-- MATH
  $N=0,1,\cdots$
  -->
-<SPAN CLASS="MATH">34#34</SPAN>)の要素
+<SPAN CLASS="MATH"></SPAN>)の要素
 からなるリストに
 対して適用され、その結果は<EM>result-type</EM>の型の列に蓄積される。
 </DD>
@@ -253,13 +265,25 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <P>
 
-<A NAME="10486"></A>
+<A NAME="10492"></A>
 <B>fill</B> <EM>sequence item &amp;key (:start 0) (:end (length sequence)) </EM>[関数]
 
 <DL COMPACT>
 <DT> 
 <DD> 
-<EM>sequence</EM>の<EM>start</EM>番目から(<EM>end</EM><SPAN CLASS="MATH">4#4</SPAN>1)番目まで、<EM>item</EM>で満たす。
+<EM>sequence</EM>の<EM>start</EM>番目から(<EM>end</EM><SPAN CLASS="MATH"><IMG
+ WIDTH="408" HEIGHT="874" BORDER="0"
+ SRC="jmanual-img4.png"
+ ALT="\begin{figure}\small
+\begin{verbatim}object
+cons
+queue
+propertied-object
+s...
+...h-table
+surrounding-box
+stereo-viewing\end{verbatim}
+\normalsize\end{figure}"></SPAN>1)番目まで、<EM>item</EM>で満たす。
 
 </DD>
 </DL>
@@ -268,7 +292,7 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <P>
 
-<A NAME="10500"></A>
+<A NAME="10506"></A>
 <B>replace</B> <EM>dest source &amp;key :start1 :end1 :start2 :end2 </EM>[関数]
 
 <DL COMPACT>
@@ -287,7 +311,7 @@ endは短い列の長さに一致するように縮められる。
 
 <P>
 
-<A NAME="10520"></A>
+<A NAME="10526"></A>
 <B>sort</B> <EM>sequence compare &amp;optional key </EM>[関数]
 
 <DL COMPACT>
@@ -299,7 +323,7 @@ endは短い列の長さに一致するように縮められる。
 同じ要素を持った列のソートをするときは十分気をつけること。
 例えば、<TT>(sort '(1 1) #'&gt;)</TT>は失敗する。なぜなら、1と1の比較は
 どちらからでも失敗するからである。
-この問題を避けるために、比較として<TT>#'<SPAN CLASS="MATH">19#19</SPAN></TT>か<TT>#'<SPAN CLASS="MATH">20#20</SPAN></TT>のような関数を用いる。
+この問題を避けるために、比較として<TT>#'<SPAN CLASS="MATH"></SPAN></TT>か<TT>#'<SPAN CLASS="MATH"></SPAN></TT>のような関数を用いる。
 </DD>
 </DL>
 <BR>
@@ -307,7 +331,7 @@ endは短い列の長さに一致するように縮められる。
 
 <P>
 
-<A NAME="10535"></A>
+<A NAME="10541"></A>
 <B>merge</B> <EM>result-type seq1 seq2 pred &amp;key (:key #'identity) </EM>[関数]
 
 <DL COMPACT>
@@ -322,7 +346,7 @@ endは短い列の長さに一致するように縮められる。
 
 <P>
 
-<A NAME="10549"></A>
+<A NAME="10555"></A>
 <B>merge-list</B> <EM>list1 list2 pred key </EM>[関数]
 
 <DL COMPACT>
@@ -353,7 +377,7 @@ sequenceのそれぞれの要素にpredicateを適用し、
  <BR>
 <BR> <P>
 
-<A NAME="10562"></A>
+<A NAME="10568"></A>
 <B>position</B> <EM>item seq &amp;key :start :end :test :test-not :key (:count 1) </EM>[関数]
 
 <DL COMPACT>
@@ -372,7 +396,7 @@ sequenceのそれぞれの要素にpredicateを適用し、
 
 <P>
 
-<A NAME="10579"></A>
+<A NAME="10585"></A>
 <B>position-if</B> <EM>predicate seq &amp;key :start :end :key </EM>[関数]
 
 <DL COMPACT>
@@ -385,7 +409,7 @@ sequenceのそれぞれの要素にpredicateを適用し、
 
 <P>
 
-<A NAME="10590"></A>
+<A NAME="10596"></A>
 <B>position-if-not</B> <EM>predicate seq &amp;key :start :end :key </EM>[関数]
 
 <DL COMPACT>
@@ -398,7 +422,7 @@ sequenceのそれぞれの要素にpredicateを適用し、
 
 <P>
 
-<A NAME="10601"></A>
+<A NAME="10607"></A>
 <B>find</B> <EM>item seq &amp;key :start :end :test :test-not :key (:count 1) </EM>[関数]
 
 <DL COMPACT>
@@ -416,7 +440,7 @@ sequenceのそれぞれの要素にpredicateを適用し、
 
 <P>
 
-<A NAME="10619"></A>
+<A NAME="10625"></A>
 <B>find-if</B> <EM>predicate seq &amp;key :start :end :key (:count 1) </EM>[関数]
 
 <DL COMPACT>
@@ -429,7 +453,7 @@ sequenceのそれぞれの要素にpredicateを適用し、
 <BR>
 <BR>
 
-<A NAME="10632"></A>
+<A NAME="10638"></A>
 <B>find-if-not</B> <EM>predicate seq &amp;key :start :end :key </EM>[関数]
 
 <DL COMPACT>
@@ -442,7 +466,7 @@ sequenceのそれぞれの要素にpredicateを適用し、
 
 <P>
 
-<A NAME="10643"></A>
+<A NAME="10649"></A>
 <B>count</B> <EM>item seq &amp;key :start :end :test :test-not :key </EM>[関数]
 
 <DL COMPACT>
@@ -457,7 +481,7 @@ sequenceのそれぞれの要素にpredicateを適用し、
 
 <P>
 
-<A NAME="10657"></A>
+<A NAME="10663"></A>
 <B>count-if</B> <EM>predicate seq &amp;key :start :end :key </EM>[関数]
 
 <DL COMPACT>
@@ -469,7 +493,7 @@ sequenceのそれぞれの要素にpredicateを適用し、
 <BR>
 <BR>
 
-<A NAME="10669"></A>
+<A NAME="10675"></A>
 <B>count-if-not</B> <EM>predicate seq &amp;key :start :end :key </EM>[関数]
 
 <DL COMPACT>
@@ -482,7 +506,7 @@ sequenceのそれぞれの要素にpredicateを適用し、
 
 <P>
 
-<A NAME="10680"></A>
+<A NAME="10686"></A>
 <B>remove</B> <EM>item seq &amp;key :start :end :test :test-not :key :count </EM>[関数]
 
 <DL COMPACT>
@@ -500,7 +524,7 @@ sequenceのそれぞれの要素にpredicateを適用し、
 
 <P>
 
-<A NAME="10697"></A>
+<A NAME="10703"></A>
 <B>remove-if</B> <EM>predicate seq &amp;key :start :end :key :count </EM>[関数]
 
 <DL COMPACT>
@@ -511,7 +535,7 @@ sequenceのそれぞれの要素にpredicateを適用し、
 <BR>
 <BR>
 
-<A NAME="10708"></A>
+<A NAME="10714"></A>
 <B>remove-if-not</B> <EM>predicate seq &amp;key :start :end :key :count </EM>[関数]
 
 <DL COMPACT>
@@ -522,7 +546,7 @@ sequenceのそれぞれの要素にpredicateを適用し、
 <BR>
 <BR>
 
-<A NAME="10719"></A>
+<A NAME="10725"></A>
 <B>remove-duplicates</B> <EM>seq &amp;key :start :end :key :test :test-not :count </EM>[関数]
 
 <DL COMPACT>
@@ -536,7 +560,7 @@ sequenceのそれぞれの要素にpredicateを適用し、
 
 <P>
 
-<A NAME="10730"></A>
+<A NAME="10736"></A>
 <B>delete</B> <EM>item seq &amp;key :start :end :test :test-not :key :count </EM>[関数]
 
 <DL COMPACT>
@@ -553,7 +577,7 @@ sequenceのそれぞれの要素にpredicateを適用し、
 
 <P>
 
-<A NAME="10745"></A>
+<A NAME="10751"></A>
 <B>delete-if</B> <EM>predicate seq &amp;key :start :end :key :count </EM>[関数]
 
 <DL COMPACT>
@@ -564,7 +588,7 @@ sequenceのそれぞれの要素にpredicateを適用し、
 <BR>
 <BR>
 
-<A NAME="10756"></A>
+<A NAME="10762"></A>
 <B>delete-if-not</B> <EM>predicate seq &amp;key :start :end :key :count </EM>[関数]
 
 <DL COMPACT>
@@ -580,7 +604,7 @@ sequenceのそれぞれの要素にpredicateを適用し、
 
 <P>
 
-<A NAME="10770"></A>
+<A NAME="10776"></A>
 <B>substitute</B> <EM>newitem olditem seq
  &amp;key :start :end :test :test-not :key :count </EM>[関数]
 
@@ -602,7 +626,7 @@ sequenceのそれぞれの要素にpredicateを適用し、
 
 <P>
 
-<A NAME="10785"></A>
+<A NAME="10791"></A>
 <B>substitute-if</B> <EM>newitem predicate seq &amp;key :start :end :key :count </EM>[関数]
 
 <DL COMPACT>
@@ -613,7 +637,7 @@ sequenceのそれぞれの要素にpredicateを適用し、
 <BR>
 <BR>
 
-<A NAME="10796"></A>
+<A NAME="10802"></A>
 <B>substitute-if-not</B> <EM>newitem predicate seq &amp;key :start :end :key :count </EM>[関数]
 
 <DL COMPACT>
@@ -626,7 +650,7 @@ sequenceのそれぞれの要素にpredicateを適用し、
 
 <P>
 
-<A NAME="10807"></A>
+<A NAME="10813"></A>
 <B>nsubstitute</B> <EM>newitem olditem seq &amp;key :start :end :test :test-not :key :count </EM>[関数]
 
 <DL COMPACT>
@@ -638,7 +662,7 @@ sequenceのそれぞれの要素にpredicateを適用し、
 <BR>
 <BR>
 
-<A NAME="10823"></A>
+<A NAME="10829"></A>
 <B>nsubstitute-if</B> <EM>newitem predicate seq &amp;key :start :end :key :count </EM>[関数]
 
 <DL COMPACT>
@@ -649,7 +673,7 @@ sequenceのそれぞれの要素にpredicateを適用し、
 <BR>
 <BR>
 
-<A NAME="10834"></A>
+<A NAME="10840"></A>
 <B>nsubstitute-if-not</B> <EM>newitem predicate seq &amp;key :start :end :key :count </EM>[関数]
 
 <DL COMPACT>
@@ -672,7 +696,7 @@ sequenceのそれぞれの要素にpredicateを適用し、
 <P>
 
  <BR>
-<BR> <A NAME="10845"></A>
+<BR> <A NAME="10851"></A>
 <B>listp</B> <EM>object </EM>[関数]
 
 <DL COMPACT>
@@ -684,7 +708,7 @@ sequenceのそれぞれの要素にpredicateを適用し、
 <BR>
 <BR>
 
-<A NAME="10855"></A>
+<A NAME="10861"></A>
 <B>consp</B> <EM>object </EM>[関数]
 
 <DL COMPACT>
@@ -696,7 +720,7 @@ sequenceのそれぞれの要素にpredicateを適用し、
 <BR>
 <BR>
 
-<A NAME="10867"></A>
+<A NAME="10873"></A>
 <B>car</B> <EM>list </EM>[関数]
 
 <DL COMPACT>
@@ -709,7 +733,7 @@ atomの<B>car</B>はエラーとなる。<TT>(car '(1 2 3)) = 1</TT>
 <BR>
 <BR>
 
-<A NAME="10881"></A>
+<A NAME="10887"></A>
 <B>cdr</B> <EM>list </EM>[関数]
 
 <DL COMPACT>
@@ -722,7 +746,7 @@ atomの<B>cdr</B>はエラーとなる。<TT>(cdr '(1 2 3)) = (2 3)</TT>
 <BR>
 <BR>
 
-<A NAME="10895"></A>
+<A NAME="10901"></A>
 <B>cadr</B> <EM>list </EM>[関数]
 
 <DL COMPACT>
@@ -733,7 +757,7 @@ atomの<B>cdr</B>はエラーとなる。<TT>(cdr '(1 2 3)) = (2 3)</TT>
 <BR>
 <BR>
 
-<A NAME="10906"></A>
+<A NAME="10912"></A>
 <B>cddr</B> <EM>list </EM>[関数]
 
 <DL COMPACT>
@@ -744,7 +768,7 @@ atomの<B>cdr</B>はエラーとなる。<TT>(cdr '(1 2 3)) = (2 3)</TT>
 <BR>
 <BR>
 
-<A NAME="10917"></A>
+<A NAME="10923"></A>
 <B>cdar</B> <EM>list </EM>[関数]
 
 <DL COMPACT>
@@ -755,7 +779,7 @@ atomの<B>cdr</B>はエラーとなる。<TT>(cdr '(1 2 3)) = (2 3)</TT>
 <BR>
 <BR>
 
-<A NAME="10928"></A>
+<A NAME="10934"></A>
 <B>caar</B> <EM>list </EM>[関数]
 
 <DL COMPACT>
@@ -766,7 +790,7 @@ atomの<B>cdr</B>はエラーとなる。<TT>(cdr '(1 2 3)) = (2 3)</TT>
 <BR>
 <BR>
 
-<A NAME="10939"></A>
+<A NAME="10945"></A>
 <B>caddr</B> <EM>list </EM>[関数]
 
 <DL COMPACT>
@@ -777,7 +801,7 @@ atomの<B>cdr</B>はエラーとなる。<TT>(cdr '(1 2 3)) = (2 3)</TT>
 <BR>
 <BR>
 
-<A NAME="10950"></A>
+<A NAME="10956"></A>
 <B>caadr</B> <EM>list </EM>[関数]
 
 <DL COMPACT>
@@ -788,7 +812,7 @@ atomの<B>cdr</B>はエラーとなる。<TT>(cdr '(1 2 3)) = (2 3)</TT>
 <BR>
 <BR>
 
-<A NAME="10961"></A>
+<A NAME="10967"></A>
 <B>cadar</B> <EM>list </EM>[関数]
 
 <DL COMPACT>
@@ -799,7 +823,7 @@ atomの<B>cdr</B>はエラーとなる。<TT>(cdr '(1 2 3)) = (2 3)</TT>
 <BR>
 <BR>
 
-<A NAME="10972"></A>
+<A NAME="10978"></A>
 <B>caaar</B> <EM>list </EM>[関数]
 
 <DL COMPACT>
@@ -810,7 +834,7 @@ atomの<B>cdr</B>はエラーとなる。<TT>(cdr '(1 2 3)) = (2 3)</TT>
 <BR>
 <BR>
 
-<A NAME="10983"></A>
+<A NAME="10989"></A>
 <B>cdadr</B> <EM>list </EM>[関数]
 
 <DL COMPACT>
@@ -821,7 +845,7 @@ atomの<B>cdr</B>はエラーとなる。<TT>(cdr '(1 2 3)) = (2 3)</TT>
 <BR>
 <BR>
 
-<A NAME="10994"></A>
+<A NAME="11000"></A>
 <B>cdaar</B> <EM>list </EM>[関数]
 
 <DL COMPACT>
@@ -832,7 +856,7 @@ atomの<B>cdr</B>はエラーとなる。<TT>(cdr '(1 2 3)) = (2 3)</TT>
 <BR>
 <BR>
 
-<A NAME="11005"></A>
+<A NAME="11011"></A>
 <B>cdddr</B> <EM>list </EM>[関数]
 
 <DL COMPACT>
@@ -843,7 +867,7 @@ atomの<B>cdr</B>はエラーとなる。<TT>(cdr '(1 2 3)) = (2 3)</TT>
 <BR>
 <BR>
 
-<A NAME="11016"></A>
+<A NAME="11022"></A>
 <B>cddar</B> <EM>list </EM>[関数]
 
 <DL COMPACT>
@@ -854,7 +878,7 @@ atomの<B>cdr</B>はエラーとなる。<TT>(cdr '(1 2 3)) = (2 3)</TT>
 <BR>
 <BR>
 
-<A NAME="11027"></A>
+<A NAME="11033"></A>
 <B>first</B> <EM>list </EM>[関数]
 
 <DL COMPACT>
@@ -866,7 +890,7 @@ atomの<B>cdr</B>はエラーとなる。<TT>(cdr '(1 2 3)) = (2 3)</TT>
 <BR>
 <BR>
 
-<A NAME="11040"></A>
+<A NAME="11046"></A>
 <B>nth</B> <EM>count list </EM>[関数]
 
 <DL COMPACT>
@@ -881,7 +905,7 @@ atomの<B>cdr</B>はエラーとなる。<TT>(cdr '(1 2 3)) = (2 3)</TT>
 
 <P>
 
-<A NAME="11055"></A>
+<A NAME="11061"></A>
 <B>nthcdr</B> <EM>count list </EM>[関数]
 
 <DL COMPACT>
@@ -895,7 +919,7 @@ atomの<B>cdr</B>はエラーとなる。<TT>(cdr '(1 2 3)) = (2 3)</TT>
 
 <P>
 
-<A NAME="11068"></A>
+<A NAME="11074"></A>
 <B>last</B> <EM>list </EM>[関数]
 
 <DL COMPACT>
@@ -909,7 +933,7 @@ atomの<B>cdr</B>はエラーとなる。<TT>(cdr '(1 2 3)) = (2 3)</TT>
 
 <P>
 
-<A NAME="11079"></A>
+<A NAME="11085"></A>
 <B>butlast</B> <EM>list &amp;optional (n 1) </EM>[関数]
 
 <DL COMPACT>
@@ -922,7 +946,7 @@ atomの<B>cdr</B>はエラーとなる。<TT>(cdr '(1 2 3)) = (2 3)</TT>
 
 <P>
 
-<A NAME="11091"></A>
+<A NAME="11097"></A>
 <B>cons</B> <EM>car cdr </EM>[関数]
 
 <DL COMPACT>
@@ -936,7 +960,7 @@ atomの<B>cdr</B>はエラーとなる。<TT>(cdr '(1 2 3)) = (2 3)</TT>
 
 <P>
 
-<A NAME="11105"></A>
+<A NAME="11111"></A>
 <B>list</B> <EM>{element}* </EM>[関数]
 
 <DL COMPACT>
@@ -949,7 +973,7 @@ atomの<B>cdr</B>はエラーとなる。<TT>(cdr '(1 2 3)) = (2 3)</TT>
 
 <P>
 
-<A NAME="11116"></A>
+<A NAME="11122"></A>
 <B>list*</B> <EM>{element}* </EM>[関数]
 
 <DL COMPACT>
@@ -965,7 +989,7 @@ atomであってはならない。
 
 <P>
 
-<A NAME="11129"></A>
+<A NAME="11135"></A>
 <B>list-length</B> <EM>list </EM>[関数]
 
 <DL COMPACT>
@@ -979,7 +1003,7 @@ atomであってはならない。
 
 <P>
 
-<A NAME="11141"></A>
+<A NAME="11147"></A>
 <B>make-list</B> <EM>size &amp;key (:initial-element nil) </EM>[関数]
 
 <DL COMPACT>
@@ -993,7 +1017,7 @@ atomであってはならない。
 
 <P>
 
-<A NAME="11153"></A>
+<A NAME="11159"></A>
 <B>rplaca</B> <EM>cons a </EM>[関数]
 
 <DL COMPACT>
@@ -1009,7 +1033,7 @@ atomであってはならない。
 
 <P>
 
-<A NAME="11169"></A>
+<A NAME="11175"></A>
 <B>rplacd</B> <EM>cons d </EM>[関数]
 
 <DL COMPACT>
@@ -1025,7 +1049,7 @@ atomであってはならない。
 
 <P>
 
-<A NAME="11185"></A>
+<A NAME="11191"></A>
 <B>memq</B> <EM>item list </EM>[関数]
 
 <DL COMPACT>
@@ -1039,7 +1063,7 @@ atomであってはならない。
 
 <P>
 
-<A NAME="11197"></A>
+<A NAME="11203"></A>
 <B>member</B> <EM>item list &amp;key :key :test :test-not </EM>[関数]
 
 <DL COMPACT>
@@ -1056,7 +1080,7 @@ atomであってはならない。
 
 <P>
 
-<A NAME="11214"></A>
+<A NAME="11220"></A>
 <B>assq</B> <EM>item alist </EM>[関数]
 
 <DL COMPACT>
@@ -1069,7 +1093,7 @@ atomであってはならない。
 
 <P>
 
-<A NAME="11225"></A>
+<A NAME="11231"></A>
 <B>assoc</B> <EM>item alist &amp;key :key :test :test-not </EM>[関数]
 
 <DL COMPACT>
@@ -1085,7 +1109,7 @@ atomであってはならない。
 
 <P>
 
-<A NAME="11241"></A>
+<A NAME="11247"></A>
 <B>rassoc</B> <EM>item alist </EM>[関数]
 
 <DL COMPACT>
@@ -1099,7 +1123,7 @@ atomであってはならない。
 
 <P>
 
-<A NAME="11254"></A>
+<A NAME="11260"></A>
 <B>pairlis</B> <EM>l1 l2 &amp;optional alist </EM>[関数]
 
 <DL COMPACT>
@@ -1115,7 +1139,7 @@ atomであってはならない。
 
 <P>
 
-<A NAME="11269"></A>
+<A NAME="11275"></A>
 <B>acons</B> <EM>key val alist </EM>[関数]
 
 <DL COMPACT>
@@ -1130,7 +1154,7 @@ atomであってはならない。
 
 <P>
 
-<A NAME="11282"></A>
+<A NAME="11288"></A>
 <B>append</B> <EM>{list}* </EM>[関数]
 
 <DL COMPACT>
@@ -1145,7 +1169,7 @@ atomであってはならない。
 
 <P>
 
-<A NAME="11294"></A>
+<A NAME="11300"></A>
 <B>nconc</B> <EM>{list}* </EM>[関数]
 
 <DL COMPACT>
@@ -1160,7 +1184,7 @@ atomであってはならない。
 
 <P>
 
-<A NAME="11307"></A>
+<A NAME="11313"></A>
 <B>subst</B> <EM>new old tree </EM>[関数]
 
 <DL COMPACT>
@@ -1174,7 +1198,7 @@ atomであってはならない。
 
 <P>
 
-<A NAME="11320"></A>
+<A NAME="11326"></A>
 <B>flatten</B> <EM>complex-list </EM>[関数]
 
 <DL COMPACT>
@@ -1191,7 +1215,7 @@ atomやいろんな深さのリストを含んだ<EM>complex-list</EM>を、
 
 <P>
 
-<A NAME="11333"></A>
+<A NAME="11339"></A>
 <B>push</B> <EM>item place </EM>[マクロ]
 
 <DL COMPACT>
@@ -1205,7 +1229,7 @@ atomやいろんな深さのリストを含んだ<EM>complex-list</EM>を、
 
 <P>
 
-<A NAME="11345"></A>
+<A NAME="11351"></A>
 <B>pop</B> <EM>stack </EM>[マクロ]
 
 <DL COMPACT>
@@ -1220,7 +1244,7 @@ atomやいろんな深さのリストを含んだ<EM>complex-list</EM>を、
 
 <P>
 
-<A NAME="11357"></A>
+<A NAME="11363"></A>
 <B>pushnew</B> <EM>item place &amp;key :test :test-not :key </EM>[マクロ]
 
 <DL COMPACT>
@@ -1237,7 +1261,7 @@ atomやいろんな深さのリストを含んだ<EM>complex-list</EM>を、
 
 <P>
 
-<A NAME="11375"></A>
+<A NAME="11381"></A>
 <B>adjoin</B> <EM>item list </EM>[関数]
 
 <DL COMPACT>
@@ -1251,7 +1275,7 @@ atomやいろんな深さのリストを含んだ<EM>complex-list</EM>を、
 
 <P>
 
-<A NAME="11388"></A>
+<A NAME="11394"></A>
 <B>union</B> <EM>list1 list2 &amp;key (:test #'eq) (:test-not) (:key #'identity) </EM>[関数]
 
 <DL COMPACT>
@@ -1263,7 +1287,7 @@ atomやいろんな深さのリストを含んだ<EM>complex-list</EM>を、
 <BR>
 <BR>
 
-<A NAME="11398"></A>
+<A NAME="11404"></A>
 <B>subsetp</B> <EM>list1 list2 &amp;key (:test #'eq) (:test-not) (:key #'identity) </EM>[関数]
 
 <DL COMPACT>
@@ -1277,7 +1301,7 @@ atomやいろんな深さのリストを含んだ<EM>complex-list</EM>を、
 
 <P>
 
-<A NAME="11412"></A>
+<A NAME="11418"></A>
 <B>intersection</B> <EM>list1 list2
  &amp;key (:test #'eq) (:test-not) (:key #'identity) </EM>[関数]
 
@@ -1292,7 +1316,7 @@ atomやいろんな深さのリストを含んだ<EM>complex-list</EM>を、
 
 <P>
 
-<A NAME="11424"></A>
+<A NAME="11430"></A>
 <B>set-difference</B> <EM>list1 list2
 &amp;key (:test #'eq) (:test-not) (:key #'identity) </EM>[関数]
 
@@ -1306,7 +1330,7 @@ atomやいろんな深さのリストを含んだ<EM>complex-list</EM>を、
 <BR>
 <BR>
 
-<A NAME="11436"></A>
+<A NAME="11442"></A>
 <B>set-exclusive-or</B> <EM>list1 list2
  &amp;key (:test #'eq) (:test-not) (:key #'identity) </EM>[関数]
 
@@ -1319,7 +1343,7 @@ atomやいろんな深さのリストを含んだ<EM>complex-list</EM>を、
 <BR>
 <BR>
 
-<A NAME="11448"></A>
+<A NAME="11454"></A>
 <B>list-insert</B> <EM>item pos list </EM>[関数]
 
 <DL COMPACT>
@@ -1337,7 +1361,7 @@ atomやいろんな深さのリストを含んだ<EM>complex-list</EM>を、
 
 <P>
 
-<A NAME="11466"></A>
+<A NAME="11472"></A>
 <B>copy-tree</B> <EM>tree </EM>[関数]
 
 <DL COMPACT>
@@ -1354,7 +1378,7 @@ atomやいろんな深さのリストを含んだ<EM>complex-list</EM>を、
 
 <P>
 
-<A NAME="11480"></A>
+<A NAME="11486"></A>
 <B>mapc</B> <EM>func arg-list &amp;rest more-arg-lists </EM>[関数]
 
 <DL COMPACT>
@@ -1363,7 +1387,7 @@ atomやいろんな深さのリストを含んだ<EM>complex-list</EM>を、
 <EM>arg-list</EM>や<EM>more-arg-lists</EM>それぞれのN番目(<!-- MATH
  $N=0,1,\cdots$
  -->
-<SPAN CLASS="MATH">34#34</SPAN>)の要素からなるリストに
+<SPAN CLASS="MATH"></SPAN>)の要素からなるリストに
 <EM>func</EM>を適用する。
 適用結果は無視され、<EM>arg-list</EM>が返される。
 </DD>
@@ -1373,7 +1397,7 @@ atomやいろんな深さのリストを含んだ<EM>complex-list</EM>を、
 
 <P>
 
-<A NAME="11494"></A>
+<A NAME="11500"></A>
 <B>mapcar</B> <EM>func &amp;rest arg-list </EM>[関数]
 
 <DL COMPACT>
@@ -1389,7 +1413,7 @@ atomやいろんな深さのリストを含んだ<EM>complex-list</EM>を、
 
 <P>
 
-<A NAME="11509"></A>
+<A NAME="11515"></A>
 <B>mapcan</B> <EM>func arg-list &amp;rest more-arg-lists </EM>[関数]
 
 <DL COMPACT>
@@ -1446,7 +1470,7 @@ atomやいろんな深さのリストを含んだ<EM>complex-list</EM>を、
  <BR>
 <BR> <P>
 
-<A NAME="11526"></A>
+<A NAME="11532"></A>
 <B>array-rank-limit</B> [定数]
 
 <DL COMPACT>
@@ -1457,7 +1481,7 @@ atomやいろんな深さのリストを含んだ<EM>complex-list</EM>を、
 <BR>
 <BR>
 
-<A NAME="11536"></A>
+<A NAME="11542"></A>
 <B>array-dimension-limit</B> [定数]
 
 <DL COMPACT>
@@ -1472,7 +1496,7 @@ atomやいろんな深さのリストを含んだ<EM>complex-list</EM>を、
 
 <P>
 
-<A NAME="11546"></A>
+<A NAME="11552"></A>
 <B>vectorp</B> <EM>object </EM>[関数]
 
 <DL COMPACT>
@@ -1486,7 +1510,7 @@ atomやいろんな深さのリストを含んだ<EM>complex-list</EM>を、
 <BR>
 <BR>
 
-<A NAME="11558"></A>
+<A NAME="11564"></A>
 <B>vector</B> <EM>&amp;rest elements </EM>[関数]
 
 <DL COMPACT>
@@ -1500,9 +1524,20 @@ atomやいろんな深さのリストを含んだ<EM>complex-list</EM>を、
 
 <P>
 
-<A NAME="11569"></A>
+<A NAME="11575"></A>
 <BR>
-6#6
+<IMG
+ WIDTH="176" HEIGHT="112" ALIGN="BOTTOM" BORDER="0"
+ SRC="jmanual-img6.png"
+ ALT="\begin{emtabbing}
+{\bf make-array}
+\it
+dims \&amp;key \= (:element-type vector) \\lq  ...
+... \\
+\&gt; (:displaced-index-offset 0) \\
+\&gt; (:adjustable nil)
+\rm
+\end{emtabbing}">
 <BR>
 
 <DL COMPACT>
@@ -1517,7 +1552,7 @@ atomやいろんな深さのリストを含んだ<EM>complex-list</EM>を、
 
 <P>
 
-<A NAME="11582"></A>
+<A NAME="11588"></A>
 <B>svref</B> <EM>vector pos </EM>[関数]
 
 <DL COMPACT>
@@ -1532,7 +1567,7 @@ atomやいろんな深さのリストを含んだ<EM>complex-list</EM>を、
 
 <P>
 
-<A NAME="11595"></A>
+<A NAME="11601"></A>
 <B>aref</B> <EM>vector &amp;rest (indices) </EM>[関数]
 
 <DL COMPACT>
@@ -1550,7 +1585,7 @@ atomやいろんな深さのリストを含んだ<EM>complex-list</EM>を、
 
 <P>
 
-<A NAME="11611"></A>
+<A NAME="11617"></A>
 <B>vector-push</B> <EM>val array </EM>[関数]
 
 <DL COMPACT>
@@ -1568,7 +1603,7 @@ fill-pointerは、次の位置にポイントを1つ進められる。
 
 <P>
 
-<A NAME="11625"></A>
+<A NAME="11631"></A>
 <B>vector-push-extend</B> <EM>val array </EM>[関数]
 
 <DL COMPACT>
@@ -1583,7 +1618,7 @@ fill-pointerは、次の位置にポイントを1つ進められる。
 
 <P>
 
-<A NAME="11638"></A>
+<A NAME="11644"></A>
 <B>arrayp</B> <EM>obj </EM>[関数]
 
 <DL COMPACT>
@@ -1596,7 +1631,7 @@ fill-pointerは、次の位置にポイントを1つ進められる。
 
 <P>
 
-<A NAME="11649"></A>
+<A NAME="11655"></A>
 <B>array-total-size</B> <EM>array </EM>[関数]
 
 <DL COMPACT>
@@ -1610,7 +1645,7 @@ fill-pointerは、次の位置にポイントを1つ進められる。
 <BR>
 <BR>
 
-<A NAME="11660"></A>
+<A NAME="11666"></A>
 <B>fill-pointer</B> <EM>array </EM>[関数]
 
 <DL COMPACT>
@@ -1622,7 +1657,7 @@ file-pointerを持っていなければNILを返す。
 <BR>
 <BR>
 
-<A NAME="11671"></A>
+<A NAME="11677"></A>
 <B>array-rank</B> <EM>array </EM>[関数]
 
 <DL COMPACT>
@@ -1633,7 +1668,7 @@ file-pointerを持っていなければNILを返す。
 <BR>
 <BR>
 
-<A NAME="11682"></A>
+<A NAME="11688"></A>
 <B>array-dimensions</B> <EM>array </EM>[関数]
 
 <DL COMPACT>
@@ -1647,7 +1682,7 @@ file-pointerを持っていなければNILを返す。
 
 <P>
 
-<A NAME="11693"></A>
+<A NAME="11699"></A>
 <B>array-dimension</B> <EM>array axis </EM>[関数]
 
 <DL COMPACT>
@@ -1662,7 +1697,7 @@ file-pointerを持っていなければNILを返す。
 
 <P>
 
-<A NAME="11707"></A>
+<A NAME="11713"></A>
 <B>bit</B> <EM>bitvec index </EM>[関数]
 
 <DL COMPACT>
@@ -1675,7 +1710,7 @@ file-pointerを持っていなければNILを返す。
 <BR>
 <BR>
 
-<A NAME="11721"></A>
+<A NAME="11727"></A>
 <B>bit-and</B> <EM>bits1 bits2 &amp;optional result </EM>[関数]
 
 <DL COMPACT>
@@ -1686,7 +1721,7 @@ file-pointerを持っていなければNILを返す。
 <BR>
 <BR>
 
-<A NAME="11732"></A>
+<A NAME="11738"></A>
 <B>bit-ior</B> <EM>bits1 bits2 &amp;optional result </EM>[関数]
 
 <DL COMPACT>
@@ -1697,7 +1732,7 @@ file-pointerを持っていなければNILを返す。
 <BR>
 <BR>
 
-<A NAME="11743"></A>
+<A NAME="11749"></A>
 <B>bit-xor</B> <EM>bits1 bits2 &amp;optional result </EM>[関数]
 
 <DL COMPACT>
@@ -1708,7 +1743,7 @@ file-pointerを持っていなければNILを返す。
 <BR>
 <BR>
 
-<A NAME="11754"></A>
+<A NAME="11760"></A>
 <B>bit-eqv</B> <EM>bits1 bits2 &amp;optional result </EM>[関数]
 
 <DL COMPACT>
@@ -1719,7 +1754,7 @@ file-pointerを持っていなければNILを返す。
 <BR>
 <BR>
 
-<A NAME="11765"></A>
+<A NAME="11771"></A>
 <B>bit-nand</B> <EM>bits1 bits2 &amp;optional result </EM>[関数]
 
 <DL COMPACT>
@@ -1730,7 +1765,7 @@ file-pointerを持っていなければNILを返す。
 <BR>
 <BR>
 
-<A NAME="11776"></A>
+<A NAME="11782"></A>
 <B>bit-nor</B> <EM>bits1 bits2 &amp;optional result </EM>[関数]
 
 <DL COMPACT>
@@ -1741,7 +1776,7 @@ file-pointerを持っていなければNILを返す。
 <BR>
 <BR>
 
-<A NAME="11787"></A>
+<A NAME="11793"></A>
 <B>bit-not</B> <EM>bits1 &amp;optional result </EM>[関数]
 
 <DL COMPACT>
@@ -1775,7 +1810,7 @@ EusLispには、文字型がない。
  <BR>
 <BR> <P>
 
-<A NAME="11799"></A>
+<A NAME="11805"></A>
 <B>digit-char-p</B> <EM>ch </EM>[関数]
 
 <DL COMPACT>
@@ -1784,10 +1819,10 @@ EusLispには、文字型がない。
 もし<EM>ch</EM>が<TT>#<!-- MATH
  $\backslash$
  -->
-<SPAN CLASS="MATH">32#32</SPAN>0</TT>〜<TT>#<!-- MATH
+<SPAN CLASS="MATH"></SPAN>0</TT>〜<TT>#<!-- MATH
  $\backslash$
  -->
-<SPAN CLASS="MATH">32#32</SPAN>9</TT>ならTを返す。
+<SPAN CLASS="MATH"></SPAN>9</TT>ならTを返す。
 </DD>
 </DL>
 <BR>
@@ -1795,7 +1830,7 @@ EusLispには、文字型がない。
 
 <P>
 
-<A NAME="11812"></A>
+<A NAME="11818"></A>
 <B>alpha-char-p</B> <EM>ch </EM>[関数]
 
 <DL COMPACT>
@@ -1804,17 +1839,17 @@ EusLispには、文字型がない。
 もし<EM>ch</EM>が<TT>#<!-- MATH
  $\backslash$
  -->
-<SPAN CLASS="MATH">32#32</SPAN>A</TT>〜<TT>#<!-- MATH
+<SPAN CLASS="MATH"></SPAN>A</TT>〜<TT>#<!-- MATH
  $\backslash$
  -->
-<SPAN CLASS="MATH">32#32</SPAN>Z</TT>または
+<SPAN CLASS="MATH"></SPAN>Z</TT>または
 <TT>#<!-- MATH
  $\backslash$
  -->
-<SPAN CLASS="MATH">32#32</SPAN>a</TT>〜<TT>#<!-- MATH
+<SPAN CLASS="MATH"></SPAN>a</TT>〜<TT>#<!-- MATH
  $\backslash$
  -->
-<SPAN CLASS="MATH">32#32</SPAN>z</TT>なら、Tを返す。
+<SPAN CLASS="MATH"></SPAN>z</TT>なら、Tを返す。
 </DD>
 </DL>
 <BR>
@@ -1822,7 +1857,7 @@ EusLispには、文字型がない。
 
 <P>
 
-<A NAME="11827"></A>
+<A NAME="11833"></A>
 <B>upper-case-p</B> <EM>ch </EM>[関数]
 
 <DL COMPACT>
@@ -1831,10 +1866,10 @@ EusLispには、文字型がない。
 もし<EM>ch</EM>が<TT>#<!-- MATH
  $\backslash$
  -->
-<SPAN CLASS="MATH">32#32</SPAN>A</TT>〜<TT>#<!-- MATH
+<SPAN CLASS="MATH"></SPAN>A</TT>〜<TT>#<!-- MATH
  $\backslash$
  -->
-<SPAN CLASS="MATH">32#32</SPAN>Z</TT>なら、Tを返す。
+<SPAN CLASS="MATH"></SPAN>Z</TT>なら、Tを返す。
 </DD>
 </DL>
 <BR>
@@ -1842,7 +1877,7 @@ EusLispには、文字型がない。
 
 <P>
 
-<A NAME="11840"></A>
+<A NAME="11846"></A>
 <B>lower-case-p</B> <EM>ch </EM>[関数]
 
 <DL COMPACT>
@@ -1851,10 +1886,10 @@ EusLispには、文字型がない。
 もし<EM>ch</EM>が<TT>#<!-- MATH
  $\backslash$
  -->
-<SPAN CLASS="MATH">32#32</SPAN>a</TT>〜<TT>#<!-- MATH
+<SPAN CLASS="MATH"></SPAN>a</TT>〜<TT>#<!-- MATH
  $\backslash$
  -->
-<SPAN CLASS="MATH">32#32</SPAN>z</TT>なら、Tを返す。
+<SPAN CLASS="MATH"></SPAN>z</TT>なら、Tを返す。
 </DD>
 </DL>
 <BR>
@@ -1862,7 +1897,7 @@ EusLispには、文字型がない。
 
 <P>
 
-<A NAME="11853"></A>
+<A NAME="11859"></A>
 <B>alphanumeric-p</B> <EM>ch </EM>[関数]
 
 <DL COMPACT>
@@ -1871,24 +1906,24 @@ EusLispには、文字型がない。
 もし<EM>ch</EM>が<TT>#<!-- MATH
  $\backslash$
  -->
-<SPAN CLASS="MATH">32#32</SPAN>0</TT>〜<TT>#<!-- MATH
+<SPAN CLASS="MATH"></SPAN>0</TT>〜<TT>#<!-- MATH
  $\backslash$
  -->
-<SPAN CLASS="MATH">32#32</SPAN>9</TT>、
+<SPAN CLASS="MATH"></SPAN>9</TT>、
 <TT>#<!-- MATH
  $\backslash$
  -->
-<SPAN CLASS="MATH">32#32</SPAN>A</TT>〜<TT>#<!-- MATH
+<SPAN CLASS="MATH"></SPAN>A</TT>〜<TT>#<!-- MATH
  $\backslash$
  -->
-<SPAN CLASS="MATH">32#32</SPAN>Z</TT>または
+<SPAN CLASS="MATH"></SPAN>Z</TT>または
 <TT>#<!-- MATH
  $\backslash$
  -->
-<SPAN CLASS="MATH">32#32</SPAN>a</TT>〜<TT>#<!-- MATH
+<SPAN CLASS="MATH"></SPAN>a</TT>〜<TT>#<!-- MATH
  $\backslash$
  -->
-<SPAN CLASS="MATH">32#32</SPAN>z</TT>なら、Tを返す。
+<SPAN CLASS="MATH"></SPAN>z</TT>なら、Tを返す。
 </DD>
 </DL>
 <BR>
@@ -1896,7 +1931,7 @@ EusLispには、文字型がない。
 
 <P>
 
-<A NAME="11870"></A>
+<A NAME="11876"></A>
 <B>char-upcase</B> <EM>ch </EM>[関数]
 
 <DL COMPACT>
@@ -1910,7 +1945,7 @@ EusLispには、文字型がない。
 
 <P>
 
-<A NAME="11881"></A>
+<A NAME="11887"></A>
 <B>char-downcase</B> <EM>ch </EM>[関数]
 
 <DL COMPACT>
@@ -1924,7 +1959,7 @@ EusLispには、文字型がない。
 
 <P>
 
-<A NAME="11892"></A>
+<A NAME="11898"></A>
 <B>char</B> <EM>string index </EM>[関数]
 
 <DL COMPACT>
@@ -1938,7 +1973,7 @@ EusLispには、文字型がない。
 
 <P>
 
-<A NAME="11904"></A>
+<A NAME="11910"></A>
 <B>schar</B> <EM>string index </EM>[関数]
 
 <DL COMPACT>
@@ -1954,7 +1989,7 @@ EusLispには、文字型がない。
 
 <P>
 
-<A NAME="11917"></A>
+<A NAME="11923"></A>
 <B>stringp</B> <EM>string </EM>[関数]
 
 <DL COMPACT>
@@ -1968,7 +2003,7 @@ EusLispには、文字型がない。
 
 <P>
 
-<A NAME="11928"></A>
+<A NAME="11934"></A>
 <B>string-upcase</B> <EM>str &amp;key :start :end </EM>[関数]
 
 <DL COMPACT>
@@ -1982,7 +2017,7 @@ EusLispには、文字型がない。
 
 <P>
 
-<A NAME="11939"></A>
+<A NAME="11945"></A>
 <B>string-downcase</B> <EM>str &amp;key :start :end </EM>[関数]
 
 <DL COMPACT>
@@ -1996,7 +2031,7 @@ EusLispには、文字型がない。
 
 <P>
 
-<A NAME="11950"></A>
+<A NAME="11956"></A>
 <B>nstring-upcase</B> <EM>str </EM>[関数]
 
 <DL COMPACT>
@@ -2010,7 +2045,7 @@ EusLispには、文字型がない。
 
 <P>
 
-<A NAME="11961"></A>
+<A NAME="11967"></A>
 <B>nstring-downcase</B> <EM>str &amp;key :start :end </EM>[関数]
 
 <DL COMPACT>
@@ -2024,7 +2059,7 @@ EusLispには、文字型がない。
 
 <P>
 
-<A NAME="11972"></A>
+<A NAME="11978"></A>
 <B>string=</B> <EM>str1 str2 &amp;key :start1 :end1 :start2 :end2 </EM>[関数]
 
 <DL COMPACT>
@@ -2039,7 +2074,7 @@ EusLispには、文字型がない。
 
 <P>
 
-<A NAME="11985"></A>
+<A NAME="11991"></A>
 <B>string-equal</B> <EM>str1 str2 &amp;key :start1 :end1 :start2 :end2 </EM>[関数]
 
 <DL COMPACT>
@@ -2054,7 +2089,7 @@ EusLispには、文字型がない。
 
 <P>
 
-<A NAME="11998"></A>
+<A NAME="12004"></A>
 <B>string</B> <EM>object </EM>[関数]
 
 <DL COMPACT>
@@ -2076,8 +2111,18 @@ EusLispには、文字型がない。
 
 <P>
 
-<A NAME="12017"></A>
-<B>string<SPAN CLASS="MATH">9#9</SPAN></B> <EM>str1 str2 </EM>[関数]
+<A NAME="12023"></A>
+<B>string<SPAN CLASS="MATH"><IMG
+ WIDTH="331" HEIGHT="88" ALIGN="BOTTOM" BORDER="0"
+ SRC="jmanual-img9.png"
+ ALT="\begin{emtabbing}
+{\bf load}
+\it fname \&amp;key \= :verbose \hspace{20mm} \= *load...
+...
+\&gt; :symbol-output \&gt; ''a.out'' \\
+\&gt; :ld-option \&gt; ''''
+\rm
+\end{emtabbing}"></SPAN></B> <EM>str1 str2 </EM>[関数]
 
 <DL COMPACT>
 <DT> 
@@ -2087,8 +2132,8 @@ EusLispには、文字型がない。
 <BR>
 <BR>
 
-<A NAME="12028"></A>
-<B>string<SPAN CLASS="MATH">20#20</SPAN></B> <EM>str1 str2 </EM>[関数]
+<A NAME="12034"></A>
+<B>string<SPAN CLASS="MATH"></SPAN></B> <EM>str1 str2 </EM>[関数]
 
 <DL COMPACT>
 <DT> 
@@ -2098,8 +2143,8 @@ EusLispには、文字型がない。
 <BR>
 <BR>
 
-<A NAME="12039"></A>
-<B>string<SPAN CLASS="MATH">18#18</SPAN></B> <EM>str1 str2 </EM>[関数]
+<A NAME="12045"></A>
+<B>string<SPAN CLASS="MATH"></SPAN></B> <EM>str1 str2 </EM>[関数]
 
 <DL COMPACT>
 <DT> 
@@ -2109,15 +2154,25 @@ EusLispには、文字型がない。
 <BR>
 <BR>
 
-<A NAME="12050"></A>
-<B>string<SPAN CLASS="MATH">19#19</SPAN></B> <EM>str1 str2 </EM>[関数]
+<A NAME="12056"></A>
+<B>string<SPAN CLASS="MATH"></SPAN></B> <EM>str1 str2 </EM>[関数]
 
 <DL COMPACT>
 <DT> 
 <DD> 
 <EM>str1</EM>と<EM>str2</EM>を先頭から順番に比較して、比較演算が成立した位置
 を返す。もし、成立しなければ、NILを返す。文字の比較は、その文字のコードに
-に対して行なわれるため、<TT>A<SPAN CLASS="MATH">9#9</SPAN>Z</TT>である。。
+に対して行なわれるため、<TT>A<SPAN CLASS="MATH"><IMG
+ WIDTH="331" HEIGHT="88" ALIGN="BOTTOM" BORDER="0"
+ SRC="jmanual-img9.png"
+ ALT="\begin{emtabbing}
+{\bf load}
+\it fname \&amp;key \= :verbose \hspace{20mm} \= *load...
+...
+\&gt; :symbol-output \&gt; ''a.out'' \\
+\&gt; :ld-option \&gt; ''''
+\rm
+\end{emtabbing}"></SPAN>Z</TT>である。。
 </DD>
 </DL>
 <BR>
@@ -2125,7 +2180,7 @@ EusLispには、文字型がない。
 
 <P>
 
-<A NAME="12063"></A>
+<A NAME="12069"></A>
 <B>string-left-trim</B> <EM>bag str </EM>[関数]
 
 <DL COMPACT>
@@ -2136,7 +2191,7 @@ EusLispには、文字型がない。
 <BR>
 <BR>
 
-<A NAME="12074"></A>
+<A NAME="12080"></A>
 <B>string-right-trim</B> <EM>bag str </EM>[関数]
 
 <DL COMPACT>
@@ -2153,7 +2208,7 @@ EusLispには、文字型がない。
 
 <P>
 
-<A NAME="12088"></A>
+<A NAME="12094"></A>
 <B>string-trim</B> <EM>bag str </EM>[関数]
 
 <DL COMPACT>
@@ -2168,7 +2223,7 @@ EusLispには、文字型がない。
 
 <P>
 
-<A NAME="12101"></A>
+<A NAME="12107"></A>
 <B>substringp</B> <EM>sub string </EM>[関数]
 
 <DL COMPACT>
@@ -2240,7 +2295,7 @@ I/O空間を参照することがある。
 <P>
 
  <BR>
-<BR> <A NAME="12113"></A>
+<BR> <A NAME="12119"></A>
 <B>make-foreign-string</B> <EM>address length </EM>[関数]
 
 <DL COMPACT>
@@ -2293,7 +2348,7 @@ EusLisp内のオブジェクトのアドレスは
  <BR>
 <BR> <P>
 
-<A NAME="12127"></A>
+<A NAME="12133"></A>
 <B>sxhash</B> <EM>obj </EM>[関数]
 
 <DL COMPACT>
@@ -2315,7 +2370,7 @@ stringなら、それぞれの文字コードの合計をシフトしたもの�
 
 <P>
 
-<A NAME="12141"></A>
+<A NAME="12147"></A>
 <B>make-hash-table</B> <EM>&amp;key (:size 30) (:test #'eq) (:rehash-size 2.0) </EM>[関数]
 
 <DL COMPACT>
@@ -2329,7 +2384,7 @@ hash-tableを作り、返す。
 
 <P>
 
-<A NAME="12151"></A>
+<A NAME="12157"></A>
 <B>gethash</B> <EM>key htab </EM>[関数]
 
 <DL COMPACT>
@@ -2347,7 +2402,7 @@ hash-tableに新しい値が登録され、そのテーブルの埋まったス�
 
 <P>
 
-<A NAME="12166"></A>
+<A NAME="12172"></A>
 <B>remhash</B> <EM>key htab </EM>[関数]
 
 <DL COMPACT>
@@ -2361,7 +2416,7 @@ hash-tableに新しい値が登録され、そのテーブルの埋まったス�
 
 <P>
 
-<A NAME="12178"></A>
+<A NAME="12184"></A>
 <B>maphash</B> <EM>function htab  </EM>[関数]
 
 <DL COMPACT>
@@ -2375,7 +2430,7 @@ hash-tableに新しい値が登録され、そのテーブルの埋まったス�
 
 <P>
 
-<A NAME="12191"></A>
+<A NAME="12197"></A>
 <B>hash-table-p</B> <EM>x </EM>[関数]
 
 <DL COMPACT>
@@ -2389,7 +2444,7 @@ hash-tableに新しい値が登録され、そのテーブルの埋まったス�
 
 <P>
 	<BR> 
-<A NAME="12203"></A>
+<A NAME="12209"></A>
 <BIG CLASS="XLARGE"><B>hash-table </B></BIG> [クラス]  <PRE><TT>
   :super   <B>object</B> 
 <BR>  :slots 		 (key value count 
@@ -2417,7 +2472,7 @@ rehash-size empty deleted)
 
 <P>
 
-<A NAME="12232"></A>
+<A NAME="12238"></A>
 <B>:hash-function</B> <EM>newhash </EM>[メソッド]
 
 <DL COMPACT>
@@ -2449,7 +2504,7 @@ carがqueueの実体であり、このqueueのインスタンスをqとすると
 
 <P>
 	<BR> 
-<A NAME="12248"></A>
+<A NAME="12254"></A>
 <BIG CLASS="XLARGE"><B>queue </B></BIG> [クラス]  <PRE><TT>
   :super   <B>cons</B> 
 <BR>  :slots 		 (car cdr) 
@@ -2467,7 +2522,7 @@ carがqueueの実体であり、このqueueのインスタンスをqとすると
 
 <P>
 
-<A NAME="12265"></A>
+<A NAME="12271"></A>
 <B>:init</B> [メソッド]
 
 <DL COMPACT>
@@ -2480,7 +2535,7 @@ carがqueueの実体であり、このqueueのインスタンスをqとすると
 
 <P>
 
-<A NAME="12275"></A>
+<A NAME="12281"></A>
 <B>:enqueue</B> <EM>val </EM>[メソッド]
 
 <DL COMPACT>
@@ -2491,7 +2546,7 @@ carがqueueの実体であり、このqueueのインスタンスをqとすると
 <BR>
 <BR>
 
-<A NAME="12285"></A>
+<A NAME="12291"></A>
 <B>:dequeue</B> <EM>&amp;optional (error-p nil) </EM>[メソッド]
 
 <DL COMPACT>
@@ -2506,7 +2561,7 @@ carがqueueの実体であり、このqueueのインスタンスをqとすると
 
 <P>
 
-<A NAME="12295"></A>
+<A NAME="12301"></A>
 <B>:length</B> [メソッド]
 
 <DL COMPACT>
@@ -2517,7 +2572,7 @@ carがqueueの実体であり、このqueueのインスタンスをqとすると
 <BR>
 <BR>
 
-<A NAME="12305"></A>
+<A NAME="12311"></A>
 <B>:empty?</B> [メソッド]
 
 <DL COMPACT>
@@ -2530,7 +2585,7 @@ carがqueueの実体であり、このqueueのインスタンスをqとすると
 
 <P>
 
-<A NAME="12315"></A>
+<A NAME="12321"></A>
 <B>:trim</B> <EM>s </EM>[メソッド]
 
 <DL COMPACT>
@@ -2541,7 +2596,7 @@ carがqueueの実体であり、このqueueのインスタンスをqとすると
 <BR>
 <BR>
 
-<A NAME="12325"></A>
+<A NAME="12331"></A>
 <B>:search</B> <EM>item &amp;optional (test #'equal) </EM>[メソッド]
 
 <DL COMPACT>
@@ -2555,7 +2610,7 @@ carがqueueの実体であり、このqueueのインスタンスをqとすると
 
 <P>
 
-<A NAME="12335"></A>
+<A NAME="12341"></A>
 <B>:delete</B> <EM>item &amp;optional (test #'equal) (count 1) </EM>[メソッド]
 
 <DL COMPACT>
@@ -2567,7 +2622,7 @@ carがqueueの実体であり、このqueueのインスタンスをqとすると
 <BR>
 <BR>
 
-<A NAME="12345"></A>
+<A NAME="12351"></A>
 <B>:first</B> [メソッド]
 
 <DL COMPACT>
@@ -2578,7 +2633,7 @@ carがqueueの実体であり、このqueueのインスタンスをqとすると
 <BR>
 <BR>
 
-<A NAME="12355"></A>
+<A NAME="12361"></A>
 <B>:last</B> [メソッド]
 
 <DL COMPACT>
@@ -2604,7 +2659,7 @@ carがqueueの実体であり、このqueueのインスタンスをqとすると
 </DIV>
 <!--End of Navigation Panel-->
 <ADDRESS>
-
+Travis CI User
 2016-12-19
 </ADDRESS>
 </BODY>

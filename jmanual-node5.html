@@ -214,9 +214,9 @@ b --&gt; #*0000010000
 <DIV ALIGN="CENTER">
 
 <DIV ALIGN="CENTER">
-<A NAME="989"></A>
+<A NAME="995"></A>
 <TABLE CELLPADDING=3 BORDER="1">
-<CAPTION><STRONG>Table:</STRONG>
+<CAPTION><STRONG>Table 2:</STRONG>
 EusLispの特殊書式</CAPTION>
 <TR><TD ALIGN="LEFT"><BIG CLASS="LARGE"> 
 and </BIG></TD>
@@ -317,7 +317,17 @@ lambda書式は、次の文法で与えられる。
 
 <P><PRE><TT>
  (lambda ({var}* <BR>)}*] <BR>
-<BR>) <SPAN CLASS="MATH">7#7</SPAN> ((keyword var) [initform])}* <BR>] <BR>)}*]) 
+<BR>) <SPAN CLASS="MATH"><IMG
+ WIDTH="151" HEIGHT="71" ALIGN="BOTTOM" BORDER="0"
+ SRC="jmanual-img7.png"
+ ALT="\begin{emtabbing}
+{\bf open}
+\it path \&amp;key \= :direction :input \\lq  [関数]\\ ...
+...\\
+\&gt; :permission \char93 o644 \\
+\&gt; :buffer-size 512\\
+\rm
+\end{emtabbing}"></SPAN> ((keyword var) [initform])}* <BR>] <BR>)}*]) 
 <BR>  {declaration}* 
 <BR>  {form}*) 
 <BR>
@@ -339,7 +349,7 @@ lambda書式は、普通のリストデータと区別できないため、
 <B>function</B>特殊書式を用いて、インタプリタやコンパイラに関数として
 認識するように知らせなければならない。
 <A NAME="tex2html7"
-  HREF="jmanual-footnode.html#foot939"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="footnote.png"></SUP></A><B>function</B>は、関数の上に環境を固定するために重要である。
+  HREF="jmanual-footnode.html#foot945"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="footnote.png"></SUP></A><B>function</B>は、関数の上に環境を固定するために重要である。
 そのため、すべてのローカル変数はその関数が違ったローカルスコープの他の関数を
 通ってきたとしてさえ、アクセスすることができる。
 次のプログラムは、<TT>let</TT>の<TT>sum</TT>がlambda書式の中に見えるため、
@@ -415,7 +425,7 @@ EusLispのclosureは、不定な大きさを持つことができない。
 </DIV>
 <!--End of Navigation Panel-->
 <ADDRESS>
-
+Travis CI User
 2016-12-19
 </ADDRESS>
 </BODY>

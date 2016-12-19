@@ -129,13 +129,13 @@ symbolやconsのようなオブジェクトは、これまでのEuslispのよう
 
 <P>
 
-<DIV ALIGN="CENTER"><A NAME="threadmodel"></A><A NAME="25547"></A>
+<DIV ALIGN="CENTER"><A NAME="threadmodel"></A><A NAME="25553"></A>
 <TABLE>
-<CAPTION ALIGN="BOTTOM"><STRONG>Figure:</STRONG>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 5:</STRONG>
 Solarisオペレーティングシステムのスレッドモデル</CAPTION>
 <TR><TD>
 <DIV ALIGN="CENTER">
-11#11
+
 
 </DIV></TD></TR>
 </TABLE>
@@ -193,13 +193,13 @@ EusLispは、すべての型のオブジェクトに対して単一のヒープ�
 
 <P>
 
-<DIV ALIGN="CENTER"><A NAME="parathreads"></A><A NAME="25559"></A>
+<DIV ALIGN="CENTER"><A NAME="parathreads"></A><A NAME="25565"></A>
 <TABLE>
-<CAPTION ALIGN="BOTTOM"><STRONG>Figure:</STRONG>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 6:</STRONG>
 並列スレッドのメモリ要求とガーベージコレクトに並列実行</CAPTION>
 <TR><TD>
 <DIV ALIGN="CENTER">
-12#12
+
 
 </DIV></TD></TR>
 </TABLE>
@@ -232,15 +232,15 @@ Euslispにおいて数ミリ秒かかる。
 
 <P>
 
-<DIV ALIGN="CENTER"><A NAME="threadobj"></A><A NAME="25754"></A>
+<DIV ALIGN="CENTER"><A NAME="threadobj"></A><A NAME="25760"></A>
 <TABLE>
-<CAPTION ALIGN="BOTTOM"><STRONG>Figure:</STRONG>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 7:</STRONG>
 スレッド間で制御やデータを受け渡すためのスレッドオブジェクト（左）とスレッドプール内に置かれたスレッドの集まり（右）</CAPTION>
 <TR><TD>
 <DIV ALIGN="CENTER">
 <TABLE CELLPADDING=3 ALIGN="CENTER">
-<TR><TD ALIGN="CENTER">13#13</TD>
-<TD ALIGN="CENTER">14#14</TD>
+<TR><TD></TD>
+<TD></TD>
 </TR>
 </TABLE>
 </DIV></TD></TR>
@@ -283,13 +283,13 @@ Solarisのカーネルが時間分割スケージューリングを基本とし�
 
 <P>
 
-<DIV ALIGN="CENTER"><A NAME="synchports"></A><A NAME="25587"></A>
+<DIV ALIGN="CENTER"><A NAME="synchports"></A><A NAME="25593"></A>
 <TABLE>
-<CAPTION ALIGN="BOTTOM"><STRONG>Figure:</STRONG>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 8:</STRONG>
 同期障壁と同期メモリポート</CAPTION>
 <TR><TD>
 <DIV ALIGN="CENTER">
-15#15
+
 
 </DIV></TD></TR>
 </TABLE>
@@ -401,9 +401,9 @@ filter-imageは、フィルターの並列計算のために複数のスレッ�
 <DIV ALIGN="CENTER">
 
 <DIV ALIGN="CENTER">
-<A NAME="25755"></A>
+<A NAME="25761"></A>
 <TABLE CELLPADDING=3 BORDER="1">
-<CAPTION><STRONG>Table:</STRONG>
+<CAPTION><STRONG>Table 3:</STRONG>
 マルチプロセッサ上で実行されたプログラムの並列度</CAPTION>
 <TR><TD ALIGN="LEFT">processors</TD>
 <TD ALIGN="RIGHT">1</TD>
@@ -471,7 +471,7 @@ Euslispのスレッドは、<B>thread</B>クラスのインスタンスによっ
  <BR>
 <BR> <P>
 
-<A NAME="25779"></A>
+<A NAME="25785"></A>
 <B>sys:make-thread</B> <EM>num &amp;optional (lsize 32*1024) (csize lsize) </EM>[関数]
 
 <DL COMPACT>
@@ -493,7 +493,7 @@ Euslispのスレッドは、<B>thread</B>クラスのインスタンスによっ
 
 <P>
 
-<A NAME="25794"></A>
+<A NAME="25800"></A>
 <B>sys:*threads*</B> [変数]
 
 <DL COMPACT>
@@ -507,7 +507,7 @@ Euslispのスレッドは、<B>thread</B>クラスのインスタンスによっ
 
 <P>
 
-<A NAME="25805"></A>
+<A NAME="25811"></A>
 <B>sys::free-threads</B> [関数]
 
 <DL COMPACT>
@@ -525,7 +525,7 @@ Euslispのスレッドは、<B>thread</B>クラスのインスタンスによっ
 
 <P>
 
-<A NAME="25816"></A>
+<A NAME="25822"></A>
 <B>sys:thread</B> <EM>func &amp;rest args </EM>[関数]
 
 <DL COMPACT>
@@ -552,7 +552,7 @@ Euslispのスレッドは、<B>thread</B>クラスのインスタンスによっ
 
 <P>
 
-<A NAME="25833"></A>
+<A NAME="25839"></A>
 <B>sys:thread-no-wait</B> <EM>func &amp;rest args </EM>[関数]
 
 <DL COMPACT>
@@ -568,7 +568,7 @@ Euslispのスレッドは、<B>thread</B>クラスのインスタンスによっ
 
 <P>
 
-<A NAME="25844"></A>
+<A NAME="25850"></A>
 <B>sys:wait-thread</B> <EM>thread </EM>[関数]
 
 <DL COMPACT>
@@ -587,7 +587,7 @@ Euslispのスレッドは、<B>thread</B>クラスのインスタンスによっ
 
 <P>
 
-<A NAME="25858"></A>
+<A NAME="25864"></A>
 <B>sys:plist</B> <EM>&amp;rest forms </EM>[マクロ]
 
 <DL COMPACT>
@@ -621,7 +621,7 @@ reader-writer lockは実現されてない。
 <P>
 
  <BR>
-<BR> <A NAME="25871"></A>
+<BR> <A NAME="25877"></A>
 <B>sys:make-mutex-lock</B> [関数]
 
 <DL COMPACT>
@@ -636,7 +636,7 @@ mutex-lockは、6つの要素を持つ整数ベクトルで表現されている
 
 <P>
 
-<A NAME="25881"></A>
+<A NAME="25887"></A>
 <B>sys:mutex-lock</B> <EM>mlock </EM>[関数]
 
 <DL COMPACT>
@@ -652,7 +652,7 @@ mutex-lockの<EM>mlock</EM>をロックする。
 
 <P>
 
-<A NAME="25894"></A>
+<A NAME="25900"></A>
 <B>sys:mutex-unlock</B> <EM>mlock </EM>[関数]
 
 <DL COMPACT>
@@ -666,7 +666,7 @@ mutex-lockの<EM>mlock</EM>をロックする。
 
 <P>
 
-<A NAME="25905"></A>
+<A NAME="25911"></A>
 <B>sys:mutex</B> <EM>mlock &amp;rest forms </EM>[マクロ]
 
 <DL COMPACT>
@@ -694,7 +694,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 
 <P>
 
-<A NAME="25920"></A>
+<A NAME="25926"></A>
 <B>sys:make-cond</B> [関数]
 
 <DL COMPACT>
@@ -709,7 +709,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 
 <P>
 
-<A NAME="25930"></A>
+<A NAME="25936"></A>
 <B>sys:cond-wait</B> <EM>condvar mlock </EM>[関数]
 
 <DL COMPACT>
@@ -725,7 +725,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 
 <P>
 
-<A NAME="25944"></A>
+<A NAME="25950"></A>
 <B>sys:cond-signal</B> <EM>condvar </EM>[関数]
 
 <DL COMPACT>
@@ -737,7 +737,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 <BR>
 <BR>
 
-<A NAME="25955"></A>
+<A NAME="25961"></A>
 <B>sys:make-semaphore</B> [関数]
 
 <DL COMPACT>
@@ -749,7 +749,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 <BR>
 <BR>
 
-<A NAME="25965"></A>
+<A NAME="25971"></A>
 <B>sys:sema-post</B> <EM>sem </EM>[関数]
 
 <DL COMPACT>
@@ -760,7 +760,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 <BR>
 <BR>
 
-<A NAME="25976"></A>
+<A NAME="25982"></A>
 <B>sys:sema-wait</B> <EM>sem </EM>[関数]
 
 <DL COMPACT>
@@ -774,7 +774,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 
 <P>
 	<BR> 
-<A NAME="25988"></A>
+<A NAME="25994"></A>
 <BIG CLASS="XLARGE"><B>sys:barrier-synch </B></BIG> [クラス]  <PRE><TT>
   :super   <B>propertied-object</B> 
 <BR>  :slots 		 threads n-threads count barrier-cond threads-lock count-lock 
@@ -805,7 +805,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 
 <P>
 
-<A NAME="26017"></A>
+<A NAME="26023"></A>
 <B>:init</B> [メソッド]
 
 <DL COMPACT>
@@ -817,7 +817,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 <BR>
 <BR>
 
-<A NAME="26027"></A>
+<A NAME="26033"></A>
 <B>:add</B> <EM>thr </EM>[メソッド]
 
 <DL COMPACT>
@@ -828,7 +828,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 <BR>
 <BR>
 
-<A NAME="26039"></A>
+<A NAME="26045"></A>
 <B>:remove</B> <EM>thr </EM>[メソッド]
 
 <DL COMPACT>
@@ -839,7 +839,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 <BR>
 <BR>
 
-<A NAME="26051"></A>
+<A NAME="26057"></A>
 <B>:wait</B> [メソッド]
 
 <DL COMPACT>
@@ -853,7 +853,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 
 <P>
 	<BR> 
-<A NAME="26064"></A>
+<A NAME="26070"></A>
 <BIG CLASS="XLARGE"><B>sys:synch-memory-port </B></BIG> [クラス]  <PRE><TT>
   :super   <B>propertied-object</B> 
 <BR>  :slots 		 sema-in sema-out buf empty lock 
@@ -873,7 +873,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 
 <P>
 
-<A NAME="26081"></A>
+<A NAME="26087"></A>
 <B>:read</B> [メソッド]
 
 <DL COMPACT>
@@ -888,7 +888,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 
 <P>
 
-<A NAME="26093"></A>
+<A NAME="26099"></A>
 <B>:write</B> <EM>datum </EM>[メソッド]
 
 <DL COMPACT>
@@ -905,7 +905,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 
 <P>
 
-<A NAME="26106"></A>
+<A NAME="26112"></A>
 <B>:init</B> [メソッド]
 
 <DL COMPACT>
@@ -932,7 +932,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 </DIV>
 <!--End of Navigation Panel-->
 <ADDRESS>
-
+Travis CI User
 2016-12-19
 </ADDRESS>
 </BODY>

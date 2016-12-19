@@ -143,7 +143,7 @@ Classes and Methods</A>
  <BR>
 <BR> <P>
 
-<A NAME="3865"></A>
+<A NAME="3861"></A>
 <BR>
 <IMG
  WIDTH="556" HEIGHT="89" ALIGN="BOTTOM" BORDER="0"
@@ -172,7 +172,7 @@ disposition.
 
 <P>
 
-<A NAME="3876"></A>
+<A NAME="3872"></A>
 <B>defmethod</B> <EM>classname {(selector lambda-list . body)}* </EM>[special]
 
 <DL COMPACT>
@@ -187,7 +187,7 @@ must be a keyword symbol.
 
 <P>
 
-<A NAME="3888"></A>
+<A NAME="3884"></A>
 <B>defclassmethod</B> <EM>classname {(selector lambda-list . body)}* </EM>[macro]
 
 <DL COMPACT>
@@ -200,7 +200,7 @@ must be a keyword symbol.
 
 <P>
 
-<A NAME="3899"></A>
+<A NAME="3895"></A>
 <B>classp</B> <EM>object </EM>[function]
 
 <DL COMPACT>
@@ -214,7 +214,7 @@ an instance of class <B>metaclass</B> or its subclasses.
 
 <P>
 
-<A NAME="3911"></A>
+<A NAME="3907"></A>
 <B>subclassp</B> <EM>class super </EM>[function]
 
 <DL COMPACT>
@@ -228,7 +228,7 @@ Checks <EM>class</EM> is a subclass of <EM>super</EM>.
 
 <P>
 
-<A NAME="3923"></A>
+<A NAME="3919"></A>
 <B>vector-class-p</B> <EM>x </EM>[function]
 
 <DL COMPACT>
@@ -241,7 +241,7 @@ Checks <EM>class</EM> is a subclass of <EM>super</EM>.
 
 <P>
 
-<A NAME="3935"></A>
+<A NAME="3931"></A>
 <B>delete-method</B> <EM>class method-name </EM>[function]
 
 <DL COMPACT>
@@ -255,7 +255,7 @@ The method definition is removed from the specified class.
 
 <P>
 
-<A NAME="3945"></A>
+<A NAME="3941"></A>
 <B>class-hierarchy</B> <EM>class </EM>[function]
 
 <DL COMPACT>
@@ -269,7 +269,7 @@ prints inheritance hierarchy below <EM>class</EM>.
 
 <P>
 
-<A NAME="3956"></A>
+<A NAME="3952"></A>
 <B>system:list-all-classes</B> [function]
 
 <DL COMPACT>
@@ -283,7 +283,7 @@ lists up all the classes defined so far.
 
 <P>
 
-<A NAME="3966"></A>
+<A NAME="3962"></A>
 <B>system:find-method</B> <EM>object selector </EM>[function]
 
 <DL COMPACT>
@@ -299,7 +299,7 @@ This is used to know whether <EM>object</EM> can respond to <EM>selector</EM>.
 
 <P>
 
-<A NAME="3980"></A>
+<A NAME="3976"></A>
 <B>system:method-cache</B> <EM>[flag] </EM>[function]
 
 <DL COMPACT>
@@ -324,7 +324,7 @@ Message Sending</A>
  <BR>
 <BR> <P>
 
-<A NAME="3991"></A>
+<A NAME="3987"></A>
 <B>send</B> <EM>object selector {arg}* </EM>[function]
 
 <DL COMPACT>
@@ -340,7 +340,7 @@ send a message consisting of <EM>selector</EM> and <EM>arg</EM> to <EM>object</E
 
 <P>
 
-<A NAME="4006"></A>
+<A NAME="4002"></A>
 <B>send-message</B> <EM>target search selector {arg}* </EM>[function]
 
 <DL COMPACT>
@@ -354,7 +354,7 @@ Low level primitive to implement <B>send-super</B>.
 
 <P>
 
-<A NAME="4017"></A>
+<A NAME="4013"></A>
 <B>send*</B> <EM>object selector &amp;rest msg-list </EM>[macro]
 
 <DL COMPACT>
@@ -370,7 +370,7 @@ between <B>funcall</B> and <B>apply</B>, or <B>list</B> and <B>list*</B>.
 
 <P>
 
-<A NAME="4035"></A>
+<A NAME="4031"></A>
 <B>send-all</B> <EM>receivers selector &amp;rest mesg </EM>[function]
 
 <DL COMPACT>
@@ -385,7 +385,7 @@ in a list.
 
 <P>
 
-<A NAME="4045"></A>
+<A NAME="4041"></A>
 <B>send-super</B> <EM>selector &amp;rest msgs </EM>[macro]
 
 <DL COMPACT>
@@ -402,7 +402,7 @@ It is an error to <EM>send-super</EM> outside a method (i.e. in a function).
 
 <P>
 
-<A NAME="4057"></A>
+<A NAME="4053"></A>
 <B>send-super*</B> <EM>selector &amp;rest msg-list </EM>[macro]
 
 <DL COMPACT>
@@ -426,7 +426,7 @@ Instance Management</A>
  <BR>
 <BR> <P>
 
-<A NAME="4068"></A>
+<A NAME="4064"></A>
 <B>instantiate</B> <EM>class &amp;optional size </EM>[function]
 
 <DL COMPACT>
@@ -441,7 +441,7 @@ If the class is a vector-class, <EM>size</EM> should be supplied.
 
 <P>
 
-<A NAME="4079"></A>
+<A NAME="4075"></A>
 <B>instance</B> <EM>class &amp;rest message </EM>[macro]
 
 <DL COMPACT>
@@ -455,7 +455,7 @@ An instance is created, and the message is sent to it.
 
 <P>
 
-<A NAME="4089"></A>
+<A NAME="4085"></A>
 <B>make-instance</B> <EM>class &amp;rest var-val-pairs </EM>[function]
 
 <DL COMPACT>
@@ -472,7 +472,7 @@ is equivalent to <TT>(cons 1 2)</TT>.
 
 <P>
 
-<A NAME="4103"></A>
+<A NAME="4099"></A>
 <B>copy-object</B> <EM>object </EM>[function]
 
 <DL COMPACT>
@@ -496,7 +496,7 @@ use of <B>copy-seq</B> or <B>copy-tree</B> is recommended.
 
 <P>
 
-<A NAME="4119"></A>
+<A NAME="4115"></A>
 <B>become</B> <EM>object class </EM>[function]
 
 <DL COMPACT>
@@ -514,7 +514,7 @@ to a bit-vector.
 
 <P>
 
-<A NAME="4131"></A>
+<A NAME="4127"></A>
 <B>replace-object</B> <EM>dest src </EM>[function]
 
 <DL COMPACT>
@@ -528,7 +528,7 @@ dest must be an instance of the subclass of src.
 
 <P>
 
-<A NAME="4141"></A>
+<A NAME="4137"></A>
 <B>class</B> <EM>object </EM>[function]
 
 <DL COMPACT>
@@ -543,7 +543,7 @@ To get the name of the class, send :name message to the class object.
 
 <P>
 
-<A NAME="4152"></A>
+<A NAME="4148"></A>
 <B>derivedp</B> <EM>object class </EM>[function]
 
 <DL COMPACT>
@@ -560,7 +560,7 @@ type check always finishes within a constant time.
 
 <P>
 
-<A NAME="4167"></A>
+<A NAME="4163"></A>
 <B>slot</B> <EM>object class (index <SPAN CLASS="MATH"><IMG
  WIDTH="9" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
  SRC="manual-img5.png"
@@ -577,7 +577,7 @@ Returns the named or indexed slot value.
 
 <P>
 
-<A NAME="4177"></A>
+<A NAME="4173"></A>
 <B>setslot</B> <EM>object class (index <SPAN CLASS="MATH"><IMG
  WIDTH="9" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
  SRC="manual-img5.png"
@@ -604,7 +604,7 @@ Basic Classes</A>
 
  <BR>
 <BR> <BR> 
-<A NAME="4191"></A>
+<A NAME="4187"></A>
 <BIG CLASS="XLARGE"><B>object </B></BIG> [class]  <PRE><TT>
   :super    
 <BR>  :slots 		 
@@ -624,7 +624,7 @@ Since it defines no slot variables, it is no use to make an instance of
 
 <P>
 
-<A NAME="4209"></A>
+<A NAME="4205"></A>
 <B>:prin1</B> <EM>&amp;optional stream &amp;rest mesg </EM>[method]
 
 <DL COMPACT>
@@ -654,7 +654,7 @@ after it is printed.
 
 <P>
 
-<A NAME="4224"></A>
+<A NAME="4220"></A>
 <B>:slots</B> [method]
 
 <DL COMPACT>
@@ -671,7 +671,7 @@ list, although you cannot alter them.
 
 <P>
 	<BR> 
-<A NAME="4236"></A>
+<A NAME="4232"></A>
 <BIG CLASS="XLARGE"><B>propertied-object </B></BIG> [class]  <PRE><TT>
   :super   <B>object</B> 
 <BR>  :slots 		 plist 
@@ -692,7 +692,7 @@ lists, even if they are not symbols.
 
 <P>
 
-<A NAME="4253"></A>
+<A NAME="4249"></A>
 <B>:plist</B> <EM>&amp;optional plist </EM>[method]
 
 <DL COMPACT>
@@ -714,7 +714,7 @@ to ensure the equality check will be performed interpacakge-widely.
 
 <P>
 
-<A NAME="4266"></A>
+<A NAME="4262"></A>
 <B>:get</B> <EM>indicator </EM>[method]
 
 <DL COMPACT>
@@ -729,7 +729,7 @@ returns the value associated with <EM>indicator</EM> in the property list.
 
 <P>
 
-<A NAME="4277"></A>
+<A NAME="4273"></A>
 <B>:put</B> <EM>indicator value </EM>[method]
 
 <DL COMPACT>
@@ -743,7 +743,7 @@ associates <EM>value</EM> to <EM>indicator</EM> in the plist.
 
 <P>
 
-<A NAME="4289"></A>
+<A NAME="4285"></A>
 <B>:remprop</B> <EM>indicator </EM>[method]
 
 <DL COMPACT>
@@ -758,7 +758,7 @@ Further attempt to <EM>:get</EM> the value returns nil.
 
 <P>
 
-<A NAME="4301"></A>
+<A NAME="4297"></A>
 <B>:name</B> <EM>&amp;optional name </EM>[method]
 
 <DL COMPACT>
@@ -773,7 +773,7 @@ This property is used for printing.
 
 <P>
 
-<A NAME="4312"></A>
+<A NAME="4308"></A>
 <B>:prin1</B> <EM>&amp;optional stream &amp;rest mesg </EM>[method]
 
 <DL COMPACT>
@@ -789,7 +789,7 @@ the address of the object.
 
 <P>
 
-<A NAME="4323"></A>
+<A NAME="4319"></A>
 <B>:slots</B> [method]
 
 <DL COMPACT>
@@ -803,7 +803,7 @@ returns a list of variable and value pairs of this object.
 
 <P>
 
-<A NAME="4333"></A>
+<A NAME="4329"></A>
 <B>:methods</B> [method]
 
 <DL COMPACT>
@@ -818,7 +818,7 @@ In other words, this object can accept method calls listed by :methods.
 
 <P>
 
-<A NAME="4343"></A>
+<A NAME="4339"></A>
 <B>:get-val</B> <EM>variable-name </EM>[method]
 
 <DL COMPACT>
@@ -833,7 +833,7 @@ If the object does not have the variable-name slot, an error is reported.
 
 <P>
 
-<A NAME="4354"></A>
+<A NAME="4350"></A>
 <B>:set-val</B> <EM>variable-name value </EM>[method]
 
 <DL COMPACT>
@@ -848,7 +848,7 @@ If the object does not have the variable-name slot, an error is reported.
 
 <P>
 	<BR> 
-<A NAME="4366"></A>
+<A NAME="4362"></A>
 <BIG CLASS="XLARGE"><B>metaclass </B></BIG> [class]  <PRE><TT>
   :super   <B>propertied-object</B> 
 <BR>  :slots 		 name super cix vars types forwards methods 
@@ -865,7 +865,7 @@ should be defined with <B>metaclass</B> as their superclass.
 <BR>
 <BR>
 
-<A NAME="4384"></A>
+<A NAME="4380"></A>
 <B>:new</B> [method]
 
 <DL COMPACT>
@@ -877,7 +877,7 @@ after filling all the slots with NIL.
 <BR>
 <BR>
 
-<A NAME="4394"></A>
+<A NAME="4390"></A>
 <B>:super</B> [method]
 
 <DL COMPACT>
@@ -890,7 +890,7 @@ You cannot alter superclass once defclassed.
 <BR>
 <BR>
 
-<A NAME="4404"></A>
+<A NAME="4400"></A>
 <B>:methods</B> [method]
 
 <DL COMPACT>
@@ -904,7 +904,7 @@ the method, parameters, and body.
 <BR>
 <BR>
 
-<A NAME="4414"></A>
+<A NAME="4410"></A>
 <B>:method</B> <EM>name </EM>[method]
 
 <DL COMPACT>
@@ -917,7 +917,7 @@ If not found, NIL is returned.
 <BR>
 <BR>
 
-<A NAME="4425"></A>
+<A NAME="4421"></A>
 <B>:method-names</B> <EM>subname </EM>[method]
 
 <DL COMPACT>
@@ -931,7 +931,7 @@ Methods are searched only in this class.
 <BR>
 <BR>
 
-<A NAME="4436"></A>
+<A NAME="4432"></A>
 <B>:all-methods</B> [method]
 
 <DL COMPACT>
@@ -946,7 +946,7 @@ methods.
 <BR>
 <BR>
 
-<A NAME="4446"></A>
+<A NAME="4442"></A>
 <B>:all-method-names</B> <EM>subname </EM>[method]
 
 <DL COMPACT>
@@ -960,7 +960,7 @@ The search is made from  this class up to <B>object</B>.
 <BR>
 <BR>
 
-<A NAME="4458"></A>
+<A NAME="4454"></A>
 <B>:slots</B> [method]
 
 <DL COMPACT>
@@ -972,7 +972,7 @@ returns the slot-name vector.
 <BR>
 <BR>
 
-<A NAME="4468"></A>
+<A NAME="4464"></A>
 <B>:name</B> [method]
 
 <DL COMPACT>
@@ -983,7 +983,7 @@ returns the slot-name vector.
 <BR>
 <BR>
 
-<A NAME="4478"></A>
+<A NAME="4474"></A>
 <B>:cid</B> [method]
 
 <DL COMPACT>
@@ -998,7 +998,7 @@ when a new subclass is defined under this class.
 <BR>
 <BR>
 
-<A NAME="4488"></A>
+<A NAME="4484"></A>
 <B>:subclasses</B> [method]
 
 <DL COMPACT>
@@ -1010,7 +1010,7 @@ returns a list of the direct subclass of this class.
 <BR>
 <BR>
 
-<A NAME="4498"></A>
+<A NAME="4494"></A>
 <B>:hierarchy</B> [method]
 
 <DL COMPACT>
@@ -1024,7 +1024,7 @@ listing of all the class hierarchy.
 <BR>
 <BR>
 
-<A NAME="4509"></A>
+<A NAME="4505"></A>
 <B>find-method</B> <EM>object selector </EM>[function]
 
 <DL COMPACT>
@@ -1051,7 +1051,7 @@ the message without causing nomethod error.
 </DIV>
 <!--End of Navigation Panel-->
 <ADDRESS>
-
+Travis CI User
 2016-12-19
 </ADDRESS>
 </BODY>

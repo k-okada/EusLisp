@@ -81,7 +81,7 @@ LUTは，ピクセル(pixel)データを変換するためのベクトルデー�
  <BR>
 <BR> <P>
 
-<A NAME="48935"></A>
+<A NAME="48941"></A>
 <B>make-equilevel-lut</B> <EM>levels &amp;optional (size 256) </EM>[関数]
 
 <DL COMPACT>
@@ -99,7 +99,7 @@ LUTは，ピクセル(pixel)データを変換するためのベクトルデー�
 
 <P>
 
-<A NAME="48949"></A>
+<A NAME="48955"></A>
 <B>look-up</B> <EM>src dest lut </EM>[関数]
 
 <DL COMPACT>
@@ -117,7 +117,7 @@ LUTは，ピクセル(pixel)データを変換するためのベクトルデー�
 
 <P>
 
-<A NAME="48966"></A>
+<A NAME="48972"></A>
 <B>look-up2</B> <EM>src dest lut1 lut2 </EM>[関数]
 
 <DL COMPACT>
@@ -133,7 +133,7 @@ LUTは，ピクセル(pixel)データを変換するためのベクトルデー�
 
 <P>
 
-<A NAME="48983"></A>
+<A NAME="48989"></A>
 <B>look-up*</B> <EM>src dest luts </EM>[関数]
 
 <DL COMPACT>
@@ -149,7 +149,7 @@ LUTは，ピクセル(pixel)データを変換するためのベクトルデー�
 
 <P>
 
-<A NAME="48997"></A>
+<A NAME="49003"></A>
 <B>concatenate-lut</B> <EM>lut1 lut2 &amp;optional (size 256) </EM>[関数]
 
 <DL COMPACT>
@@ -165,7 +165,7 @@ LUTは，ピクセル(pixel)データを変換するためのベクトルデー�
 
 <P>
 
-<A NAME="49011"></A>
+<A NAME="49017"></A>
 <B>make-colors</B> <EM>default-color-map </EM>[関数]
 
 <DL COMPACT>
@@ -179,7 +179,7 @@ LUTは，ピクセル(pixel)データを変換するためのベクトルデー�
 
 <P>
 
-<A NAME="49021"></A>
+<A NAME="49027"></A>
 <B>*x-gray32-lut*</B> [変数]
 
 <DL COMPACT>
@@ -195,7 +195,7 @@ LUTは，ピクセル(pixel)データを変換するためのベクトルデー�
 
 <P>
 
-<A NAME="49033"></A>
+<A NAME="49039"></A>
 <B>*x-gray16-lut*</B> [変数]
 
 <DL COMPACT>
@@ -210,7 +210,7 @@ LUTは，ピクセル(pixel)データを変換するためのベクトルデー�
 
 <P>
 
-<A NAME="49044"></A>
+<A NAME="49050"></A>
 <B>*x-color-lut*</B> [変数]
 
 <DL COMPACT>
@@ -227,7 +227,7 @@ LUTは，ピクセル(pixel)データを変換するためのベクトルデー�
 
 <P>
 
-<A NAME="49055"></A>
+<A NAME="49061"></A>
 <B>*256to8*</B> [変数]
 
 <DL COMPACT>
@@ -242,7 +242,7 @@ LUTは，ピクセル(pixel)データを変換するためのベクトルデー�
 
 <P>
 
-<A NAME="49065"></A>
+<A NAME="49071"></A>
 <B>*256to16*</B> [変数]
 
 <DL COMPACT>
@@ -257,7 +257,7 @@ LUTは，ピクセル(pixel)データを変換するためのベクトルデー�
 
 <P>
 
-<A NAME="49075"></A>
+<A NAME="49081"></A>
 <B>*256to32*</B> [変数]
 
 <DL COMPACT>
@@ -272,7 +272,7 @@ LUTは，ピクセル(pixel)データを変換するためのベクトルデー�
 
 <P>
 
-<A NAME="49085"></A>
+<A NAME="49091"></A>
 <B>*gray32*</B> [変数]
 
 <DL COMPACT>
@@ -289,7 +289,7 @@ LUTは，ピクセル(pixel)データを変換するためのベクトルデー�
 
 <P>
 
-<A NAME="49098"></A>
+<A NAME="49104"></A>
 <B>*rainbow32*</B> [変数]
 
 <DL COMPACT>
@@ -318,7 +318,7 @@ LUTは，ピクセル(pixel)データを変換するためのベクトルデー�
 
  <BR>
 <BR> <BR> 
-<A NAME="49111"></A>
+<A NAME="49117"></A>
 <BIG CLASS="XLARGE"><B>pixel-image </B></BIG> [クラス]  <PRE><TT>
   :super   <B>array</B> 
 <BR>  :slots 		 xpicture display-lut histogram
@@ -346,7 +346,7 @@ pixelの変換は、<B>display-lut</B>によって実現され、
 
 <P>
 
-<A NAME="49134"></A>
+<A NAME="49140"></A>
 <B>:width</B> [メソッド]
 
 <DL COMPACT>
@@ -357,7 +357,7 @@ pixelの変換は、<B>display-lut</B>によって実現され、
 <BR>
 <BR>
 
-<A NAME="49144"></A>
+<A NAME="49150"></A>
 <B>:height</B> [メソッド]
 
 <DL COMPACT>
@@ -368,7 +368,7 @@ pixelの変換は、<B>display-lut</B>によって実現され、
 <BR>
 <BR>
 
-<A NAME="49154"></A>
+<A NAME="49160"></A>
 <B>:size</B> [メソッド]
 
 <DL COMPACT>
@@ -379,7 +379,7 @@ pixelの変換は、<B>display-lut</B>によって実現され、
 <BR>
 <BR>
 
-<A NAME="49164"></A>
+<A NAME="49170"></A>
 <B>:transpose</B> <EM>&amp;optional (result (instance (class self) :init dim0 dim1)) </EM>[メソッド]
 
 <DL COMPACT>
@@ -391,7 +391,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49174"></A>
+<A NAME="49180"></A>
 <B>:map-picture</B> <EM>lut &amp;optional (result (send self :duplicate)) </EM>[メソッド]
 
 <DL COMPACT>
@@ -403,7 +403,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49186"></A>
+<A NAME="49192"></A>
 <B>:map</B> <EM>fn &amp;optional (result (send self :duplicate)) </EM>[メソッド]
 
 <DL COMPACT>
@@ -416,7 +416,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49198"></A>
+<A NAME="49204"></A>
 <B>:brightest-pixel</B> [メソッド]
 
 <DL COMPACT>
@@ -427,7 +427,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49208"></A>
+<A NAME="49214"></A>
 <B>:darkest-pixel</B> [メソッド]
 
 <DL COMPACT>
@@ -438,7 +438,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49218"></A>
+<A NAME="49224"></A>
 <B>:average-pixel</B> [メソッド]
 
 <DL COMPACT>
@@ -450,7 +450,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49228"></A>
+<A NAME="49234"></A>
 <B>:halve</B> <EM>&amp;optional simage </EM>[メソッド]
 
 <DL COMPACT>
@@ -462,7 +462,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49238"></A>
+<A NAME="49244"></A>
 <B>:subimage</B> <EM>x y subwidth subheight </EM>[メソッド]
 
 <DL COMPACT>
@@ -477,7 +477,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49253"></A>
+<A NAME="49259"></A>
 <B>:xpicture</B> <EM>&amp;optional lut </EM>[メソッド]
 
 <DL COMPACT>
@@ -489,7 +489,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49265"></A>
+<A NAME="49271"></A>
 <B>:display-lut</B> <EM>&amp;optional newlut </EM>[メソッド]
 
 <DL COMPACT>
@@ -503,7 +503,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49278"></A>
+<A NAME="49284"></A>
 <B>:display</B> <EM>(xwin geometry:*viewsurface*) </EM>[メソッド]
 
 <DL COMPACT>
@@ -519,7 +519,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49290"></A>
+<A NAME="49296"></A>
 <B>:duplicate</B> [メソッド]
 
 <DL COMPACT>
@@ -532,7 +532,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49300"></A>
+<A NAME="49306"></A>
 <B>:copy-from</B> <EM>src </EM>[メソッド]
 
 <DL COMPACT>
@@ -545,7 +545,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49312"></A>
+<A NAME="49318"></A>
 <B>:hex</B> <EM>&amp;optional (x 0) (y 0) (w 16) (h 16) (strm t) </EM>[メソッド]
 
 <DL COMPACT>
@@ -557,7 +557,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49322"></A>
+<A NAME="49328"></A>
 <B>:hex1</B> <EM>&amp;optional (x 0) (y 0) (w 64) (h 16) (strm t) </EM>[メソッド]
 
 <DL COMPACT>
@@ -569,7 +569,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49332"></A>
+<A NAME="49338"></A>
 <B>:prin1</B> <EM>strm &amp;rest msg </EM>[メソッド]
 
 <DL COMPACT>
@@ -581,7 +581,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49342"></A>
+<A NAME="49348"></A>
 <B>:init</B> <EM>w h &amp;optional imgvec </EM>[メソッド]
 
 <DL COMPACT>
@@ -594,7 +594,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49354"></A>
+<A NAME="49360"></A>
 <B>:amplify</B> <EM>rate &amp;optional (result (send self :duplicate) </EM>[メソッド]
 
 <DL COMPACT>
@@ -606,7 +606,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49365"></A>
+<A NAME="49371"></A>
 <B>:compress-gray-scale</B> <EM>levels &amp;optional result  &amp;aux pict2 </EM>[メソッド]
 
 <DL COMPACT>
@@ -619,7 +619,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49376"></A>
+<A NAME="49382"></A>
 <B>:lut</B> <EM>lut1 &amp;optional (result (send self :duplicate)) </EM>[メソッド]
 
 <DL COMPACT>
@@ -632,7 +632,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49387"></A>
+<A NAME="49393"></A>
 <B>:lut2</B> <EM>lut1 lut2 &amp;optional (result (send self :duplicate)) </EM>[メソッド]
 
 <DL COMPACT>
@@ -645,7 +645,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49399"></A>
+<A NAME="49405"></A>
 <B>:histogram</B> [メソッド]
 
 <DL COMPACT>
@@ -658,7 +658,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49409"></A>
+<A NAME="49415"></A>
 <B>:brightness-distribution</B> [メソッド]
 
 <DL COMPACT>
@@ -670,7 +670,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49419"></A>
+<A NAME="49425"></A>
 <B>:optimum-threshold</B> [メソッド]
 
 <DL COMPACT>
@@ -682,7 +682,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49429"></A>
+<A NAME="49435"></A>
 <B>:project-x</B> [メソッド]
 
 <DL COMPACT>
@@ -694,7 +694,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49439"></A>
+<A NAME="49445"></A>
 <B>:project-y</B> [メソッド]
 
 <DL COMPACT>
@@ -706,7 +706,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49449"></A>
+<A NAME="49455"></A>
 <B>:digitize</B> <EM>threshold &amp;optional (val0 0) (val1 255) result </EM>[メソッド]
 
 <DL COMPACT>
@@ -719,7 +719,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49462"></A>
+<A NAME="49468"></A>
 <B>:and</B> <EM>img2 </EM>[メソッド]
 
 <DL COMPACT>
@@ -731,7 +731,7 @@ x軸とy軸を交換する。
 <BR>
 <BR>
 
-<A NAME="49473"></A>
+<A NAME="49479"></A>
 <B>:plot</B> <EM>min max &amp;optional color viewsurface </EM>[メソッド]
 
 <DL COMPACT>
@@ -746,9 +746,9 @@ x軸とy軸を交換する。
 
 <P>
 
-<A NAME="49487"></A>
+<A NAME="49493"></A>
 <BR>
-88#88
+
 <BR>
 
 <DL COMPACT>
@@ -772,7 +772,7 @@ RGBとHLS間の変換もサポートしている。
  <BR>
 <BR> <P>
 	<BR> 
-<A NAME="49499"></A>
+<A NAME="49505"></A>
 <BIG CLASS="XLARGE"><B>color-pixel-image </B></BIG> [クラス]  <PRE><TT>
   :super   <B>propertied-object</B> 
 <BR>  :slots 		 width height component1 component2 component3 
@@ -790,7 +790,7 @@ RGBとHLS間の変換もサポートしている。
 
 <P>
 
-<A NAME="49517"></A>
+<A NAME="49523"></A>
 <B>:width</B> [メソッド]
 
 <DL COMPACT>
@@ -801,7 +801,7 @@ RGBとHLS間の変換もサポートしている。
 <BR>
 <BR>
 
-<A NAME="49527"></A>
+<A NAME="49533"></A>
 <B>:height</B> [メソッド]
 
 <DL COMPACT>
@@ -812,18 +812,18 @@ RGBとHLS間の変換もサポートしている。
 <BR>
 <BR>
 
-<A NAME="49537"></A>
+<A NAME="49543"></A>
 <B>:size</B> [メソッド]
 
 <DL COMPACT>
 <DT> 
-<DD> この画像の幅<SPAN CLASS="MATH">57#57</SPAN>高さを返す。
+<DD> この画像の幅<SPAN CLASS="MATH"></SPAN>高さを返す。
 </DD>
 </DL>
 <BR>
 <BR>
 
-<A NAME="49547"></A>
+<A NAME="49553"></A>
 <B>:red</B> [メソッド]
 
 <DL COMPACT>
@@ -834,7 +834,7 @@ RGBとHLS間の変換もサポートしている。
 <BR>
 <BR>
 
-<A NAME="49558"></A>
+<A NAME="49564"></A>
 <B>:green</B> [メソッド]
 
 <DL COMPACT>
@@ -845,7 +845,7 @@ RGBとHLS間の変換もサポートしている。
 <BR>
 <BR>
 
-<A NAME="49569"></A>
+<A NAME="49575"></A>
 <B>:blue</B> [メソッド]
 
 <DL COMPACT>
@@ -856,7 +856,7 @@ RGBとHLS間の変換もサポートしている。
 <BR>
 <BR>
 
-<A NAME="49580"></A>
+<A NAME="49586"></A>
 <B>:hue</B> [メソッド]
 
 <DL COMPACT>
@@ -868,7 +868,7 @@ RGBとHLS間の変換もサポートしている。
 <BR>
 <BR>
 
-<A NAME="49591"></A>
+<A NAME="49597"></A>
 <B>:lightness</B> [メソッド]
 
 <DL COMPACT>
@@ -880,7 +880,7 @@ RGBとHLS間の変換もサポートしている。
 <BR>
 <BR>
 
-<A NAME="49602"></A>
+<A NAME="49608"></A>
 <B>:saturation</B> [メソッド]
 
 <DL COMPACT>
@@ -892,7 +892,7 @@ RGBとHLS間の変換もサポートしている。
 <BR>
 <BR>
 
-<A NAME="49613"></A>
+<A NAME="49619"></A>
 <B>:pixel</B> <EM>x y </EM>[メソッド]
 
 <DL COMPACT>
@@ -905,7 +905,7 @@ RGBとHLS間の変換もサポートしている。
 <BR>
 <BR>
 
-<A NAME="49625"></A>
+<A NAME="49631"></A>
 <B>:monochromize</B> <EM>&amp;optional (NTSC nil) </EM>[メソッド]
 
 <DL COMPACT>
@@ -919,7 +919,7 @@ RGB構成から明るさを計算し、新しい<TT>pixel-image</TT>を返す。
 <BR>
 <BR>
 
-<A NAME="49639"></A>
+<A NAME="49645"></A>
 <B>:HLS</B> [メソッド]
 
 <DL COMPACT>
@@ -931,7 +931,7 @@ RGB構成から明るさを計算し、新しい<TT>pixel-image</TT>を返す。
 <BR>
 <BR>
 
-<A NAME="49650"></A>
+<A NAME="49656"></A>
 <B>:RGB</B> [メソッド]
 
 <DL COMPACT>
@@ -943,7 +943,7 @@ RGB構成から明るさを計算し、新しい<TT>pixel-image</TT>を返す。
 <BR>
 <BR>
 
-<A NAME="49661"></A>
+<A NAME="49667"></A>
 <B>:halve</B> [メソッド]
 
 <DL COMPACT>
@@ -955,7 +955,7 @@ RGB構成から明るさを計算し、新しい<TT>pixel-image</TT>を返す。
 <BR>
 <BR>
 
-<A NAME="49672"></A>
+<A NAME="49678"></A>
 <B>:display</B> <EM>&amp;optional (win *color-viewer*) </EM>[メソッド]
 
 <DL COMPACT>
@@ -971,7 +971,7 @@ RGB構成から明るさを計算し、新しい<TT>pixel-image</TT>を返す。
 <BR>
 <BR>
 
-<A NAME="49684"></A>
+<A NAME="49690"></A>
 <B>:display-lut</B> <EM>&amp;optional (newlut1) (newlut2 newlut1) (newlut3 newlut2) </EM>[メソッド]
 
 <DL COMPACT>
@@ -985,9 +985,9 @@ RGB構成から明るさを計算し、新しい<TT>pixel-image</TT>を返す。
 <BR>
 <BR>
 
-<A NAME="49699"></A>
+<A NAME="49705"></A>
 <BR>
-89#89
+
 <BR>
 
 <DL COMPACT>
@@ -998,7 +998,7 @@ RGB構成から明るさを計算し、新しい<TT>pixel-image</TT>を返す。
 <BR>
 <BR>
 
-<A NAME="49710"></A>
+<A NAME="49716"></A>
 <B>:hex</B> <EM>&amp;optional (x 0) (y 0) (w 16) (h 16) (strm t) </EM>[メソッド]
 
 <DL COMPACT>
@@ -1010,7 +1010,7 @@ RGB構成から明るさを計算し、新しい<TT>pixel-image</TT>を返す。
 <BR>
 <BR>
 
-<A NAME="49720"></A>
+<A NAME="49726"></A>
 <B>:hex1</B> <EM>&amp;optional (x 0) (y 0) (w 64) (h 16) (strm t) </EM>[メソッド]
 
 <DL COMPACT>
@@ -1022,7 +1022,7 @@ RGB構成から明るさを計算し、新しい<TT>pixel-image</TT>を返す。
 <BR>
 <BR>
 
-<A NAME="49730"></A>
+<A NAME="49736"></A>
 <B>:prin1</B> <EM>strm &amp;rest msg </EM>[メソッド]
 
 <DL COMPACT>
@@ -1034,7 +1034,7 @@ RGB構成から明るさを計算し、新しい<TT>pixel-image</TT>を返す。
 <BR>
 <BR>
 
-<A NAME="49740"></A>
+<A NAME="49746"></A>
 <B>:init</B> <EM>width height &amp;optional r g b </EM>[メソッド]
 
 <DL COMPACT>
@@ -1065,9 +1065,9 @@ Xwindowに表示をすることができる。<PRE>
 <P>
 
  <BR>
-<BR> <A NAME="49751"></A>
+<BR> <A NAME="49757"></A>
 <BR>
-90#90
+
 <BR>
 
 <DL COMPACT>
@@ -1098,7 +1098,7 @@ Xwindowに表示をすることができる。<PRE>
 
 <P>
 
-<A NAME="49779"></A>
+<A NAME="49785"></A>
 <B>overlay-edge</B> <EM>ximg edgeimg </EM>[関数]
 
 <DL COMPACT>
@@ -1115,9 +1115,9 @@ Xwindowに表示可能な<B>pixel-image</B>である<EM>ximg</EM>の最上位に
 
 <P>
 
-<A NAME="49793"></A>
+<A NAME="49799"></A>
 <BR>
-91#91
+
 <BR>
 
 <DL COMPACT>
@@ -1138,7 +1138,7 @@ Xwindowに表示可能な<B>pixel-image</B>である<EM>ximg</EM>の最上位に
 
  <BR>
 <BR> <BR> 
-<A NAME="49806"></A>
+<A NAME="49812"></A>
 <BIG CLASS="XLARGE"><B>region </B></BIG> [クラス]  <PRE><TT>
   :super   <B>propertied-object</B> 
 <BR>  :slots 		 contour area intensity std-deviation 
@@ -1154,7 +1154,7 @@ Xwindowに表示可能な<B>pixel-image</B>である<EM>ximg</EM>の最上位に
 <BR>
 <BR>
 	<BR> 
-<A NAME="49824"></A>
+<A NAME="49830"></A>
 <BIG CLASS="XLARGE"><B>boundary </B></BIG> [クラス]  <PRE><TT>
   :super   <B>propertied-object</B> 
 <BR>  :slots 		 parent-region  hole  segments  intensity  topleft  bottomright  length 
@@ -1170,7 +1170,7 @@ Xwindowに表示可能な<B>pixel-image</B>である<EM>ximg</EM>の最上位に
 <BR>
 <BR>
 	<BR> 
-<A NAME="49842"></A>
+<A NAME="49848"></A>
 <BIG CLASS="XLARGE"><B>edge-segment </B></BIG> [クラス]  <PRE><TT>
   :super   <B>propertied-object</B> 
 <BR>  :slots 		 prev next   wing ; the other half-edge  intensity std-deviation   start end 
@@ -1186,7 +1186,7 @@ Xwindowに表示可能な<B>pixel-image</B>である<EM>ximg</EM>の最上位に
 <BR>
 <BR>
 	<BR> 
-<A NAME="49860"></A>
+<A NAME="49866"></A>
 <BIG CLASS="XLARGE"><B>line-edge-segment </B></BIG> [クラス]  <PRE><TT>
   :super   <B>edge-segment</B> 
 <BR>  :slots 		 la lb 
@@ -1202,7 +1202,7 @@ Xwindowに表示可能な<B>pixel-image</B>である<EM>ximg</EM>の最上位に
 <BR>
 <BR>
 	<BR> 
-<A NAME="49878"></A>
+<A NAME="49884"></A>
 <BIG CLASS="XLARGE"><B>curved-edge-segment </B></BIG> [クラス]  <PRE><TT>
   :super   <B>edge-segment</B> 
 <BR>  :slots 		 rotation total-rot side   a b c d e 
@@ -1220,7 +1220,7 @@ Xwindowに表示可能な<B>pixel-image</B>である<EM>ximg</EM>の最上位に
 
 <P>
 
-<A NAME="49895"></A>
+<A NAME="49901"></A>
 <B>draw-ellipse-segment</B> <EM>elp gc &amp;optional (vs *viewsurface*)
 				      (height (send vs :height))
 					(x 0) (y 0) </EM>[関数]
@@ -1235,7 +1235,7 @@ Xwindowに表示可能な<B>pixel-image</B>である<EM>ximg</EM>の最上位に
 <BR>
 <BR>
 
-<A NAME="49908"></A>
+<A NAME="49914"></A>
 <B>draw-line-segment</B> <EM>s &amp;optional gc (vs *viewsurface*)
 				(height (send vs :height))
 				(x 0) (y 0) </EM>[関数]
@@ -1250,9 +1250,9 @@ Xwindowに表示可能な<B>pixel-image</B>である<EM>ximg</EM>の最上位に
 <BR>
 <BR>
 
-<A NAME="49921"></A>
+<A NAME="49927"></A>
 <BR>
-92#92
+
 <BR>
 
 <DL COMPACT>
@@ -1264,7 +1264,7 @@ Xwindowに表示可能な<B>pixel-image</B>である<EM>ximg</EM>の最上位に
 <BR>
 <BR>
 
-<A NAME="49935"></A>
+<A NAME="49941"></A>
 <B>draw-boundary</B> <EM>b &amp;optional gc </EM>[関数]
 
 <DL COMPACT>
@@ -1277,7 +1277,7 @@ Xwindowに表示可能な<B>pixel-image</B>である<EM>ximg</EM>の最上位に
 <BR>
 <BR>
 
-<A NAME="49948"></A>
+<A NAME="49954"></A>
 <B>draw-boundaries</B> <EM>bs &amp;optional gc (step nil) </EM>[関数]
 
 <DL COMPACT>
@@ -1292,7 +1292,7 @@ Xwindowに表示可能な<B>pixel-image</B>である<EM>ximg</EM>の最上位に
 
 <P>
 
-<A NAME="49961"></A>
+<A NAME="49967"></A>
 <B>*red-gc*</B> [変数]
 
 <DL COMPACT>
@@ -1303,7 +1303,7 @@ Xwindowに表示可能な<B>pixel-image</B>である<EM>ximg</EM>の最上位に
 <BR>
 <BR>
 
-<A NAME="49972"></A>
+<A NAME="49978"></A>
 <B>*blue-gc*</B> [変数]
 
 <DL COMPACT>
@@ -1314,7 +1314,7 @@ Xwindowに表示可能な<B>pixel-image</B>である<EM>ximg</EM>の最上位に
 <BR>
 <BR>
 
-<A NAME="49983"></A>
+<A NAME="49989"></A>
 <B>*green-gc*</B> [変数]
 
 <DL COMPACT>
@@ -1325,7 +1325,7 @@ Xwindowに表示可能な<B>pixel-image</B>である<EM>ximg</EM>の最上位に
 <BR>
 <BR>
 
-<A NAME="49994"></A>
+<A NAME="50000"></A>
 <B>*yellow-gc*</B> [変数]
 
 <DL COMPACT>
@@ -1336,7 +1336,7 @@ Xwindowに表示可能な<B>pixel-image</B>である<EM>ximg</EM>の最上位に
 <BR>
 <BR>
 
-<A NAME="50005"></A>
+<A NAME="50011"></A>
 <B>*cyan-gc*</B> [変数]
 
 <DL COMPACT>
@@ -1350,13 +1350,13 @@ Xwindowに表示可能な<B>pixel-image</B>である<EM>ximg</EM>の最上位に
 <P>
              <P>
 
-<DIV ALIGN="CENTER"><A NAME="48754"></A>
+<DIV ALIGN="CENTER"><A NAME="48760"></A>
 <TABLE>
 <CAPTION ALIGN="BOTTOM"><STRONG>Figure 19:</STRONG>
 Edge Finder and Overlaied Edges</CAPTION>
 <TR><TD>
 <DIV ALIGN="CENTER">
-93#93
+
 
 </DIV></TD></TR>
 </TABLE>
@@ -1375,7 +1375,7 @@ Edge Finder and Overlaied Edges</CAPTION>
 
  <BR>
 <BR> <BR> 
-<A NAME="50017"></A>
+<A NAME="50023"></A>
 <BIG CLASS="XLARGE"><B>tracking-window </B></BIG> [クラス]  <PRE><TT>
   :super   <B>pixel-image</B> 
 <BR>  :slots 		 x-pos y-pos x-vel y-vel
@@ -1399,7 +1399,7 @@ update threshold half-pattern correlation
 
 <P>
 
-<A NAME="50034"></A>
+<A NAME="50040"></A>
 <B>:correlation</B> [メソッド]
 
 <DL COMPACT>
@@ -1411,7 +1411,7 @@ update threshold half-pattern correlation
 <BR>
 <BR>
 
-<A NAME="50044"></A>
+<A NAME="50050"></A>
 <B>:grab</B> <EM>&amp;optional (x x-pos) (y y-pos) (sampling 2) </EM>[メソッド]
 
 <DL COMPACT>
@@ -1423,7 +1423,7 @@ update threshold half-pattern correlation
 <BR>
 <BR>
 
-<A NAME="50055"></A>
+<A NAME="50061"></A>
 <B>:window-rectangle</B> <EM>val </EM>[メソッド]
 
 <DL COMPACT>
@@ -1435,7 +1435,7 @@ Xwindowの上に四角形を描く。
 <BR>
 <BR>
 
-<A NAME="50065"></A>
+<A NAME="50071"></A>
 <B>:rectangle</B> <EM>val </EM>[メソッド]
 
 <DL COMPACT>
@@ -1447,7 +1447,7 @@ Xwindowの上に四角形を描く。
 <BR>
 <BR>
 
-<A NAME="50075"></A>
+<A NAME="50081"></A>
 <B>:move</B> <EM>newpos &amp;aux (newx (aref newpos 0)) (newy (aref newpos 1)) </EM>[メソッド]
 
 <DL COMPACT>
@@ -1459,7 +1459,7 @@ Xwindowの上に四角形を描く。
 <BR>
 <BR>
 
-<A NAME="50086"></A>
+<A NAME="50092"></A>
 <B>:track</B> <EM>display-window &amp;optional th </EM>[メソッド]
 
 <DL COMPACT>
@@ -1471,7 +1471,7 @@ Xwindowの画像からこの画像をトラッキングする。
 <BR>
 <BR>
 
-<A NAME="50096"></A>
+<A NAME="50102"></A>
 <B>:serach</B> <EM>display-window &amp;optional th </EM>[メソッド]
 
 <DL COMPACT>
@@ -1483,7 +1483,7 @@ Xwindowの画像からこの画像を捜す。
 <BR>
 <BR>
 
-<A NAME="50106"></A>
+<A NAME="50112"></A>
 <B>:track-and-search</B> <EM>flag &amp;optional th </EM>[メソッド]
 
 <DL COMPACT>
@@ -1499,7 +1499,7 @@ Xwindowの画像からこの画像を捜す。
 
 <P>
 
-<A NAME="50116"></A>
+<A NAME="50122"></A>
 <B>:pos</B> [メソッド]
 
 <DL COMPACT>
@@ -1511,7 +1511,7 @@ windowの左上位置を返す。
 <BR>
 <BR>
 
-<A NAME="50126"></A>
+<A NAME="50132"></A>
 <B>:vel</B> [メソッド]
 
 <DL COMPACT>
@@ -1523,7 +1523,7 @@ windowの左上位置を返す。
 <BR>
 <BR>
 
-<A NAME="50136"></A>
+<A NAME="50142"></A>
 <B>:insidep</B> <EM>pos &amp;aux (x (aref pos 0)) (y (aref pos 1)) </EM>[メソッド]
 
 <DL COMPACT>
@@ -1535,7 +1535,7 @@ windowの左上位置を返す。
 <BR>
 <BR>
 
-<A NAME="50148"></A>
+<A NAME="50154"></A>
 <B>:update</B> <EM>&amp;optional (flag :get) </EM>[メソッド]
 
 <DL COMPACT>
@@ -1548,7 +1548,7 @@ windowの左上位置を返す。
 <BR>
 <BR>
 
-<A NAME="50162"></A>
+<A NAME="50168"></A>
 <B>:prin1</B> <EM>strm &amp;rest mesg </EM>[メソッド]
 
 <DL COMPACT>
@@ -1560,7 +1560,7 @@ windowの左上位置を返す。
 <BR>
 <BR>
 
-<A NAME="50173"></A>
+<A NAME="50179"></A>
 <B>:init</B> <EM>x y size win-size </EM>[メソッド]
 
 <DL COMPACT>
@@ -1586,7 +1586,7 @@ EusLispは、pgm(portable gray-scale map)とppm(portable pixmap)フォーマッ�
 <P>
 
  <BR>
-<BR> <A NAME="50184"></A>
+<BR> <A NAME="50190"></A>
 <B>read-pnm</B> <EM>f &amp;optional buf0 buf1 buf2 </EM>[関数]
 
 <DL COMPACT>
@@ -1601,7 +1601,7 @@ EusLispは、pgm(portable gray-scale map)とppm(portable pixmap)フォーマッ�
 <BR>
 <BR>
 
-<A NAME="50198"></A>
+<A NAME="50204"></A>
 <B>read-pnm-file</B> <EM>file &amp;optional buf0 buf1 buf2 </EM>[関数]
 
 <DL COMPACT>
@@ -1616,7 +1616,7 @@ EusLispは、pgm(portable gray-scale map)とppm(portable pixmap)フォーマッ�
 
 <P>
 
-<A NAME="50209"></A>
+<A NAME="50215"></A>
 <B>write-pgm</B> <EM>f image  &amp;optional (depth 255) </EM>[関数]
 
 <DL COMPACT>
@@ -1630,7 +1630,7 @@ EusLispは、pgm(portable gray-scale map)とppm(portable pixmap)フォーマッ�
 <BR>
 <BR>
 
-<A NAME="50223"></A>
+<A NAME="50229"></A>
 <B>write-ppm</B> <EM>f image  &amp;optional (depth 255) </EM>[関数]
 
 <DL COMPACT>
@@ -1643,7 +1643,7 @@ EusLispは、pgm(portable gray-scale map)とppm(portable pixmap)フォーマッ�
 <BR>
 <BR>
 
-<A NAME="50237"></A>
+<A NAME="50243"></A>
 <B>write-pnm</B> <EM>f img </EM>[関数]
 
 <DL COMPACT>
@@ -1657,7 +1657,7 @@ EusLispは、pgm(portable gray-scale map)とppm(portable pixmap)フォーマッ�
 <BR>
 <BR>
 
-<A NAME="50253"></A>
+<A NAME="50259"></A>
 <B>write-pnm-file</B> <EM>file img </EM>[関数]
 
 <DL COMPACT>
@@ -1672,7 +1672,7 @@ EusLispは、pgm(portable gray-scale map)とppm(portable pixmap)フォーマッ�
 
 <P>
 
-<A NAME="50266"></A>
+<A NAME="50272"></A>
 <B>image::read-raw-image</B> <EM>file &amp;optional (x 256) (y x) </EM>[関数]
 
 <DL COMPACT>
@@ -1685,7 +1685,7 @@ raw-imageの次元は、与えられた<EM>x</EM>と<EM>y</EM>に一致しなけ
 <BR>
 <BR>
 
-<A NAME="50278"></A>
+<A NAME="50284"></A>
 <B>image::write-raw-image</B> <EM>file imgvec </EM>[関数]
 
 <DL COMPACT>
@@ -1712,7 +1712,7 @@ raw-imageの次元は、与えられた<EM>x</EM>と<EM>y</EM>に一致しなけ
 </DIV>
 <!--End of Navigation Panel-->
 <ADDRESS>
-
+Travis CI User
 2016-12-19
 </ADDRESS>
 </BODY>
