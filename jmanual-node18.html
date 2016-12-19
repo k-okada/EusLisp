@@ -83,7 +83,7 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <P>
 
-<DIV ALIGN="CENTER"><A NAME="36614"></A>
+<DIV ALIGN="CENTER"><A NAME="36597"></A>
 <TABLE>
 <CAPTION ALIGN="BOTTOM"><STRONG>Figure 13:</STRONG>
 viewing座標系と投影画面</CAPTION>
@@ -100,7 +100,7 @@ viewing座標系と投影画面</CAPTION>
  <BR>
 <BR> <P>
 	<BR> 
-<A NAME="37191"></A>
+<A NAME="37174"></A>
 <BIG CLASS="XLARGE"><B>viewing </B></BIG> [クラス]  <PRE><TT>
   :super   <B>cascaded-coords</B> 
 <BR>  :slots 		 (viewcoords) 
@@ -118,7 +118,7 @@ viewing座標系と投影画面</CAPTION>
 
 <P>
 
-<A NAME="37208"></A>
+<A NAME="37191"></A>
 <B>:viewpoint</B> [メソッド]
 
 <DL COMPACT>
@@ -132,7 +132,7 @@ viewing座標系と投影画面</CAPTION>
 
 <P>
 
-<A NAME="37219"></A>
+<A NAME="37202"></A>
 <B>:view-direction</B> [メソッド]
 
 <DL COMPACT>
@@ -147,7 +147,7 @@ viewing座標系と投影画面</CAPTION>
 
 <P>
 
-<A NAME="37230"></A>
+<A NAME="37213"></A>
 <B>:view-up</B> [メソッド]
 
 <DL COMPACT>
@@ -160,7 +160,7 @@ y軸は、<B>viewport</B>の上方である。
 <BR>
 <BR>
 
-<A NAME="37242"></A>
+<A NAME="37225"></A>
 <B>:view-right</B> [メソッド]
 
 <DL COMPACT>
@@ -175,7 +175,7 @@ x軸は、<B>viewport</B>の水平右方向である。
 
 <P>
 
-<A NAME="37254"></A>
+<A NAME="37237"></A>
 <B>:look</B> <EM>from &amp;optional (to #f(0 0 0)) </EM>[メソッド]
 
 <DL COMPACT>
@@ -190,7 +190,7 @@ x軸は、<B>viewport</B>の水平右方向である。
 
 <P>
 
-<A NAME="37267"></A>
+<A NAME="37250"></A>
 <BR>
 
 <BR>
@@ -255,7 +255,7 @@ x軸に決定される。
  <BR>
 <BR> <P>
 	<BR> 
-<A NAME="37297"></A>
+<A NAME="37280"></A>
 <BIG CLASS="XLARGE"><B>projection </B></BIG> [クラス]  <PRE><TT>
   :super   <B>viewing</B> 
 <BR>  :slots 		 (screenx screeny hither yon projection-matrix) 
@@ -273,7 +273,7 @@ x軸に決定される。
 
 <P>
 
-<A NAME="37314"></A>
+<A NAME="37297"></A>
 <B>:projection</B> <EM>&amp;optional pmat </EM>[メソッド]
 
 <DL COMPACT>
@@ -287,7 +287,7 @@ x軸に決定される。
 <BR>
 <BR>
 
-<A NAME="37327"></A>
+<A NAME="37310"></A>
 <B>:project</B> <EM>vec </EM>[メソッド]
 
 <DL COMPACT>
@@ -301,7 +301,7 @@ x軸に決定される。
 <BR>
 <BR>
 
-<A NAME="37339"></A>
+<A NAME="37322"></A>
 <B>:project3</B> <EM>vec </EM>[メソッド]
 
 <DL COMPACT>
@@ -315,7 +315,7 @@ x軸に決定される。
 <BR>
 <BR>
 
-<A NAME="37351"></A>
+<A NAME="37334"></A>
 <B>:view</B> <EM>vec </EM>[メソッド]
 
 <DL COMPACT>
@@ -328,7 +328,7 @@ x軸に決定される。
 <BR>
 <BR>
 
-<A NAME="37362"></A>
+<A NAME="37345"></A>
 <B>:screen</B> <EM>xsize (&amp;optional (ysize xsize)) </EM>[メソッド]
 
 <DL COMPACT>
@@ -341,7 +341,7 @@ viewing画面の大きさを変える。
 <BR>
 <BR>
 
-<A NAME="37372"></A>
+<A NAME="37355"></A>
 <B>:hither</B> <EM>depth-to-front-clip-plane </EM>[メソッド]
 
 <DL COMPACT>
@@ -354,7 +354,7 @@ viewing画面の大きさを変える。
 <BR>
 <BR>
 
-<A NAME="37382"></A>
+<A NAME="37365"></A>
 <B>:yon</B> <EM>depth-to-back-clip-plane </EM>[メソッド]
 
 <DL COMPACT>
@@ -367,7 +367,7 @@ viewing画面の大きさを変える。
 <BR>
 <BR>
 
-<A NAME="37392"></A>
+<A NAME="37375"></A>
 <B>:aspect</B> <EM>&amp;oiptional ratio </EM>[メソッド]
 
 <DL COMPACT>
@@ -382,7 +382,7 @@ viewing画面の大きさを変える。
 <BR>
 <BR>
 
-<A NAME="37405"></A>
+<A NAME="37388"></A>
 <BR>
 
 <BR>
@@ -401,7 +401,7 @@ viewing画面の大きさを変える。
 
 <P>
 	<BR> 
-<A NAME="37420"></A>
+<A NAME="37403"></A>
 <BIG CLASS="XLARGE"><B>parallel-viewing </B></BIG> [クラス]  <PRE><TT>
   :super   <B>projection</B> 
 <BR>  :slots 		 () 
@@ -420,7 +420,7 @@ viewing画面の大きさを変える。
 
 <P>
 
-<A NAME="37438"></A>
+<A NAME="37421"></A>
 <B>:make-projection</B> [メソッド]
 
 <DL COMPACT>
@@ -433,7 +433,7 @@ viewing画面の大きさを変える。
 
 <P>
 	<BR> 
-<A NAME="37450"></A>
+<A NAME="37433"></A>
 <BIG CLASS="XLARGE"><B>perspective-viewing </B></BIG> [クラス]  <PRE><TT>
   :super   <B>projection</B> 
 <BR>  :slots 		 (viewdistance) 
@@ -451,7 +451,7 @@ viewing画面の大きさを変える。
 
 <P>
 
-<A NAME="37467"></A>
+<A NAME="37450"></A>
 <B>:make-projection</B> [メソッド]
 
 <DL COMPACT>
@@ -462,7 +462,7 @@ viewing画面の大きさを変える。
 <BR>
 <BR>
 
-<A NAME="37478"></A>
+<A NAME="37461"></A>
 <B>:ray</B> <EM>u v </EM>[メソッド]
 
 <DL COMPACT>
@@ -474,7 +474,7 @@ viewing画面の大きさを変える。
 <BR>
 <BR>
 
-<A NAME="37489"></A>
+<A NAME="37472"></A>
 <B>:viewdistance</B> <EM>&amp;optional vd </EM>[メソッド]
 
 <DL COMPACT>
@@ -490,7 +490,7 @@ viewing画面の大きさを変える。
 <BR>
 <BR>
 
-<A NAME="37506"></A>
+<A NAME="37489"></A>
 <B>:view-angle</B> <EM>&amp;optional ang </EM>[メソッド]
 
 <DL COMPACT>
@@ -507,7 +507,7 @@ viewing画面の大きさを変える。
 <BR>
 <BR>
 
-<A NAME="37518"></A>
+<A NAME="37501"></A>
 <B>:zoom</B> <EM>&amp;optional scale </EM>[メソッド]
 
 <DL COMPACT>
@@ -522,7 +522,7 @@ viewing画面の大きさを変える。
 <BR>
 <BR>
 
-<A NAME="37533"></A>
+<A NAME="37516"></A>
 <B>:lookaround</B> <EM>alfa beta </EM>[メソッド]
 
 <DL COMPACT>
@@ -540,7 +540,7 @@ viewing座標系は、ワールド座標系のz軸回りに<EM>alfa</EM>ラジ�
 <BR>
 <BR>
 
-<A NAME="37549"></A>
+<A NAME="37532"></A>
 <B>:look-body</B> <EM>bodies </EM>[メソッド]
 
 <DL COMPACT>
@@ -556,7 +556,7 @@ viewing座標系は、ワールド座標系のz軸回りに<EM>alfa</EM>ラジ�
 
 <P>
 
-<A NAME="37561"></A>
+<A NAME="37544"></A>
 <B>:init</B> <EM>&amp;key (:viewdistance 100.0) &amp;allow-other-keys </EM>[メソッド]
 
 <DL COMPACT>
@@ -601,7 +601,7 @@ y軸が下方向に伸びているとしている。
  <BR>
 <BR> <P>
 
-<A NAME="37572"></A>
+<A NAME="37555"></A>
 <B>homo-viewport-clip</B> <EM>v1 v2 </EM>[関数]
 
 <DL COMPACT>
@@ -623,7 +623,7 @@ NILを返す。
 
 <P>
 	<BR> 
-<A NAME="37586"></A>
+<A NAME="37569"></A>
 <BIG CLASS="XLARGE"><B>viewport </B></BIG> [クラス]  <PRE><TT>
   :super   <B>coordinates</B> 
 <BR>  :slots 		 
@@ -643,7 +643,7 @@ NILを返す。
 
 <P>
 
-<A NAME="37605"></A>
+<A NAME="37588"></A>
 <B>:xcenter</B> <EM>&amp;optional xcenter </EM>[メソッド]
 
 <DL COMPACT>
@@ -656,7 +656,7 @@ NILを返す。
 <BR>
 <BR>
 
-<A NAME="37617"></A>
+<A NAME="37600"></A>
 <B>:ycenter</B> <EM>&amp;optional ycenter </EM>[メソッド]
 
 <DL COMPACT>
@@ -668,7 +668,7 @@ NILを返す。
 <BR>
 <BR>
 
-<A NAME="37628"></A>
+<A NAME="37611"></A>
 <B>:size</B> <EM>&amp;optional size </EM>[メソッド]
 
 <DL COMPACT>
@@ -682,7 +682,7 @@ NILを返す。
 
 <P>
 
-<A NAME="37639"></A>
+<A NAME="37622"></A>
 <B>:width</B> <EM>&amp;optional width </EM>[メソッド]
 
 <DL COMPACT>
@@ -694,7 +694,7 @@ NILを返す。
 <BR>
 <BR>
 
-<A NAME="37651"></A>
+<A NAME="37634"></A>
 <B>:height</B> <EM>&amp;optional height </EM>[メソッド]
 
 <DL COMPACT>
@@ -706,7 +706,7 @@ NILを返す。
 <BR>
 <BR>
 
-<A NAME="37663"></A>
+<A NAME="37646"></A>
 <B>:screen-point-to-ndc</B> <EM>p </EM>[メソッド]
 
 <DL COMPACT>
@@ -719,7 +719,7 @@ NILを返す。
 <BR>
 <BR>
 
-<A NAME="37675"></A>
+<A NAME="37658"></A>
 <B>:ndc-point-to-screen</B> <EM>p </EM>[メソッド]
 
 <DL COMPACT>
@@ -731,7 +731,7 @@ NILを返す。
 <BR>
 <BR>
 
-<A NAME="37687"></A>
+<A NAME="37670"></A>
 <B>:ndc-line-to-screen</B> <EM>p1 p2 &amp;optional (do-clip t) </EM>[メソッド]
 
 <DL COMPACT>
@@ -745,7 +745,7 @@ NILを返す。
 <BR>
 <BR>
 
-<A NAME="37700"></A>
+<A NAME="37683"></A>
 <B>:init</B> <EM>&amp;key (:xcenter 100) (:ycenter 100) (:size 100)
 (width 100) (height 100) </EM>[メソッド]
 
@@ -779,7 +779,7 @@ Viewer</A>
  <BR>
 <BR> <P>
 	<BR> 
-<A NAME="37712"></A>
+<A NAME="37695"></A>
 <BIG CLASS="XLARGE"><B>viewer </B></BIG> [クラス]  <PRE><TT>
   :super   <B>object</B> 
 <BR>  :slots 		 (eye :type viewint) 
@@ -799,7 +799,7 @@ Viewer</A>
 
 <P>
 
-<A NAME="37729"></A>
+<A NAME="37712"></A>
 <B>:viewing</B> <EM>&amp;rest msg </EM>[メソッド]
 
 <DL COMPACT>
@@ -812,7 +812,7 @@ Viewer</A>
 <BR>
 <BR>
 
-<A NAME="37745"></A>
+<A NAME="37728"></A>
 <B>:viewport</B> <EM>&amp;rest msg </EM>[メソッド]
 
 <DL COMPACT>
@@ -825,7 +825,7 @@ Viewer</A>
 <BR>
 <BR>
 
-<A NAME="37761"></A>
+<A NAME="37744"></A>
 <B>:viewsurface</B> <EM>&amp;rest msg </EM>[メソッド]
 
 <DL COMPACT>
@@ -838,7 +838,7 @@ Viewer</A>
 <BR>
 <BR>
 
-<A NAME="37777"></A>
+<A NAME="37760"></A>
 <B>:adjust-viewport</B> [メソッド]
 
 <DL COMPACT>
@@ -851,7 +851,7 @@ Viewer</A>
 <BR>
 <BR>
 
-<A NAME="37791"></A>
+<A NAME="37774"></A>
 <B>:resize</B> <EM>width height </EM>[メソッド]
 
 <DL COMPACT>
@@ -864,7 +864,7 @@ Viewer</A>
 <BR>
 <BR>
 
-<A NAME="37805"></A>
+<A NAME="37788"></A>
 <B>:draw-line-ndc</B> <EM>p1 p2 &amp;optional (do-clip t) </EM>[メソッド]
 
 <DL COMPACT>
@@ -876,7 +876,7 @@ NDCの中に定義される2つの端点<EM>p1,p2</EM>を結ぶ線を描く。
 <BR>
 <BR>
 
-<A NAME="37816"></A>
+<A NAME="37799"></A>
 <B>:draw-polyline-ndc</B> <EM>polylines &amp;optional color </EM>[メソッド]
 
 <DL COMPACT>
@@ -888,7 +888,7 @@ NDCの中に定義される端点を結ぶ多角形を描く。
 <BR>
 <BR>
 
-<A NAME="37826"></A>
+<A NAME="37809"></A>
 <B>:draw-star-ndc</B> <EM>center &amp;optional (size 0.01) color </EM>[メソッド]
 
 <DL COMPACT>
@@ -900,7 +900,7 @@ NDCの中に十字マークを描く。
 <BR>
 <BR>
 
-<A NAME="37836"></A>
+<A NAME="37819"></A>
 <B>:draw-box-ndc</B> <EM>low-left up-right &amp;optional color </EM>[メソッド]
 
 <DL COMPACT>
@@ -912,7 +912,7 @@ NDCの中に四角形を描く。
 <BR>
 <BR>
 
-<A NAME="37846"></A>
+<A NAME="37829"></A>
 <B>:draw-arc-ndc</B> <EM>point width height angle1 angle2 &amp;optional color </EM>[メソッド]
 
 <DL COMPACT>
@@ -926,7 +926,7 @@ NDCの中に円弧を描く。
 <BR>
 <BR>
 
-<A NAME="37859"></A>
+<A NAME="37842"></A>
 <B>:draw-fill-arc-ndc</B> <EM>point width height angle1 angle2 &amp;optional color </EM>[メソッド]
 
 <DL COMPACT>
@@ -938,7 +938,7 @@ NDCの中に塗り潰し円弧を描く。
 <BR>
 <BR>
 
-<A NAME="37869"></A>
+<A NAME="37852"></A>
 <B>:draw-string-ndc</B> <EM>position string &amp;optional color </EM>[メソッド]
 
 <DL COMPACT>
@@ -950,7 +950,7 @@ NDCの中に定義される<EM>position</EM>に<EM>string</EM>を描く。
 <BR>
 <BR>
 
-<A NAME="37881"></A>
+<A NAME="37864"></A>
 <B>:draw-image-string-ndc</B> <EM>position string &amp;optional color </EM>[メソッド]
 
 <DL COMPACT>
@@ -961,7 +961,7 @@ NDCの中に定義される<EM>position</EM>に<EM>string</EM>を描く。
 <BR>
 <BR>
 
-<A NAME="37892"></A>
+<A NAME="37875"></A>
 <B>:draw-rectangle-ndc</B> <EM>position width height &amp;optional color </EM>[メソッド]
 
 <DL COMPACT>
@@ -972,7 +972,7 @@ NDCの中に定義される<EM>position</EM>に<EM>string</EM>を描く。
 <BR>
 <BR>
 
-<A NAME="37903"></A>
+<A NAME="37886"></A>
 <B>:draw-fill-rectangle-ndc</B> <EM>point width height &amp;optional color </EM>[メソッド]
 
 <DL COMPACT>
@@ -983,7 +983,7 @@ NDCの中に定義される<EM>position</EM>に<EM>string</EM>を描く。
 <BR>
 <BR>
 
-<A NAME="37914"></A>
+<A NAME="37897"></A>
 <B>:draw-line</B> <EM>p1 p2 &amp;optional (do-clip t) </EM>[メソッド]
 
 <DL COMPACT>
@@ -995,7 +995,7 @@ NDCの中に定義される<EM>position</EM>に<EM>string</EM>を描く。
 <BR>
 <BR>
 
-<A NAME="37925"></A>
+<A NAME="37908"></A>
 <B>:draw-star</B> <EM>position &amp;optional (size 0.01) color </EM>[メソッド]
 
 <DL COMPACT>
@@ -1007,7 +1007,7 @@ NDCの中に定義される<EM>position</EM>に<EM>string</EM>を描く。
 <BR>
 <BR>
 
-<A NAME="37936"></A>
+<A NAME="37919"></A>
 <B>:draw-polyline</B> <EM>vlist &amp;optional color </EM>[メソッド]
 
 <DL COMPACT>
@@ -1019,7 +1019,7 @@ NDCの中に定義される<EM>position</EM>に<EM>string</EM>を描く。
 <BR>
 <BR>
 
-<A NAME="37947"></A>
+<A NAME="37930"></A>
 <B>:draw-box</B> <EM>center &amp;optional (size 0.01) </EM>[メソッド]
 
 <DL COMPACT>
@@ -1031,7 +1031,7 @@ NDCの中に定義される<EM>position</EM>に<EM>string</EM>を描く。
 <BR>
 <BR>
 
-<A NAME="37958"></A>
+<A NAME="37941"></A>
 <B>:draw-arrow</B> <EM>p1 p2 </EM>[メソッド]
 
 <DL COMPACT>
@@ -1043,7 +1043,7 @@ NDCの中に定義される<EM>position</EM>に<EM>string</EM>を描く。
 <BR>
 <BR>
 
-<A NAME="37970"></A>
+<A NAME="37953"></A>
 <B>:draw-edge</B> <EM>edge </EM>[メソッド]
 
 <DL COMPACT>
@@ -1054,7 +1054,7 @@ NDCの中に定義される<EM>position</EM>に<EM>string</EM>を描く。
 <BR>
 <BR>
 
-<A NAME="37981"></A>
+<A NAME="37964"></A>
 <B>:draw-edge-image</B> <EM>edge-image </EM>[メソッド]
 
 <DL COMPACT>
@@ -1065,7 +1065,7 @@ NDCの中に定義される<EM>position</EM>に<EM>string</EM>を描く。
 <BR>
 <BR>
 
-<A NAME="37992"></A>
+<A NAME="37975"></A>
 <B>:draw-faces</B> <EM>face-list &amp;optional (normal-clip nil) </EM>[メソッド]
 
 <DL COMPACT>
@@ -1076,7 +1076,7 @@ NDCの中に定義される<EM>position</EM>に<EM>string</EM>を描く。
 <BR>
 <BR>
 
-<A NAME="38003"></A>
+<A NAME="37986"></A>
 <B>:draw-body</B> <EM>body &amp;optional (normal-clip nil) </EM>[メソッド]
 
 <DL COMPACT>
@@ -1087,7 +1087,7 @@ NDCの中に定義される<EM>position</EM>に<EM>string</EM>を描く。
 <BR>
 <BR>
 
-<A NAME="38014"></A>
+<A NAME="37997"></A>
 <B>:draw-axis</B> <EM>coordinates &amp;optional size </EM>[メソッド]
 
 <DL COMPACT>
@@ -1099,7 +1099,7 @@ NDCの中に定義される<EM>position</EM>に<EM>string</EM>を描く。
 <BR>
 <BR>
 
-<A NAME="38026"></A>
+<A NAME="38009"></A>
 <B>:draw</B> <EM>&amp;rest things </EM>[メソッド]
 
 <DL COMPACT>
@@ -1120,7 +1120,7 @@ NDCの中に定義される<EM>position</EM>に<EM>string</EM>を描く。
 <BR>
 <BR>
 
-<A NAME="38046"></A>
+<A NAME="38029"></A>
 <B>:erase</B> <EM>&amp;rest things </EM>[メソッド]
 
 <DL COMPACT>
@@ -1132,7 +1132,7 @@ NDCの中に定義される<EM>position</EM>に<EM>string</EM>を描く。
 <BR>
 <BR>
 
-<A NAME="38057"></A>
+<A NAME="38040"></A>
 <B>:init</B> <EM>&amp;key :viewing :viewport :viewsurface </EM>[メソッド]
 
 <DL COMPACT>
@@ -1147,7 +1147,7 @@ NDCの中に定義される<EM>position</EM>に<EM>string</EM>を描く。
 
 <P>
 
-<A NAME="38072"></A>
+<A NAME="38055"></A>
 <BR>
 
 <BR>
@@ -1173,7 +1173,7 @@ NDCの中に定義される<EM>position</EM>に<EM>string</EM>を描く。
  <BR>
 <BR> <P>
 
-<A NAME="38085"></A>
+<A NAME="38068"></A>
 <B>draw</B> <EM>[viewer] &amp;rest thing </EM>[関数]
 
 <DL COMPACT>
@@ -1190,7 +1190,7 @@ NDCの中に定義される<EM>position</EM>に<EM>string</EM>を描く。
 
 <P>
 
-<A NAME="38099"></A>
+<A NAME="38082"></A>
 <B>draw-axis</B> <EM>[viewer] [size] &amp;rest thing </EM>[関数]
 
 <DL COMPACT>
@@ -1205,7 +1205,7 @@ NDCの中に定義される<EM>position</EM>に<EM>string</EM>を描く。
 
 <P>
 
-<A NAME="38113"></A>
+<A NAME="38096"></A>
 <B>draw-arrow</B> <EM>p1 p2 </EM>[関数]
 
 <DL COMPACT>
@@ -1219,7 +1219,7 @@ NDCの中に定義される<EM>position</EM>に<EM>string</EM>を描く。
 
 <P>
 
-<A NAME="38126"></A>
+<A NAME="38109"></A>
 <B>hid</B> <EM>[viewer] &amp;rest thing  </EM>[関数]
 
 <DL COMPACT>
@@ -1233,7 +1233,7 @@ NDCの中に定義される<EM>position</EM>に<EM>string</EM>を描く。
 
 <P>
 
-<A NAME="38140"></A>
+<A NAME="38123"></A>
 <B>hidd</B> <EM>[viewer] &amp;rest thing  </EM>[関数]
 
 <DL COMPACT>
@@ -1247,7 +1247,7 @@ NDCの中に定義される<EM>position</EM>に<EM>string</EM>を描く。
 
 <P>
 
-<A NAME="38151"></A>
+<A NAME="38134"></A>
 <B>hid2</B> <EM>body-list viewing </EM>[関数]
 
 <DL COMPACT>
@@ -1262,7 +1262,7 @@ edge-imageオブジェクトで表現される陰線処理画像を生成する�
 
 <P>
 
-<A NAME="38162"></A>
+<A NAME="38145"></A>
 <BR>
 
 <BR>
@@ -1286,7 +1286,7 @@ edge-imageオブジェクトで表現される陰線処理画像を生成する�
 
 <P>
 
-<A NAME="38187"></A>
+<A NAME="38170"></A>
 <B>make-light-source</B> <EM>pos &amp;optional (intensity 1.0) </EM>[関数]
 
 <DL COMPACT>
@@ -1303,7 +1303,7 @@ edge-imageオブジェクトで表現される陰線処理画像を生成する�
 
 <P>
 
-<A NAME="38200"></A>
+<A NAME="38183"></A>
 <B>tektro</B> <EM>file &amp;rest forms </EM>[マクロ]
 
 <DL COMPACT>
@@ -1319,7 +1319,7 @@ edge-imageオブジェクトで表現される陰線処理画像を生成する�
 
 <P>
 
-<A NAME="38214"></A>
+<A NAME="38197"></A>
 <B>kdraw</B> <EM>file &amp;rest forms </EM>[マクロ]
 
 <DL COMPACT>
@@ -1349,7 +1349,7 @@ EusViewer windowに書いたものと同一の図形を見ることができる�
 
 <P>
 
-<A NAME="38245"></A>
+<A NAME="38228"></A>
 <B>pictdraw</B> <EM>file &amp;rest forms </EM>[マクロ]
 
 <DL COMPACT>
@@ -1374,7 +1374,7 @@ pictdraw-viewsurfaceを作り、<TT>*viewer*</TT>のviewportに置き換え、
 
 <P>
 
-<A NAME="38268"></A>
+<A NAME="38251"></A>
 <B>hls2rgb</B> <EM>hue lightness saturation &amp;optional (range 255) </EM>[関数]
 
 <DL COMPACT>
@@ -1402,7 +1402,7 @@ HLSでは、鮮明な(rainbow)色は<TT>lightness=0.5</TT>で定義されてい�
 <BR>
 <BR>
 
-<A NAME="38290"></A>
+<A NAME="38273"></A>
 <B>rgb2hls</B> <EM>red green blue &amp;optional (range 255) </EM>[関数]
 
 <DL COMPACT>
@@ -1418,7 +1418,7 @@ RGBの色表現を、HLS表現に変換する。
              <P>
 
 <H2><A NAME="SECTION03056000000000000000"></A>
-<A NAME="37076"></A>
+<A NAME="37059"></A>
 <BR>
 アニメーション
 </H2>
@@ -1455,7 +1455,7 @@ EusLispのアニメーションは、グラフィックアクセラレータを�
 <P>
 
  <BR>
-<BR> <A NAME="38300"></A>
+<BR> <A NAME="38283"></A>
 <B>pixmap-animation</B> <EM>count &amp;rest forms </EM>[マクロ]
 
 <DL COMPACT>
@@ -1469,7 +1469,7 @@ EusLispのアニメーションは、グラフィックアクセラレータを�
 <BR>
 <BR>
 
-<A NAME="38315"></A>
+<A NAME="38298"></A>
 <B>playback-pixmaps</B> <EM>pixmaps &amp;optional (surf *viewsurface*) </EM>[関数]
 
 <DL COMPACT>
@@ -1484,7 +1484,7 @@ EusLispのアニメーションは、グラフィックアクセラレータを�
 
 <P>
 
-<A NAME="38328"></A>
+<A NAME="38311"></A>
 <B>hid-lines-animation</B> <EM>count &amp;rest forms </EM>[マクロ]
 
 <DL COMPACT>
@@ -1499,7 +1499,7 @@ EusLispのアニメーションは、グラフィックアクセラレータを�
 <BR>
 <BR>
 
-<A NAME="38344"></A>
+<A NAME="38327"></A>
 <B>playback-hid-lines</B> <EM>lines &amp;optional (view *viewer*) </EM>[関数]
 
 <DL COMPACT>
@@ -1516,7 +1516,7 @@ EusLispのアニメーションは、グラフィックアクセラレータを�
 
 <P>
 
-<A NAME="38356"></A>
+<A NAME="38339"></A>
 <B>list-visible-segments</B> <EM>hid-result </EM>[関数]
 
 <DL COMPACT>
