@@ -73,7 +73,7 @@ the interpreting performance.
 <P>
 
  <BR>
-<BR> <A NAME="2196"></A>
+<BR> <A NAME="2201"></A>
 <B>and</B> <EM>{form}* </EM>[special]
 
 <DL COMPACT>
@@ -88,7 +88,7 @@ If all forms are evaluated to non-NIL, the last value is returned.
 
 <P>
 
-<A NAME="2207"></A>
+<A NAME="2212"></A>
 <B>or</B> <EM>{form}* </EM>[special]
 
 <DL COMPACT>
@@ -104,7 +104,7 @@ NIL is returned.
 
 <P>
 
-<A NAME="2218"></A>
+<A NAME="2223"></A>
 <B>if</B> <EM>test then [else] </EM>[special]
 
 <DL COMPACT>
@@ -120,7 +120,7 @@ they must be grouped by <B>progn</B>.
 
 <P>
 
-<A NAME="2234"></A>
+<A NAME="2239"></A>
 <B>when</B> <EM>test forms </EM>[macro]
 
 <DL COMPACT>
@@ -139,7 +139,7 @@ cannot have the <EM>else</EM> forms.
 
 <P>
 
-<A NAME="2252"></A>
+<A NAME="2257"></A>
 <B>unless</B> <EM>test forms </EM>[macro]
 
 <DL COMPACT>
@@ -153,7 +153,7 @@ is equivalent to <TT>(when (not <EM>test</EM>) . <EM>forms</EM>)</TT>.
 
 <P>
 
-<A NAME="2265"></A>
+<A NAME="2270"></A>
 <B>cond</B> <EM>(test {form}*)* </EM>[special]
 
 <DL COMPACT>
@@ -174,7 +174,7 @@ In the latter case, <B>cond</B> returns NIL.
 
 <P>
 
-<A NAME="2283"></A>
+<A NAME="2288"></A>
 <B>case</B> <EM>key {({label <SPAN CLASS="MATH"><IMG
  WIDTH="9" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
  SRC="manual-img5.png"
@@ -202,7 +202,7 @@ Sequencing and Lets</A>
 <P>
 
  <BR>
-<BR> <A NAME="2301"></A>
+<BR> <A NAME="2306"></A>
 <B>prog1</B> <EM>form1 &amp;rest forms </EM>[function]
 
 <DL COMPACT>
@@ -217,7 +217,7 @@ and the value returned by <EM>form1</EM> is returned as the value of <B>prog1</B
 
 <P>
 
-<A NAME="2315"></A>
+<A NAME="2320"></A>
 <B>progn</B> <EM>{form}* </EM>[special]
 
 <DL COMPACT>
@@ -238,7 +238,7 @@ This is useful for a macro which expands to a series of
 
 <P>
 
-<A NAME="2329"></A>
+<A NAME="2334"></A>
 <B>setf</B> <EM>{access-form value}* </EM>[macro]
 
 <DL COMPACT>
@@ -252,7 +252,7 @@ assigns <EM>value</EM> to a generalized-variable <EM>access-form</EM>.
 
 <P>
 
-<A NAME="2341"></A>
+<A NAME="2346"></A>
 <B>let</B> <EM>({var <SPAN CLASS="MATH"><IMG
  WIDTH="9" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
  SRC="manual-img5.png"
@@ -272,7 +272,7 @@ All <EM>value</EM>s are evaluated and assigned to <EM>var</EM>s in parallel, i.e
 
 <P>
 
-<A NAME="2354"></A>
+<A NAME="2359"></A>
 <B>let*</B> <EM>({var <SPAN CLASS="MATH"><IMG
  WIDTH="9" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
  SRC="manual-img5.png"
@@ -298,7 +298,7 @@ Local Functions</A>
 </H2>
 
  <BR>
-<BR> <A NAME="2367"></A>
+<BR> <A NAME="2372"></A>
 <B>flet</B> <EM>({(fname lambda-list . body)}*) {form}* </EM>[special]
 
 <DL COMPACT>
@@ -312,7 +312,7 @@ defines local functions.
 
 <P>
 
-<A NAME="2377"></A>
+<A NAME="2382"></A>
 <B>labels</B> <EM>({(fname lambda-list . body)}*) {form}* </EM>[special]
 
 <DL COMPACT>
@@ -334,7 +334,7 @@ Blocks and Exits</A>
 </H2>
 
  <BR>
-<BR> <A NAME="2391"></A>
+<BR> <A NAME="2396"></A>
 <B>block</B> <EM>tag {form}* </EM>[special]
 
 <DL COMPACT>
@@ -349,7 +349,7 @@ makes a lexical block from which you can exit by <B>return-from</B>.
 
 <P>
 
-<A NAME="2403"></A>
+<A NAME="2408"></A>
 <B>return-from</B> <EM>tag value </EM>[special]
 
 <DL COMPACT>
@@ -366,7 +366,7 @@ surrounding the entire body.
 
 <P>
 
-<A NAME="2415"></A>
+<A NAME="2420"></A>
 <B>return</B> <EM>value </EM>[macro]
 
 <DL COMPACT>
@@ -382,7 +382,7 @@ and <B>dotimes</B> which implicitly establish blocks labeled NIL.
 
 <P>
 
-<A NAME="2429"></A>
+<A NAME="2434"></A>
 <B>catch</B> <EM>tag {form}* </EM>[special]
 
 <DL COMPACT>
@@ -398,7 +398,7 @@ The list of all visible catch tags can be obtained by <TT>sys:list-all-catchers<
 
 <P>
 
-<A NAME="2442"></A>
+<A NAME="2447"></A>
 <B>throw</B> <EM>tag value </EM>[special]
 
 <DL COMPACT>
@@ -413,7 +413,7 @@ exits and returns <EM>value</EM> from a catch block.
 
 <P>
 
-<A NAME="2455"></A>
+<A NAME="2460"></A>
 <B>unwind-protect</B> <EM>protected-form {cleanup-form}* </EM>[special]
 
 <DL COMPACT>
@@ -443,7 +443,7 @@ Iteration</A>
  <BR>
 <BR> <P>
 
-<A NAME="2475"></A>
+<A NAME="2480"></A>
 <B>while</B> <EM>test {form}* </EM>[special]
 
 <DL COMPACT>
@@ -474,7 +474,7 @@ To jump to next iteration, you can use following syntax with <B>tagbody</B> and 
 
 <P>
 
-<A NAME="2492"></A>
+<A NAME="2497"></A>
 <B>tagbody</B> <EM>{tag <SPAN CLASS="MATH"><IMG
  WIDTH="9" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
  SRC="manual-img5.png"
@@ -492,7 +492,7 @@ You can use <B>go</B> only in <B>tagbody</B>.
 
 <P>
 
-<A NAME="2506"></A>
+<A NAME="2511"></A>
 <B>go</B> <EM>tag </EM>[special]
 
 <DL COMPACT>
@@ -509,7 +509,7 @@ across the lexical scope is inhibited.
 
 <P>
 
-<A NAME="2520"></A>
+<A NAME="2525"></A>
 <B>prog</B> <EM>({var <SPAN CLASS="MATH"><IMG
  WIDTH="9" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
  SRC="manual-img5.png"
@@ -534,7 +534,7 @@ across the lexical scope is inhibited.
 
 <P>
 
-<A NAME="2540"></A>
+<A NAME="2545"></A>
 <B>do</B> <EM>({(var init [next])}*) (endtest [result]){declare} {form}
 * </EM>[macro]
 
@@ -554,7 +554,7 @@ reassigned to each <EM>var</EM>, and the next iteration starts.
 
 <P>
 
-<A NAME="2560"></A>
+<A NAME="2565"></A>
 <B>do*</B> <EM>({var init [next]}*) (endtest [result]){declare} {form}* </EM>[macro]
 
 <DL COMPACT>
@@ -568,7 +568,7 @@ and <EM>next</EM>, and their assignment to <EM>var</EM> occur sequentially.
 
 <P>
 
-<A NAME="2575"></A>
+<A NAME="2580"></A>
 <B>dotimes</B> <EM>(var count [result]) {forms}* </EM>[macro]
 
 <DL COMPACT>
@@ -585,7 +585,7 @@ In each evaluation, <EM>var</EM> increments from integer zero to
 
 <P>
 
-<A NAME="2590"></A>
+<A NAME="2595"></A>
 <B>dolist</B> <EM>(var list [result]) {forms}* </EM>[macro]
 
 <DL COMPACT>
@@ -604,7 +604,7 @@ and no new parameter binding is needed.
 
 <P>
 
-<A NAME="2606"></A>
+<A NAME="2611"></A>
 <B>until</B> <EM>condition {forms}* </EM>[macro]
 
 <DL COMPACT>
@@ -618,7 +618,7 @@ evaluates forms until <EM>condition</EM> holds.
 
 <P>
 
-<A NAME="2617"></A>
+<A NAME="2622"></A>
 <B>loop</B> <EM>{forms}* </EM>[macro]
 
 <DL COMPACT>
@@ -647,7 +647,7 @@ simulated by <B>subclassp</B> and <B>derivedp</B>.
  <BR>
 <BR> <P>
 
-<A NAME="2631"></A>
+<A NAME="2636"></A>
 <B>eq</B> <EM>obj1 obj2 </EM>[function]
 
 <DL COMPACT>
@@ -662,7 +662,7 @@ Examples: <TT>(eq 'a 'a)</TT> is T, <TT>(eq 1 1)</TT> is T,
 <BR>
 <BR>
 
-<A NAME="2647"></A>
+<A NAME="2652"></A>
 <B>eql</B> <EM>obj1 obj2 </EM>[function]
 
 <DL COMPACT>
@@ -675,7 +675,7 @@ immediate values.
 <BR>
 <BR>
 
-<A NAME="2659"></A>
+<A NAME="2664"></A>
 <B>equal</B> <EM>obj1 obj2 </EM>[function]
 
 <DL COMPACT>
@@ -690,7 +690,7 @@ If there is recursive reference in <EM>obj1</EM> or <EM>obj2</EM>,
 <BR>
 <BR>
 
-<A NAME="2672"></A>
+<A NAME="2677"></A>
 <B>superequal</B> <EM>obj1 obj2 </EM>[function]
 
 <DL COMPACT>
@@ -704,7 +704,7 @@ Slow but robust <B>equal</B>, since <B>superequal</B> checks circular reference.
 
 <P>
 
-<A NAME="2684"></A>
+<A NAME="2689"></A>
 <B>null</B> <EM>object </EM>[function]
 
 <DL COMPACT>
@@ -716,7 +716,7 @@ Equivalent to (eq <EM>object</EM> nil).
 <BR>
 <BR>
 
-<A NAME="2696"></A>
+<A NAME="2701"></A>
 <B>not</B> <EM>object </EM>[function]
 
 <DL COMPACT>
@@ -728,7 +728,7 @@ Equivalent to (eq <EM>object</EM> nil).
 <BR>
 <BR>
 
-<A NAME="2708"></A>
+<A NAME="2713"></A>
 <B>atom</B> <EM>object </EM>[function]
 
 <DL COMPACT>
@@ -743,7 +743,7 @@ etc., no matter what complex objects they are.
 <BR>
 <BR>
 
-<A NAME="2720"></A>
+<A NAME="2725"></A>
 <B>every</B> <EM>pred &amp;rest args </EM>[function]
 
 <DL COMPACT>
@@ -756,7 +756,7 @@ returns T if all <EM>args</EM> return T for <EM>pred</EM>.
 <BR>
 <BR>
 
-<A NAME="2735"></A>
+<A NAME="2740"></A>
 <B>some</B> <EM>pred &amp;rest args </EM>[function]
 
 <DL COMPACT>
@@ -769,7 +769,7 @@ returns T if at least one of <EM>args</EM> return T for <EM>pred</EM>.
 <BR>
 <BR>
 
-             <A NAME="2750"></A>
+             <A NAME="2755"></A>
 <B>functionp</B> <EM>object </EM>[function]
 
 <DL COMPACT>
@@ -787,7 +787,7 @@ Examples: (functionp 'car) = T, (functionp 'do) = NIL
 <BR>
 <BR>
 
-<A NAME="2767"></A>
+<A NAME="2772"></A>
 <B>compiled-function-p</B> <EM>object </EM>[function]
 
 <DL COMPACT>

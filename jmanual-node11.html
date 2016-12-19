@@ -104,7 +104,7 @@ echo-streamとconcatenated-streamは利用できない。
  <BR>
 <BR> <P>
 
-<A NAME="15463"></A>
+<A NAME="15457"></A>
 <B>streamp</B> <EM>object </EM>[関数]
 
 <DL COMPACT>
@@ -117,7 +117,7 @@ echo-streamとconcatenated-streamは利用できない。
 <BR>
 <BR>
 
-<A NAME="15476"></A>
+<A NAME="15470"></A>
 <B>input-stream-p</B> <EM>object </EM>[関数]
 
 <DL COMPACT>
@@ -129,7 +129,7 @@ echo-streamとconcatenated-streamは利用できない。
 <BR>
 <BR>
 
-<A NAME="15487"></A>
+<A NAME="15481"></A>
 <B>output-stream-p</B> <EM>object </EM>[関数]
 
 <DL COMPACT>
@@ -141,7 +141,7 @@ echo-streamとconcatenated-streamは利用できない。
 <BR>
 <BR>
 
-<A NAME="15498"></A>
+<A NAME="15492"></A>
 <B>io-stream-p</B> <EM>object </EM>[関数]
 
 <DL COMPACT>
@@ -155,7 +155,7 @@ echo-streamとconcatenated-streamは利用できない。
 
 <P>
 
-<A NAME="15509"></A>
+<A NAME="15503"></A>
 <BR>
 <IMG
  WIDTH="151" HEIGHT="71" ALIGN="BOTTOM" BORDER="0"
@@ -197,7 +197,7 @@ SunOS4は、同時に60ファイルのオープンを許可している。
 
 <P>
 
-<A NAME="15543"></A>
+<A NAME="15537"></A>
 <B>with-open-file</B> <EM>(svar path . open-options) &amp;rest forms </EM>[マクロ]
 
 <DL COMPACT>
@@ -218,7 +218,7 @@ SunOS4は、同時に60ファイルのオープンを許可している。
 
 <P>
 
-<A NAME="15563"></A>
+<A NAME="15557"></A>
 <B>close</B> <EM>stream </EM>[関数]
 
 <DL COMPACT>
@@ -235,7 +235,7 @@ SunOS4は、同時に60ファイルのオープンを許可している。
 
 <P>
 
-<A NAME="15575"></A>
+<A NAME="15569"></A>
 <B>make-string-input-stream</B> <EM>string </EM>[関数]
 
 <DL COMPACT>
@@ -249,7 +249,7 @@ SunOS4は、同時に60ファイルのオープンを許可している。
 
 <P>
 
-<A NAME="15586"></A>
+<A NAME="15580"></A>
 <B>make-string-output-stream</B> <EM>size </EM>[関数]
 
 <DL COMPACT>
@@ -265,7 +265,7 @@ SunOS4は、同時に60ファイルのオープンを許可している。
 
 <P>
 
-<A NAME="15598"></A>
+<A NAME="15592"></A>
 <B>get-output-stream-string</B> <EM>string-stream </EM>[関数]
 
 <DL COMPACT>
@@ -279,7 +279,7 @@ SunOS4は、同時に60ファイルのオープンを許可している。
 
 <P>
 
-<A NAME="15609"></A>
+<A NAME="15603"></A>
 <B>make-broadcast-stream</B> <EM>&amp;rest output-streams </EM>[関数]
 
 <DL COMPACT>
@@ -586,7 +586,7 @@ eofの発生を知りたかったり、snatch controlにシステムエラーを
  <BR>
 <BR> <P>
 
-<A NAME="15620"></A>
+<A NAME="15614"></A>
 <B>read</B> <EM>&amp;optional stream (eof-error-p t) (eof-value nil) recursive-p </EM>[関数]
 
 <DL COMPACT>
@@ -600,7 +600,7 @@ s表現を1つ読み込む。
 
 <P>
 
-<A NAME="15630"></A>
+<A NAME="15624"></A>
 <B>read-delimited-list</B> <EM>delim-char &amp;optional stream recursive-p </EM>[関数]
 
 <DL COMPACT>
@@ -619,7 +619,7 @@ s表現を1つ読み込む。
 
 <P>
 
-<A NAME="15642"></A>
+<A NAME="15636"></A>
 <B>read-line</B> <EM>&amp;optional stream (eof-error-p t) (eof-value nil) </EM>[関数]
 
 <DL COMPACT>
@@ -637,7 +637,7 @@ s表現を1つ読み込む。
 
 <P>
 
-<A NAME="15653"></A>
+<A NAME="15647"></A>
 <B>read-char</B> <EM>&amp;optional stream (eof-error-p t) (eof-value nil) </EM>[関数]
 
 <DL COMPACT>
@@ -651,7 +651,7 @@ s表現を1つ読み込む。
 
 <P>
 
-<A NAME="15663"></A>
+<A NAME="15657"></A>
 <B>read-from-string</B> <EM>string &amp;optional (eof-error-p t) (eof-value nil) </EM>[関数]
 
 <DL COMPACT>
@@ -668,7 +668,7 @@ s表現を1つ読み込む。
 
 <P>
 
-<A NAME="15676"></A>
+<A NAME="15670"></A>
 <B>unread-char</B> <EM>char &amp;optional stream </EM>[関数]
 
 <DL COMPACT>
@@ -683,7 +683,7 @@ s表現を1つ読み込む。
 
 <P>
 
-<A NAME="15688"></A>
+<A NAME="15682"></A>
 <B>peek-char</B> <EM>&amp;optional stream (eof-error-p t) (eof-value nil) </EM>[関数]
 
 <DL COMPACT>
@@ -699,7 +699,7 @@ s表現を1つ読み込む。
 
 <P>
 
-<A NAME="15702"></A>
+<A NAME="15696"></A>
 <B>y-or-n-p</B> <EM>&amp;optional format-string &amp;rest args </EM>[関数]
 
 <DL COMPACT>
@@ -715,7 +715,7 @@ yならTそしてnならNILを返す。 それ以外は起こらない。
 
 <P>
 
-<A NAME="15714"></A>
+<A NAME="15708"></A>
 <B>yes-or-no-p</B> <EM>&amp;optional stream </EM>[関数]
 
 <DL COMPACT>
@@ -739,7 +739,7 @@ yesならTそしてnoならNILを返す。 それ以外は起こらない。
  <BR>
 <BR> <P>
 
-<A NAME="15726"></A>
+<A NAME="15720"></A>
 <B>readtable-p</B> <EM>x </EM>[関数]
 
 <DL COMPACT>
@@ -751,7 +751,7 @@ yesならTそしてnoならNILを返す。 それ以外は起こらない。
 <BR>
 <BR>
 
-<A NAME="15737"></A>
+<A NAME="15731"></A>
 <B>copy-readtable</B> <EM>&amp;optional from-readtable to-readtable </EM>[関数]
 
 <DL COMPACT>
@@ -768,7 +768,7 @@ dispatch-macro tableでそれぞれ256個の要素を持つ。
 
 <P>
 
-<A NAME="15750"></A>
+<A NAME="15744"></A>
 <B>set-syntax-from-char</B> <EM>from-char to-char [from-readtable to-readtable] </EM>[関数]
 
 <DL COMPACT>
@@ -782,7 +782,7 @@ dispatch-macro tableでそれぞれ256個の要素を持つ。
 
 <P>
 
-<A NAME="15764"></A>
+<A NAME="15758"></A>
 <B>set-macro-character</B> <EM>char func [non-teminating-p readtable] </EM>[関数]
 
 <DL COMPACT>
@@ -794,7 +794,7 @@ dispatch-macro tableでそれぞれ256個の要素を持つ。
 <BR>
 <BR>
 
-<A NAME="15776"></A>
+<A NAME="15770"></A>
 <B>get-macro-character</B> <EM>char [readtable] </EM>[関数]
 
 <DL COMPACT>
@@ -806,7 +806,7 @@ dispatch-macro tableでそれぞれ256個の要素を持つ。
 <BR>
 <BR>
 
-<A NAME="15787"></A>
+<A NAME="15781"></A>
 <B>set-dispatch-macro-character</B> <EM>dispchar char func [readtable] </EM>[関数]
 
 <DL COMPACT>
@@ -819,7 +819,7 @@ dispatch read-macro関数として<EM>func</EM>を定義する。
 <BR>
 <BR>
 
-<A NAME="15800"></A>
+<A NAME="15794"></A>
 <B>get-dispatch-macro-character</B> <EM>dispchar char [readtable] </EM>[関数]
 
 <DL COMPACT>
@@ -892,7 +892,7 @@ dispatch read-macro関数を返す。
  <BR>
 <BR> <P>
 
-<A NAME="15812"></A>
+<A NAME="15806"></A>
 <B>print</B> <EM>obj &amp;optional stream </EM>[関数]
 
 <DL COMPACT>
@@ -906,7 +906,7 @@ dispatch read-macro関数を返す。
 
 <P>
 
-<A NAME="15824"></A>
+<A NAME="15818"></A>
 <B>prin1</B> <EM>obj &amp;optional stream </EM>[関数]
 
 <DL COMPACT>
@@ -922,7 +922,7 @@ dispatch read-macro関数を返す。
 
 <P>
 
-<A NAME="15835"></A>
+<A NAME="15829"></A>
 <B>princ</B> <EM>obj &amp;optional stream </EM>[関数]
 
 <DL COMPACT>
@@ -940,7 +940,7 @@ dispatch read-macro関数を返す。
 
 <P>
 
-<A NAME="15849"></A>
+<A NAME="15843"></A>
 <B>terpri</B> <EM>&amp;optional stream </EM>[関数]
 
 <DL COMPACT>
@@ -958,7 +958,7 @@ dispatch read-macro関数を返す。
 
 <P>
 
-<A NAME="15861"></A>
+<A NAME="15855"></A>
 <B>finish-output</B> <EM>&amp;optional stream </EM>[関数]
 
 <DL COMPACT>
@@ -972,7 +972,7 @@ dispatch read-macro関数を返す。
 
 <P>
 
-<A NAME="15872"></A>
+<A NAME="15866"></A>
 <B>princ-to-string</B> <EM>x &amp;optional (l 16) </EM>[関数]
 
 <DL COMPACT>
@@ -983,7 +983,7 @@ dispatch read-macro関数を返す。
 <BR>
 <BR>
 
-<A NAME="15883"></A>
+<A NAME="15877"></A>
 <B>prin1-to-string</B> <EM>x &amp;optional (l 16) </EM>[関数]
 
 <DL COMPACT>
@@ -997,7 +997,7 @@ dispatch read-macro関数を返す。
 
 <P>
 
-<A NAME="15895"></A>
+<A NAME="15889"></A>
 <B>format</B> <EM>stream format-string &amp;rest args </EM>[関数]
 
 <DL COMPACT>
@@ -1020,7 +1020,7 @@ dispatch read-macro関数を返す。
 
 <P>
 
-<A NAME="15905"></A>
+<A NAME="15899"></A>
 <B>pprint</B> <EM>obj &amp;optional (stream *standard-output*) (tab 0) (platen 75) </EM>[関数]
 
 <DL COMPACT>
@@ -1033,7 +1033,7 @@ dispatch read-macro関数を返す。
 
 <P>
 
-<A NAME="15916"></A>
+<A NAME="15910"></A>
 <B>print-functions</B> <EM>file &amp;rest fns </EM>[関数]
 
 <DL COMPACT>
@@ -1047,7 +1047,7 @@ dispatch read-macro関数を返す。
 
 <P>
 
-<A NAME="15928"></A>
+<A NAME="15922"></A>
 <B>write-byte</B> <EM>integer stream </EM>[関数]
 
 <DL COMPACT>
@@ -1058,7 +1058,7 @@ dispatch read-macro関数を返す。
 <BR>
 <BR>
 
-<A NAME="15939"></A>
+<A NAME="15933"></A>
 <B>write-word</B> <EM>integer stream </EM>[関数]
 
 <DL COMPACT>
@@ -1069,7 +1069,7 @@ dispatch read-macro関数を返す。
 <BR>
 <BR>
 
-<A NAME="15950"></A>
+<A NAME="15944"></A>
 <B>write-long</B> <EM>integer stream </EM>[関数]
 
 <DL COMPACT>
@@ -1083,7 +1083,7 @@ dispatch read-macro関数を返す。
 
 <P>
 
-<A NAME="15961"></A>
+<A NAME="15955"></A>
 <B>spaces</B> <EM>n &amp;optional stream </EM>[関数]
 
 <DL COMPACT>
@@ -1097,7 +1097,7 @@ dispatch read-macro関数を返す。
 
 <P>
 
-<A NAME="15972"></A>
+<A NAME="15966"></A>
 <B>pf</B> <EM>func &amp;optional stream *standard-output*) </EM>[マクロ]
 
 <DL COMPACT>
@@ -1111,7 +1111,7 @@ dispatch read-macro関数を返す。
 
 <P>
 
-<A NAME="15983"></A>
+<A NAME="15977"></A>
 <B>pp-method</B> <EM>class selector &amp;optional (stream *standard-output*) </EM>[関数]
 
 <DL COMPACT>
@@ -1122,7 +1122,7 @@ dispatch read-macro関数を返す。
 <BR>
 <BR>
 
-<A NAME="15995"></A>
+<A NAME="15989"></A>
 <B>tprint</B> <EM>obj tab &amp;optional (indent 0) (platen 79) (cpos 0) </EM>[関数]
 
 <DL COMPACT>
@@ -1135,7 +1135,7 @@ dispatch read-macro関数を返す。
 
 <P>
 
-<A NAME="16006"></A>
+<A NAME="16000"></A>
 <B>print-size</B> <EM>obj </EM>[関数]
 
 <DL COMPACT>
@@ -1161,7 +1161,7 @@ dispatch read-macro関数を返す。
 EusLispは、4種類のIPC機能（
 <B>共有メモリ, メッセージキュー, FIFO</B>や<B>ソケット</B>）を備えている。
 <A NAME="tex2html8"
-  HREF="jmanual-footnode.html#foot15426"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="footnote.png"></SUP></A>一般的に、この命令により性能が悪くなる。
+  HREF="jmanual-footnode.html#foot15420"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="footnote.png"></SUP></A>一般的に、この命令により性能が悪くなる。
 もし、マルチスレッド機能を使用するならば、
 <A HREF="jmanual-node15.html#mthread">12</A>節に記述されている同期関数も通信手段として
 用いることができる。
@@ -1213,7 +1213,7 @@ foreign stringへの書き込みは、
 <P>
 
  <BR>
-<BR> <A NAME="16017"></A>
+<BR> <A NAME="16011"></A>
 <B>map-file</B> <EM>filename &amp;key (:direction  :input) :length (:offset 0) (:share t)
 (:address 0) </EM>[関数]
 
@@ -1258,7 +1258,7 @@ FIFOノードを作り、ノーマルファイルとしてオープンする。
 <P>
 
  <BR>
-<BR> <A NAME="16034"></A>
+<BR> <A NAME="16028"></A>
 <B>make-msgq-input-stream</B> <EM>key &amp;optional (buffer-size 128) </EM>[関数]
 
 <DL COMPACT>
@@ -1272,7 +1272,7 @@ FIFOノードを作り、ノーマルファイルとしてオープンする。
 
 <P>
 
-<A NAME="16045"></A>
+<A NAME="16039"></A>
 <B>make-msgq-output-stream</B> <EM>key &amp;optional (buffer-size 128) </EM>[関数]
 
 <DL COMPACT>
@@ -1407,7 +1407,7 @@ service名によって指定されたsymbolを通して参照される。
  <BR>
 <BR> <P>
 
-<A NAME="16056"></A>
+<A NAME="16050"></A>
 <B>make-socket-address</B> <EM>&amp;key :domain :pathname :host :port :proto :service </EM>[関数]
 
 <DL COMPACT>
@@ -1421,7 +1421,7 @@ service名によって指定されたsymbolを通して参照される。
 
 <P>
 
-<A NAME="16066"></A>
+<A NAME="16060"></A>
 <B>make-socket-port</B> <EM>sockaddr </EM>[関数]
 
 <DL COMPACT>
@@ -1435,7 +1435,7 @@ service名によって指定されたsymbolを通して参照される。
 
 <P>
 
-<A NAME="16076"></A>
+<A NAME="16070"></A>
 <B>make-server-socket-stream</B> <EM>sockport &amp;optional (size 100) </EM>[関数]
 
 <DL COMPACT>
@@ -1449,7 +1449,7 @@ service名によって指定されたsymbolを通して参照される。
 
 <P>
 
-<A NAME="16086"></A>
+<A NAME="16080"></A>
 <B>make-client-socket-stream</B> <EM>sockaddr &amp;optional (size 100) </EM>[関数]
 
 <DL COMPACT>
@@ -1463,7 +1463,7 @@ service名によって指定されたsymbolを通して参照される。
 
 <P>
 
-<A NAME="16096"></A>
+<A NAME="16090"></A>
 <B>open-server</B> <EM>port remote-func </EM>[関数]
 
 <DL COMPACT>
@@ -1481,7 +1481,7 @@ service名によって指定されたsymbolを通して参照される。
 
 <P>
 
-<A NAME="16108"></A>
+<A NAME="16102"></A>
 <B>connect-server</B> <EM>host port </EM>[関数]
 
 <DL COMPACT>
@@ -1509,7 +1509,7 @@ service名によって指定されたsymbolを通して参照される。
  <BR>
 <BR> <P>
 
-<A NAME="16122"></A>
+<A NAME="16116"></A>
 <B>select-stream</B> <EM>stream-list timeout </EM>[関数]
 
 <DL COMPACT>
@@ -1533,7 +1533,7 @@ NILを返す。
 
 <P>
 
-<A NAME="16140"></A>
+<A NAME="16134"></A>
 <B>def-async</B> <EM>stream function </EM>[マクロ]
 
 <DL COMPACT>
@@ -1576,7 +1576,7 @@ Euslispは、UNIXの上で動作している限り、ホスト・デバイス・
  <BR>
 <BR> <P>
 
-<A NAME="16158"></A>
+<A NAME="16152"></A>
 <B>pathnamep</B> <EM>name </EM>[関数]
 
 <DL COMPACT>
@@ -1590,7 +1590,7 @@ Euslispは、UNIXの上で動作している限り、ホスト・デバイス・
 
 <P>
 
-<A NAME="16169"></A>
+<A NAME="16163"></A>
 <B>pathname</B> <EM>name </EM>[関数]
 
 <DL COMPACT>
@@ -1607,7 +1607,7 @@ Euslispは、UNIXの上で動作している限り、ホスト・デバイス・
 
 <P>
 
-<A NAME="16182"></A>
+<A NAME="16176"></A>
 <B>pathname-directory</B> <EM>path </EM>[関数]
 
 <DL COMPACT>
@@ -1623,7 +1623,7 @@ Euslispは、UNIXの上で動作している限り、ホスト・デバイス・
 
 <P>
 
-<A NAME="16194"></A>
+<A NAME="16188"></A>
 <B>pathname-name</B> <EM>path </EM>[関数]
 
 <DL COMPACT>
@@ -1638,7 +1638,7 @@ Euslispは、UNIXの上で動作している限り、ホスト・デバイス・
 
 <P>
 
-<A NAME="16206"></A>
+<A NAME="16200"></A>
 <B>pathname-type</B> <EM>path </EM>[関数]
 
 <DL COMPACT>
@@ -1653,7 +1653,7 @@ Euslispは、UNIXの上で動作している限り、ホスト・デバイス・
 
 <P>
 
-<A NAME="16218"></A>
+<A NAME="16212"></A>
 <B>make-pathname</B> <EM>&amp;key :host :device :directory :name :type :version
 defaults </EM>[関数]
 
@@ -1669,7 +1669,7 @@ UNIX上では、他のパラメータは無視される。
 
 <P>
 
-<A NAME="16231"></A>
+<A NAME="16225"></A>
 <B>merge-pathnames</B> <EM>name
 &amp;optional (defaults *default-pathname-defaults*) </EM>[関数]
 
@@ -1681,7 +1681,7 @@ UNIX上では、他のパラメータは無視される。
 <BR>
 <BR>
 
-<A NAME="16242"></A>
+<A NAME="16236"></A>
 <B>namestring</B> <EM>path </EM>[関数]
 
 <DL COMPACT>
@@ -1693,7 +1693,7 @@ UNIX上では、他のパラメータは無視される。
 <BR>
 <BR>
 
-<A NAME="16253"></A>
+<A NAME="16247"></A>
 <B>parse-namestring</B> <EM>name </EM>[関数]
 
 <DL COMPACT>
@@ -1704,7 +1704,7 @@ UNIX上では、他のパラメータは無視される。
 <BR>
 <BR>
 
-<A NAME="16264"></A>
+<A NAME="16258"></A>
 <B>truename</B> <EM>path </EM>[関数]
 
 <DL COMPACT>
@@ -1725,7 +1725,7 @@ UNIX上では、他のパラメータは無視される。
  <BR>
 <BR> <P>
 
-<A NAME="16275"></A>
+<A NAME="16269"></A>
 <B>probe-file</B> <EM>path </EM>[関数]
 
 <DL COMPACT>
@@ -1737,7 +1737,7 @@ UNIX上では、他のパラメータは無視される。
 <BR>
 <BR>
 
-<A NAME="16286"></A>
+<A NAME="16280"></A>
 <B>file-size</B> <EM>path </EM>[関数]
 
 <DL COMPACT>
@@ -1749,7 +1749,7 @@ UNIX上では、他のパラメータは無視される。
 <BR>
 <BR>
 
-<A NAME="16297"></A>
+<A NAME="16291"></A>
 <B>directory-p</B> <EM>path </EM>[関数]
 
 <DL COMPACT>
@@ -1763,7 +1763,7 @@ UNIX上では、他のパラメータは無視される。
 <BR>
 <BR>
 
-<A NAME="16309"></A>
+<A NAME="16303"></A>
 <B>find-executable</B> <EM>file </EM>[関数]
 
 <DL COMPACT>
@@ -1779,7 +1779,7 @@ UNIXのwhichコマンドとほとんど同じ関数である。
 
 <P>
 
-<A NAME="16321"></A>
+<A NAME="16315"></A>
 <B>file-write-date</B> <EM>file </EM>[関数]
 
 <DL COMPACT>
@@ -1795,7 +1795,7 @@ UNIXのwhichコマンドとほとんど同じ関数である。
 
 <P>
 
-<A NAME="16334"></A>
+<A NAME="16328"></A>
 <B>file-newer</B> <EM>new old </EM>[関数]
 
 <DL COMPACT>
@@ -1810,7 +1810,7 @@ Tを返す。
 
 <P>
 
-<A NAME="16346"></A>
+<A NAME="16340"></A>
 <B>object-file-p</B> <EM>file </EM>[関数]
 
 <DL COMPACT>
@@ -1825,7 +1825,7 @@ Tを返す。
 
 <P>
 
-<A NAME="16357"></A>
+<A NAME="16351"></A>
 <B>directory</B> <EM>&amp;optional (path ".") </EM>[関数]
 
 <DL COMPACT>
@@ -1839,7 +1839,7 @@ Tを返す。
 
 <P>
 
-<A NAME="16368"></A>
+<A NAME="16362"></A>
 <B>dir</B> <EM>&amp;optional (dir ".") </EM>[関数]
 
 <DL COMPACT>

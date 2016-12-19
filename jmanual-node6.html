@@ -72,7 +72,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 <P>
 
  <BR>
-<BR> <A NAME="2136"></A>
+<BR> <A NAME="2130"></A>
 <B>and</B> <EM>{form}* </EM>[特殊]
 
 <DL COMPACT>
@@ -88,7 +88,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 
 <P>
 
-<A NAME="2147"></A>
+<A NAME="2141"></A>
 <B>or</B> <EM>{form}* </EM>[特殊]
 
 <DL COMPACT>
@@ -104,7 +104,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 
 <P>
 
-<A NAME="2158"></A>
+<A NAME="2152"></A>
 <B>if</B> <EM>test then [else] </EM>[特殊]
 
 <DL COMPACT>
@@ -120,7 +120,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 
 <P>
 
-<A NAME="2172"></A>
+<A NAME="2166"></A>
 <B>when</B> <EM>test forms </EM>[マクロ]
 
 <DL COMPACT>
@@ -139,7 +139,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 
 <P>
 
-<A NAME="2190"></A>
+<A NAME="2184"></A>
 <B>unless</B> <EM>test forms </EM>[マクロ]
 
 <DL COMPACT>
@@ -153,7 +153,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 
 <P>
 
-<A NAME="2203"></A>
+<A NAME="2197"></A>
 <B>cond</B> <EM>(test {form}*)* </EM>[特殊]
 
 <DL COMPACT>
@@ -175,7 +175,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 
 <P>
 
-<A NAME="2221"></A>
+<A NAME="2215"></A>
 <B>case</B> <EM>key {({label <SPAN CLASS="MATH"><IMG
  WIDTH="151" HEIGHT="71" ALIGN="BOTTOM" BORDER="0"
  SRC="jmanual-img7.png"
@@ -210,7 +210,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 <P>
 
  <BR>
-<BR> <A NAME="2239"></A>
+<BR> <A NAME="2233"></A>
 <B>prog1</B> <EM>form1 &amp;rest forms </EM>[関数]
 
 <DL COMPACT>
@@ -225,7 +225,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 
 <P>
 
-<A NAME="2253"></A>
+<A NAME="2247"></A>
 <B>progn</B> <EM>{form}* </EM>[特殊]
 
 <DL COMPACT>
@@ -245,7 +245,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 
 <P>
 
-<A NAME="2268"></A>
+<A NAME="2262"></A>
 <B>setf</B> <EM>{access-form value}* </EM>[マクロ]
 
 <DL COMPACT>
@@ -259,7 +259,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 
 <P>
 
-<A NAME="2280"></A>
+<A NAME="2274"></A>
 <B>let</B> <EM>({var <SPAN CLASS="MATH"><IMG
  WIDTH="151" HEIGHT="71" ALIGN="BOTTOM" BORDER="0"
  SRC="jmanual-img7.png"
@@ -286,7 +286,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 
 <P>
 
-<A NAME="2293"></A>
+<A NAME="2287"></A>
 <B>let*</B> <EM>({var <SPAN CLASS="MATH"><IMG
  WIDTH="151" HEIGHT="71" ALIGN="BOTTOM" BORDER="0"
  SRC="jmanual-img7.png"
@@ -318,7 +318,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 </H2>
 
  <BR>
-<BR> <A NAME="2306"></A>
+<BR> <A NAME="2300"></A>
 <B>flet</B> <EM>({(fname lambda-list . body)}*) {form}* </EM>[特殊]
 
 <DL COMPACT>
@@ -332,7 +332,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 
 <P>
 
-<A NAME="2316"></A>
+<A NAME="2310"></A>
 <B>labels</B> <EM>({(fname lambda-list . body)}*) {form}* </EM>[特殊]
 
 <DL COMPACT>
@@ -354,7 +354,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 </H2>
 
  <BR>
-<BR> <A NAME="2330"></A>
+<BR> <A NAME="2324"></A>
 <B>block</B> <EM>tag {form}* </EM>[特殊]
 
 <DL COMPACT>
@@ -369,7 +369,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 
 <P>
 
-<A NAME="2342"></A>
+<A NAME="2336"></A>
 <B>return-from</B> <EM>tag value </EM>[特殊]
 
 <DL COMPACT>
@@ -386,7 +386,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 
 <P>
 
-<A NAME="2354"></A>
+<A NAME="2348"></A>
 <B>return</B> <EM>value </EM>[マクロ]
 
 <DL COMPACT>
@@ -402,7 +402,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 
 <P>
 
-<A NAME="2367"></A>
+<A NAME="2361"></A>
 <B>catch</B> <EM>tag {form}* </EM>[特殊]
 
 <DL COMPACT>
@@ -420,7 +420,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 
 <P>
 
-<A NAME="2382"></A>
+<A NAME="2376"></A>
 <B>throw</B> <EM>tag value </EM>[特殊]
 
 <DL COMPACT>
@@ -435,7 +435,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 
 <P>
 
-<A NAME="2396"></A>
+<A NAME="2390"></A>
 <B>unwind-protect</B> <EM>protected-form {cleanup-form}* </EM>[特殊]
 
 <DL COMPACT>
@@ -469,7 +469,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
  <BR>
 <BR> <P>
 
-<A NAME="2417"></A>
+<A NAME="2411"></A>
 <B>while</B> <EM>test {form}* </EM>[特殊]
 
 <DL COMPACT>
@@ -501,7 +501,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 
 <P>
 
-<A NAME="2434"></A>
+<A NAME="2428"></A>
 <B>tagbody</B> <EM>{tag <SPAN CLASS="MATH"><IMG
  WIDTH="151" HEIGHT="71" ALIGN="BOTTOM" BORDER="0"
  SRC="jmanual-img7.png"
@@ -526,7 +526,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 
 <P>
 
-<A NAME="2448"></A>
+<A NAME="2442"></A>
 <B>go</B> <EM>tag </EM>[特殊]
 
 <DL COMPACT>
@@ -543,7 +543,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 
 <P>
 
-<A NAME="2461"></A>
+<A NAME="2455"></A>
 <B>prog</B> <EM>({var <SPAN CLASS="MATH"><IMG
  WIDTH="151" HEIGHT="71" ALIGN="BOTTOM" BORDER="0"
  SRC="jmanual-img7.png"
@@ -589,7 +589,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 
 <P>
 
-<A NAME="2481"></A>
+<A NAME="2475"></A>
 <B>do</B> <EM>({(var init [next])}*) (endtest [result]){declare} {form}
 * </EM>[マクロ]
 
@@ -610,7 +610,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 
 <P>
 
-<A NAME="2501"></A>
+<A NAME="2495"></A>
 <B>do*</B> <EM>({var init [next]}*) (endtest [result]){declare} {form}* </EM>[マクロ]
 
 <DL COMPACT>
@@ -624,7 +624,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 
 <P>
 
-<A NAME="2516"></A>
+<A NAME="2510"></A>
 <B>dotimes</B> <EM>(var count [result]) {forms}* </EM>[マクロ]
 
 <DL COMPACT>
@@ -641,7 +641,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 
 <P>
 
-<A NAME="2531"></A>
+<A NAME="2525"></A>
 <B>dolist</B> <EM>(var list [result]) {forms}* </EM>[マクロ]
 
 <DL COMPACT>
@@ -660,7 +660,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 
 <P>
 
-<A NAME="2547"></A>
+<A NAME="2541"></A>
 <B>until</B> <EM>condition {forms}* </EM>[マクロ]
 
 <DL COMPACT>
@@ -674,7 +674,7 @@ EusLispではインタプリタ時の効率を改善するために特殊書式�
 
 <P>
 
-<A NAME="2559"></A>
+<A NAME="2553"></A>
 <B>loop</B> <EM>{forms}* </EM>[マクロ]
 
 <DL COMPACT>
@@ -703,7 +703,7 @@ Common Lispの<B>typep</B>と<B>subtypep</B>はないので、
  <BR>
 <BR> <P>
 
-<A NAME="2573"></A>
+<A NAME="2567"></A>
 <B>eq</B> <EM>obj1 obj2 </EM>[関数]
 
 <DL COMPACT>
@@ -717,7 +717,7 @@ Common Lispの<B>typep</B>と<B>subtypep</B>はないので、
 <BR>
 <BR>
 
-<A NAME="2589"></A>
+<A NAME="2583"></A>
 <B>eql</B> <EM>obj1 obj2 </EM>[関数]
 
 <DL COMPACT>
@@ -730,7 +730,7 @@ EusLispの中で数値は全て直接値で表現されるため、<B>eq</B>と<
 <BR>
 <BR>
 
-<A NAME="2601"></A>
+<A NAME="2595"></A>
 <B>equal</B> <EM>obj1 obj2 </EM>[関数]
 
 <DL COMPACT>
@@ -745,7 +745,7 @@ EusLispの中で数値は全て直接値で表現されるため、<B>eq</B>と<
 <BR>
 <BR>
 
-<A NAME="2614"></A>
+<A NAME="2608"></A>
 <B>superequal</B> <EM>obj1 obj2 </EM>[関数]
 
 <DL COMPACT>
@@ -759,7 +759,7 @@ EusLispの中で数値は全て直接値で表現されるため、<B>eq</B>と<
 
 <P>
 
-<A NAME="2625"></A>
+<A NAME="2619"></A>
 <B>null</B> <EM>object </EM>[関数]
 
 <DL COMPACT>
@@ -771,7 +771,7 @@ EusLispの中で数値は全て直接値で表現されるため、<B>eq</B>と<
 <BR>
 <BR>
 
-<A NAME="2638"></A>
+<A NAME="2632"></A>
 <B>not</B> <EM>object </EM>[関数]
 
 <DL COMPACT>
@@ -783,7 +783,7 @@ EusLispの中で数値は全て直接値で表現されるため、<B>eq</B>と<
 <BR>
 <BR>
 
-<A NAME="2650"></A>
+<A NAME="2644"></A>
 <B>atom</B> <EM>object </EM>[関数]
 
 <DL COMPACT>
@@ -798,7 +798,7 @@ EusLispの中で数値は全て直接値で表現されるため、<B>eq</B>と<
 <BR>
 <BR>
 
-<A NAME="2662"></A>
+<A NAME="2656"></A>
 <B>every</B> <EM>pred &amp;rest args </EM>[関数]
 
 <DL COMPACT>
@@ -812,7 +812,7 @@ Tを返す。<B>every</B>は、<EM>pred</EM>が全ての<EM>args</EM>に対し�
 <BR>
 <BR>
 
-<A NAME="2677"></A>
+<A NAME="2671"></A>
 <B>some</B> <EM>pred &amp;rest args </EM>[関数]
 
 <DL COMPACT>
@@ -826,7 +826,7 @@ Tを返す。<B>some</B>は、<EM>pred</EM>が<EM>args</EM>のどれかに対し
 <BR>
 <BR>
 
-             <A NAME="2692"></A>
+             <A NAME="2686"></A>
 <B>functionp</B> <EM>object </EM>[関数]
 
 <DL COMPACT>
@@ -842,7 +842,7 @@ lambda-formかあるいはlambda-closureであったとき、Tを返す。
 <BR>
 <BR>
 
-<A NAME="2710"></A>
+<A NAME="2704"></A>
 <B>compiled-function-p</B> <EM>object </EM>[関数]
 
 <DL COMPACT>
