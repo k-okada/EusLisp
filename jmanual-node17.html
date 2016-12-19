@@ -69,7 +69,7 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 </H1>
 
 <P>
-Euslispは、３次元の幾何学モデルの内部表現として<A NAME="31469"></A><EM>B</EM>rep（境界表現）を採用している。
+Euslispは、３次元の幾何学モデルの内部表現として<A NAME="31467"></A><EM>B</EM>rep（境界表現）を採用している。
 Brep内の要素は<B>edge, plane, polygon, face, hole,</B>や<B>body</B>クラスによって
 表現される。
 基本bodyの作成関数とbodyの合成関数は、これらのクラスの新しい
@@ -80,7 +80,7 @@ Brep内の要素は<B>edge, plane, polygon, face, hole,</B>や<B>body</B>クラ�
 
 <P>
 
-<DIV ALIGN="CENTER"><A NAME="30460"></A>
+<DIV ALIGN="CENTER"><A NAME="30458"></A>
 <TABLE>
 <CAPTION ALIGN="BOTTOM"><STRONG>Figure 9:</STRONG>
 頂点とエッジと面の分類</CAPTION>
@@ -103,7 +103,7 @@ Brep内の要素は<B>edge, plane, polygon, face, hole,</B>や<B>body</B>クラ�
  <BR>
 <BR> <P>
 
-<A NAME="31471"></A>
+<A NAME="31469"></A>
 <B>vplus</B> <EM>vector-list </EM>[関数]
 
 <DL COMPACT>
@@ -120,7 +120,7 @@ Brep内の要素は<B>edge, plane, polygon, face, hole,</B>や<B>body</B>クラ�
 
 <P>
 
-<A NAME="31484"></A>
+<A NAME="31482"></A>
 <B>vector-mean</B> <EM>vector-list </EM>[関数]
 
 <DL COMPACT>
@@ -134,7 +134,7 @@ Brep内の要素は<B>edge, plane, polygon, face, hole,</B>や<B>body</B>クラ�
 
 <P>
 
-<A NAME="31495"></A>
+<A NAME="31493"></A>
 <B>triangle</B> <EM>a b c &amp;optional (normal #f(0 0 1)) </EM>[関数]
 
 <DL COMPACT>
@@ -155,7 +155,7 @@ Brep内の要素は<B>edge, plane, polygon, face, hole,</B>や<B>body</B>クラ�
 
 <P>
 
-<A NAME="31518"></A>
+<A NAME="31516"></A>
 <B>triangle-normal</B> <EM>a b c </EM>[関数]
 
 <DL COMPACT>
@@ -169,7 +169,7 @@ Brep内の要素は<B>edge, plane, polygon, face, hole,</B>や<B>body</B>クラ�
 
 <P>
 
-<A NAME="31529"></A>
+<A NAME="31527"></A>
 <B>vector-angle</B> <EM>v1 v2 &amp;optional (normal (v* v1 v2)) </EM>[関数]
 
 <DL COMPACT>
@@ -188,7 +188,7 @@ Brep内の要素は<B>edge, plane, polygon, face, hole,</B>や<B>body</B>クラ�
 
 <P>
 
-<A NAME="31545"></A>
+<A NAME="31543"></A>
 <B>face-normal-vector</B> <EM>vertices </EM>[関数]
 
 <DL COMPACT>
@@ -202,7 +202,7 @@ Brep内の要素は<B>edge, plane, polygon, face, hole,</B>や<B>body</B>クラ�
 
 <P>
 
-<A NAME="31555"></A>
+<A NAME="31553"></A>
 <B>farthest</B> <EM>p points </EM>[関数]
 
 <DL COMPACT>
@@ -216,7 +216,7 @@ Brep内の要素は<B>edge, plane, polygon, face, hole,</B>や<B>body</B>クラ�
 
 <P>
 
-<A NAME="31567"></A>
+<A NAME="31565"></A>
 <B>farthest-pair</B> <EM>points </EM>[関数]
 
 <DL COMPACT>
@@ -231,7 +231,7 @@ Brep内の要素は<B>edge, plane, polygon, face, hole,</B>や<B>body</B>クラ�
 
 <P>
 
-<A NAME="31578"></A>
+<A NAME="31576"></A>
 <B>maxindex</B> <EM>3D-floatvec </EM>[関数]
 
 <DL COMPACT>
@@ -245,7 +245,7 @@ Brep内の要素は<B>edge, plane, polygon, face, hole,</B>や<B>body</B>クラ�
 
 <P>
 
-<A NAME="31589"></A>
+<A NAME="31587"></A>
 <B>random-vector</B> <EM>&amp;optional (range 1.0) </EM>[関数]
 
 <DL COMPACT>
@@ -259,7 +259,7 @@ Brep内の要素は<B>edge, plane, polygon, face, hole,</B>や<B>body</B>クラ�
 
 <P>
 
-<A NAME="31599"></A>
+<A NAME="31597"></A>
 <B>random-normalized-vector</B> <EM>&amp;optional (range 1.0) </EM>[関数]
 
 <DL COMPACT>
@@ -273,7 +273,7 @@ Brep内の要素は<B>edge, plane, polygon, face, hole,</B>や<B>body</B>クラ�
 
 <P>
 
-<A NAME="31609"></A>
+<A NAME="31607"></A>
 <B>random-vectors</B> <EM>count range </EM>[関数]
 
 <DL COMPACT>
@@ -287,7 +287,7 @@ Brep内の要素は<B>edge, plane, polygon, face, hole,</B>や<B>body</B>クラ�
 
 <P>
 
-<A NAME="31621"></A>
+<A NAME="31619"></A>
 <B>line-intersection</B> <EM>p1 p2 p3 p4 </EM>[関数]
 
 <DL COMPACT>
@@ -305,7 +305,7 @@ Brep内の要素は<B>edge, plane, polygon, face, hole,</B>や<B>body</B>クラ�
 
 <P>
 
-<A NAME="31636"></A>
+<A NAME="31634"></A>
 <B>collinear-p</B> <EM>p1 p2 p3 &amp;optional tolerance </EM>[関数]
 
 <DL COMPACT>
@@ -346,7 +346,7 @@ stereo-viewing\end{verbatim}
 
 <P>
 
-<A NAME="31652"></A>
+<A NAME="31650"></A>
 <B>find-coplanar-vertices</B> <EM>p1 p2 p3 vlist </EM>[関数]
 
 <DL COMPACT>
@@ -362,7 +362,7 @@ stereo-viewing\end{verbatim}
 
 <P>
 
-<A NAME="31665"></A>
+<A NAME="31663"></A>
 <B>find-connecting-edge</B> <EM>vertex edgelist </EM>[関数]
 
 <DL COMPACT>
@@ -376,7 +376,7 @@ stereo-viewing\end{verbatim}
 
 <P>
 
-<A NAME="31677"></A>
+<A NAME="31675"></A>
 <B>make-vertex-edge-htab</B> <EM>bodfacs </EM>[関数]
 
 <DL COMPACT>
@@ -392,7 +392,7 @@ stereo-viewing\end{verbatim}
 
 <P>
 
-<A NAME="31692"></A>
+<A NAME="31690"></A>
 <B>left-points</B> <EM>points p1 p2 normal </EM>[関数]
 
 <DL COMPACT>
@@ -409,7 +409,7 @@ stereo-viewing\end{verbatim}
 
 <P>
 
-<A NAME="31707"></A>
+<A NAME="31705"></A>
 <B>right-points</B> <EM>points p1 p2 normal </EM>[関数]
 
 <DL COMPACT>
@@ -426,7 +426,7 @@ stereo-viewing\end{verbatim}
 
 <P>
 
-<A NAME="31722"></A>
+<A NAME="31720"></A>
 <B>left-most-point</B> <EM>points p1 p2 normal </EM>[関数]
 
 <DL COMPACT>
@@ -443,7 +443,7 @@ stereo-viewing\end{verbatim}
 
 <P>
 
-<A NAME="31737"></A>
+<A NAME="31735"></A>
 <B>right-most-point</B> <EM>points p1 p2 normal </EM>[関数]
 
 <DL COMPACT>
@@ -460,7 +460,7 @@ stereo-viewing\end{verbatim}
 
 <P>
 
-<A NAME="31752"></A>
+<A NAME="31750"></A>
 <B>eps=</B> <EM>num1 num2 [(tolerance *epsilon*)] </EM>[関数]
 
 <DL COMPACT>
@@ -473,7 +473,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="31765"></A>
+<A NAME="31763"></A>
 <B>eps<SPAN CLASS="MATH"><IMG
  WIDTH="331" HEIGHT="88" ALIGN="BOTTOM" BORDER="0"
  SRC="jmanual-img9.png"
@@ -506,7 +506,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="31778"></A>
+<A NAME="31776"></A>
 <B>eps<SPAN CLASS="MATH"></SPAN></B> <EM>num1 num2 [(tolerance *epsilon*)] </EM>[関数]
 
 <DL COMPACT>
@@ -529,7 +529,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="31791"></A>
+<A NAME="31789"></A>
 <B>eps<SPAN CLASS="MATH"></SPAN></B> <EM>num1 num2 [(tolerance *epsilon*)] </EM>[関数]
 
 <DL COMPACT>
@@ -542,7 +542,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="31804"></A>
+<A NAME="31802"></A>
 <B>eps<SPAN CLASS="MATH"></SPAN></B> <EM>num1 num2 [(tolerance *epsilon*)] </EM>[関数]
 
 <DL COMPACT>
@@ -557,7 +557,7 @@ stereo-viewing\end{verbatim}
 
 <P>
 	<BR> 
-<A NAME="31818"></A>
+<A NAME="31816"></A>
 <BIG CLASS="XLARGE"><B>bounding-box </B></BIG> [クラス]  <PRE><TT>
   :super   <B>object</B> 
 <BR>  :slots 		 (minpoint maxpoint) 
@@ -578,7 +578,7 @@ stereo-viewing\end{verbatim}
 
 <P>
 
-<A NAME="31837"></A>
+<A NAME="31835"></A>
 <B>:box</B> [メソッド]
 
 <DL COMPACT>
@@ -589,7 +589,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="31848"></A>
+<A NAME="31846"></A>
 <B>:volume</B> [メソッド]
 
 <DL COMPACT>
@@ -600,7 +600,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="31859"></A>
+<A NAME="31857"></A>
 <B>:grow</B> <EM>rate </EM>[メソッド]
 
 <DL COMPACT>
@@ -613,7 +613,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="31872"></A>
+<A NAME="31870"></A>
 <B>:inner</B> <EM>point </EM>[メソッド]
 
 <DL COMPACT>
@@ -626,7 +626,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="31884"></A>
+<A NAME="31882"></A>
 <B>:intersection</B> <EM>box2 &amp;optional tolerance </EM>[メソッド]
 
 <DL COMPACT>
@@ -640,7 +640,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="31899"></A>
+<A NAME="31897"></A>
 <B>:union</B> <EM>box2 </EM>[メソッド]
 
 <DL COMPACT>
@@ -652,7 +652,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="31912"></A>
+<A NAME="31910"></A>
 <B>:intersectionp</B> <EM>box2 </EM>[メソッド]
 
 <DL COMPACT>
@@ -667,7 +667,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="31926"></A>
+<A NAME="31924"></A>
 <B>:extreme-point</B> <EM>direction </EM>[メソッド]
 
 <DL COMPACT>
@@ -680,7 +680,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="31938"></A>
+<A NAME="31936"></A>
 <B>:corners</B> [メソッド]
 
 <DL COMPACT>
@@ -694,7 +694,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="31950"></A>
+<A NAME="31948"></A>
 <B>:below</B> <EM>box2 &amp;optional (direction #(0 0 1) </EM>[メソッド]
 
 <DL COMPACT>
@@ -709,7 +709,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="31965"></A>
+<A NAME="31963"></A>
 <B>:body</B> [メソッド]
 
 <DL COMPACT>
@@ -722,7 +722,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="31977"></A>
+<A NAME="31975"></A>
 <B>:init</B> <EM>vlist &amp;optional tolerance </EM>[メソッド]
 
 <DL COMPACT>
@@ -738,7 +738,7 @@ stereo-viewing\end{verbatim}
 
 <P>
 
-<A NAME="31992"></A>
+<A NAME="31990"></A>
 <B>make-bounding-box</B> <EM>points [tolerance] </EM>[関数]
 
 <DL COMPACT>
@@ -751,7 +751,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="32004"></A>
+<A NAME="32002"></A>
 <B>bounding-box-union</B> <EM>boxes [tolerance *contact-threshold*] </EM>[関数]
 
 <DL COMPACT>
@@ -764,7 +764,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="32016"></A>
+<A NAME="32014"></A>
 <B>bounding-box-intersection</B> <EM>boxes [tolerance *contact-threshold*] </EM>[関数]
 
 <DL COMPACT>
@@ -795,7 +795,7 @@ stereo-viewing\end{verbatim}
  <BR>
 <BR> <P>
 	<BR> 
-<A NAME="32029"></A>
+<A NAME="32027"></A>
 <BIG CLASS="XLARGE"><B>line </B></BIG> [クラス]  <PRE><TT>
   :super   <B>propertied-object</B> 
 <BR>  :slots 		 ((pvert :type floatvector)(nvert :type floatvector)) 
@@ -815,7 +815,7 @@ stereo-viewing\end{verbatim}
 
 <P>
 
-<A NAME="32051"></A>
+<A NAME="32049"></A>
 <B>:vertices</B> [メソッド]
 
 <DL COMPACT>
@@ -828,7 +828,7 @@ stereo-viewing\end{verbatim}
 
 <P>
 
-<A NAME="32063"></A>
+<A NAME="32061"></A>
 <B>:point</B> <EM>p </EM>[メソッド]
 
 <DL COMPACT>
@@ -841,7 +841,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="32075"></A>
+<A NAME="32073"></A>
 <B>:parameter</B> <EM>point </EM>[メソッド]
 
 <DL COMPACT>
@@ -854,7 +854,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="32087"></A>
+<A NAME="32085"></A>
 <B>:direction</B> [メソッド]
 
 <DL COMPACT>
@@ -866,7 +866,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="32099"></A>
+<A NAME="32097"></A>
 <B>:end-point</B> <EM>v </EM>[メソッド]
 
 <DL COMPACT>
@@ -883,7 +883,7 @@ stereo-viewing\end{verbatim}
 
 <P>
 
-<A NAME="32115"></A>
+<A NAME="32113"></A>
 <B>:box</B> [メソッド]
 
 <DL COMPACT>
@@ -894,7 +894,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="32126"></A>
+<A NAME="32124"></A>
 <B>:boxtest</B> <EM>box </EM>[メソッド]
 
 <DL COMPACT>
@@ -906,7 +906,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="32138"></A>
+<A NAME="32136"></A>
 <B>:length</B> [メソッド]
 
 <DL COMPACT>
@@ -917,7 +917,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="32148"></A>
+<A NAME="32146"></A>
 <B>:distance</B> <EM>point-or-line </EM>[メソッド]
 
 <DL COMPACT>
@@ -936,7 +936,7 @@ stereo-viewing\end{verbatim}
 
 <P>
 
-<A NAME="32161"></A>
+<A NAME="32159"></A>
 <B>:foot</B> <EM>point </EM>[メソッド]
 
 <DL COMPACT>
@@ -949,7 +949,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="32172"></A>
+<A NAME="32170"></A>
 <B>:common-perpendicular</B> <EM>l </EM>[メソッド]
 
 <DL COMPACT>
@@ -963,7 +963,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="32184"></A>
+<A NAME="32182"></A>
 <B>:project</B> <EM>plane </EM>[メソッド]
 
 <DL COMPACT>
@@ -975,7 +975,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="32197"></A>
+<A NAME="32195"></A>
 <B>:collinear-point</B> <EM>point &amp;optional (tolerance *coplanar-threshold*) </EM>[メソッド]
 
 <DL COMPACT>
@@ -990,7 +990,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="32211"></A>
+<A NAME="32209"></A>
 <B>:on-line-point</B> <EM>point &amp;optional (tolerance *coplanar-threshold*) </EM>[メソッド]
 
 <DL COMPACT>
@@ -1003,7 +1003,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="32224"></A>
+<A NAME="32222"></A>
 <B>:collinear-line</B> <EM>ln &amp;optional (tolerance *coplanar-threshold*) </EM>[メソッド]
 
 <DL COMPACT>
@@ -1016,7 +1016,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="32236"></A>
+<A NAME="32234"></A>
 <B>:coplanar</B> <EM>ln &amp;optional (tolerance *coplanar-threshold*) </EM>[メソッド]
 
 <DL COMPACT>
@@ -1031,7 +1031,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="32249"></A>
+<A NAME="32247"></A>
 <B>:intersection</B> <EM>ln </EM>[メソッド]
 
 <DL COMPACT>
@@ -1047,7 +1047,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="32261"></A>
+<A NAME="32259"></A>
 <B>:intersect-line</B> <EM>ln </EM>[メソッド]
 
 <DL COMPACT>
@@ -1063,7 +1063,7 @@ stereo-viewing\end{verbatim}
 
 <P>
 	<BR> 
-<A NAME="32275"></A>
+<A NAME="32273"></A>
 <BIG CLASS="XLARGE"><B>edge </B></BIG> [クラス]  <PRE><TT>
   :super   <B>line</B> 
 <BR>  :slots 		 (pface nface 
@@ -1090,7 +1090,7 @@ pvertとnvertの解釈を与えなければならない。
 
 <P>
 
-<A NAME="32299"></A>
+<A NAME="32297"></A>
 <B>make-line</B> <EM>point1 point2 </EM>[関数]
 
 <DL COMPACT>
@@ -1105,7 +1105,7 @@ pvertとnvertの解釈を与えなければならない。
 
 <P>
 
-<A NAME="32314"></A>
+<A NAME="32312"></A>
 <B>:pvertex</B> <EM>pf </EM>[メソッド]
 
 <DL COMPACT>
@@ -1119,7 +1119,7 @@ pvertとnvertの解釈を与えなければならない。
 
 <P>
 
-<A NAME="32327"></A>
+<A NAME="32325"></A>
 <B>:nvertex</B> <EM>pf </EM>[メソッド]
 
 <DL COMPACT>
@@ -1133,7 +1133,7 @@ pvertとnvertの解釈を与えなければならない。
 
 <P>
 
-<A NAME="32340"></A>
+<A NAME="32338"></A>
 <B>:body</B> [メソッド]
 
 <DL COMPACT>
@@ -1144,7 +1144,7 @@ pvertとnvertの解釈を与えなければならない。
 <BR>
 <BR>
 
-<A NAME="32351"></A>
+<A NAME="32349"></A>
 <B>:pface</B> <EM>pv nv </EM>[メソッド]
 
 <DL COMPACT>
@@ -1156,7 +1156,7 @@ pvertとnvertに解釈したときのpfaceを返す。
 <BR>
 <BR>
 
-<A NAME="32363"></A>
+<A NAME="32361"></A>
 <B>:nface</B> <EM>pv nv </EM>[メソッド]
 
 <DL COMPACT>
@@ -1168,7 +1168,7 @@ pvertとnvertに解釈したときのnfaceを返す。
 <BR>
 <BR>
 
-<A NAME="32375"></A>
+<A NAME="32373"></A>
 <B>:binormal</B> <EM>aface </EM>[メソッド]
 
 <DL COMPACT>
@@ -1180,7 +1180,7 @@ pvertとnvertに解釈したときのnfaceを返す。
 <BR>
 <BR>
 
-<A NAME="32386"></A>
+<A NAME="32384"></A>
 <B>:angle</B> [メソッド]
 
 <DL COMPACT>
@@ -1192,7 +1192,7 @@ pvertとnvertに解釈したときのnfaceを返す。
 <BR>
 <BR>
 
-<A NAME="32396"></A>
+<A NAME="32394"></A>
 <B>:set-angle</B> [メソッド]
 
 <DL COMPACT>
@@ -1207,7 +1207,7 @@ pvertとnvertに解釈したときのnfaceを返す。
 
 <P>
 
-<A NAME="32407"></A>
+<A NAME="32405"></A>
 <B>:invert</B> [メソッド]
 
 <DL COMPACT>
@@ -1218,7 +1218,7 @@ pvertとnvertに解釈したときのnfaceを返す。
 <BR>
 <BR>
 
-<A NAME="32418"></A>
+<A NAME="32416"></A>
 <B>:set-face</B> <EM>pv nv f </EM>[メソッド]
 
 <DL COMPACT>
@@ -1235,7 +1235,7 @@ pvertとnvertに解釈したときのnfaceを返す。
 
 <P>
 
-<A NAME="32436"></A>
+<A NAME="32434"></A>
 <B>:contourp</B> <EM>viewpoint </EM>[メソッド]
 
 <DL COMPACT>
@@ -1251,7 +1251,7 @@ pvertとnvertに解釈したときのnfaceを返す。
 
 <P>
 
-<A NAME="32449"></A>
+<A NAME="32447"></A>
 <B>:approximated-p</B> [メソッド]
 
 <DL COMPACT>
@@ -1268,7 +1268,7 @@ Tを返す。
 
 <P>
 
-<A NAME="32459"></A>
+<A NAME="32457"></A>
 <B>:set-approximated-flag</B> <EM>&amp;optional (threshold 0.7) </EM>[メソッド]
 
 <DL COMPACT>
@@ -1288,7 +1288,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 
 <P>
 
-<A NAME="32472"></A>
+<A NAME="32470"></A>
 <B>:init</B> <EM>&amp;key :pface :nface :pvertex :nvertex </EM>[メソッド]
 
 <DL COMPACT>
@@ -1318,7 +1318,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
  <BR>
 <BR> <P>
 	<BR> 
-<A NAME="32484"></A>
+<A NAME="32482"></A>
 <BIG CLASS="XLARGE"><B>plane </B></BIG> [クラス]  <PRE><TT>
   :super   <B>propertied-object</B> 
 <BR>  :slots 		 ((normal :type float-vector) 
@@ -1337,7 +1337,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 
 <P>
 
-<A NAME="32501"></A>
+<A NAME="32499"></A>
 <B>:normal</B> [メソッド]
 
 <DL COMPACT>
@@ -1349,7 +1349,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32511"></A>
+<A NAME="32509"></A>
 <B>:distance</B> <EM>point </EM>[メソッド]
 
 <DL COMPACT>
@@ -1361,7 +1361,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32522"></A>
+<A NAME="32520"></A>
 <B>:coplanar-point</B> <EM>point </EM>[メソッド]
 
 <DL COMPACT>
@@ -1373,7 +1373,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32533"></A>
+<A NAME="32531"></A>
 <B>:coplanar-line</B> <EM>line </EM>[メソッド]
 
 <DL COMPACT>
@@ -1387,7 +1387,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 
 <P>
 
-<A NAME="32544"></A>
+<A NAME="32542"></A>
 <B>:intersection</B> <EM>point1 point2 </EM>[メソッド]
 
 <DL COMPACT>
@@ -1401,7 +1401,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32557"></A>
+<A NAME="32555"></A>
 <B>:intersection-edge</B> <EM>edge </EM>[メソッド]
 
 <DL COMPACT>
@@ -1414,7 +1414,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32569"></A>
+<A NAME="32567"></A>
 <B>:foot</B> <EM>point </EM>[メソッド]
 
 <DL COMPACT>
@@ -1428,7 +1428,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 
 <P>
 
-<A NAME="32580"></A>
+<A NAME="32578"></A>
 <B>:init</B> <EM>normal point </EM>[メソッド]
 
 <DL COMPACT>
@@ -1446,7 +1446,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 
 <P>
 	<BR> 
-<A NAME="32594"></A>
+<A NAME="32592"></A>
 <BIG CLASS="XLARGE"><B>polygon </B></BIG> [クラス]  <PRE><TT>
   :super   <B>plane</B> 
 <BR>  :slots 		 (convexp edges vertices 
@@ -1470,7 +1470,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 
 <P>
 
-<A NAME="32615"></A>
+<A NAME="32613"></A>
 <B>:box</B> <EM>&amp;optional tolerance </EM>[メソッド]
 
 <DL COMPACT>
@@ -1482,7 +1482,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32626"></A>
+<A NAME="32624"></A>
 <B>:boxtest</B> <EM>box2 &amp;optional tolerance </EM>[メソッド]
 
 <DL COMPACT>
@@ -1496,7 +1496,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32639"></A>
+<A NAME="32637"></A>
 <B>:edges</B> [メソッド]
 
 <DL COMPACT>
@@ -1516,7 +1516,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32649"></A>
+<A NAME="32647"></A>
 <B>:edge</B> <EM>n </EM>[メソッド]
 
 <DL COMPACT>
@@ -1527,7 +1527,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32660"></A>
+<A NAME="32658"></A>
 <B>:vertices</B> [メソッド]
 
 <DL COMPACT>
@@ -1542,7 +1542,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32670"></A>
+<A NAME="32668"></A>
 <B>:vertex</B> <EM>n </EM>[メソッド]
 
 <DL COMPACT>
@@ -1553,7 +1553,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32681"></A>
+<A NAME="32679"></A>
 <B>:insidep</B> <EM>point &amp;optional (tolerance *epsilon*) </EM>[メソッド]
 
 <DL COMPACT>
@@ -1566,7 +1566,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32695"></A>
+<A NAME="32693"></A>
 <B>:intersect-point-vector</B> <EM>point vnorm </EM>[メソッド]
 
 <DL COMPACT>
@@ -1579,7 +1579,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32707"></A>
+<A NAME="32705"></A>
 <B>:intersect-line</B> <EM>p1 p2 </EM>[メソッド]
 
 <DL COMPACT>
@@ -1593,7 +1593,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32719"></A>
+<A NAME="32717"></A>
 <B>:intersect-edge</B> <EM>edge </EM>[メソッド]
 
 <DL COMPACT>
@@ -1607,7 +1607,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32730"></A>
+<A NAME="32728"></A>
 <B>:intersect-face</B> <EM>aregion </EM>[メソッド]
 
 <DL COMPACT>
@@ -1619,7 +1619,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32741"></A>
+<A NAME="32739"></A>
 <B>:transform-normal</B> [メソッド]
 
 <DL COMPACT>
@@ -1630,7 +1630,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32752"></A>
+<A NAME="32750"></A>
 <B>:reset-normal</B> [メソッド]
 
 <DL COMPACT>
@@ -1642,7 +1642,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32763"></A>
+<A NAME="32761"></A>
 <B>:invert</B> [メソッド]
 
 <DL COMPACT>
@@ -1653,7 +1653,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32774"></A>
+<A NAME="32772"></A>
 <B>:area</B> [メソッド]
 
 <DL COMPACT>
@@ -1664,7 +1664,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32784"></A>
+<A NAME="32782"></A>
 <B>:init</B> <EM>&amp;key :vertices :edges :normal :distance </EM>[メソッド]
 
 <DL COMPACT>
@@ -1677,7 +1677,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 
 <P>
 	<BR> 
-<A NAME="32796"></A>
+<A NAME="32794"></A>
 <BIG CLASS="XLARGE"><B>face </B></BIG> [クラス]  <PRE><TT>
   :super   <B>polygon</B> 
 <BR>  :slots 		 (holes mbody primitive-face id) 
@@ -1697,7 +1697,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 
 <P>
 
-<A NAME="32816"></A>
+<A NAME="32814"></A>
 <B>:all-edges</B> [メソッド]
 
 <DL COMPACT>
@@ -1708,7 +1708,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32827"></A>
+<A NAME="32825"></A>
 <B>:all-vertices</B> [メソッド]
 
 <DL COMPACT>
@@ -1722,7 +1722,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32839"></A>
+<A NAME="32837"></A>
 <B>:insidep</B> <EM>point </EM>[メソッド]
 
 <DL COMPACT>
@@ -1736,7 +1736,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32851"></A>
+<A NAME="32849"></A>
 <B>:area</B> [メソッド]
 
 <DL COMPACT>
@@ -1749,7 +1749,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32861"></A>
+<A NAME="32859"></A>
 <B>:centroid</B> <EM>&amp;optional point </EM>[メソッド]
 
 <DL COMPACT>
@@ -1765,7 +1765,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32873"></A>
+<A NAME="32871"></A>
 <B>:invert</B> [メソッド]
 
 <DL COMPACT>
@@ -1778,7 +1778,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32883"></A>
+<A NAME="32881"></A>
 <B>:enter-hole</B> <EM>hole </EM>[メソッド]
 
 <DL COMPACT>
@@ -1790,7 +1790,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32894"></A>
+<A NAME="32892"></A>
 <B>:primitive-body</B> [メソッド]
 
 <DL COMPACT>
@@ -1802,7 +1802,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32905"></A>
+<A NAME="32903"></A>
 <B>:id</B> [メソッド]
 
 <DL COMPACT>
@@ -1814,7 +1814,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32917"></A>
+<A NAME="32915"></A>
 <B>:face-id</B> [メソッド]
 
 <DL COMPACT>
@@ -1828,7 +1828,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32931"></A>
+<A NAME="32929"></A>
 <B>:body-type</B> [メソッド]
 
 <DL COMPACT>
@@ -1840,7 +1840,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32942"></A>
+<A NAME="32940"></A>
 <B>:init</B> <EM>&amp;key :normal :distance :edges :vertices :holes </EM>[メソッド]
 
 <DL COMPACT>
@@ -1853,7 +1853,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 
 <P>
 	<BR> 
-<A NAME="32954"></A>
+<A NAME="32952"></A>
 <BIG CLASS="XLARGE"><B>hole </B></BIG> [クラス]  <PRE><TT>
   :super   <B>polygon</B> 
 <BR>  :slots 		 (myface) 
@@ -1873,7 +1873,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 
 <P>
 
-<A NAME="32974"></A>
+<A NAME="32972"></A>
 <B>:face</B> [メソッド]
 
 <DL COMPACT>
@@ -1884,7 +1884,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32985"></A>
+<A NAME="32983"></A>
 <B>:enter-face</B> <EM>face </EM>[メソッド]
 
 <DL COMPACT>
@@ -1898,7 +1898,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="32999"></A>
+<A NAME="32997"></A>
 <B>:init</B> <EM>&amp;key :normal :distance :edges :vertices :face </EM>[メソッド]
 
 <DL COMPACT>
@@ -1917,7 +1917,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 
 <P>
 	<BR> 
-<A NAME="33011"></A>
+<A NAME="33009"></A>
 <BIG CLASS="XLARGE"><B>body </B></BIG> [クラス]  <PRE><TT>
   :super   <B>cascaded-coords</B> 
 <BR>  :slots 		 (faces edges vertices model-vertices box convexp evertedp csg) 
@@ -1935,7 +1935,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 
 <P>
 
-<A NAME="33028"></A>
+<A NAME="33026"></A>
 <B>:magnify</B> <EM>rate </EM>[メソッド]
 
 <DL COMPACT>
@@ -1950,7 +1950,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 
 <P>
 
-<A NAME="33041"></A>
+<A NAME="33039"></A>
 <B>:translate-vertices</B> <EM>vector </EM>[メソッド]
 
 <DL COMPACT>
@@ -1965,7 +1965,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 
 <P>
 
-<A NAME="33053"></A>
+<A NAME="33051"></A>
 <B>:rotate-vertices</B> <EM>angle axis </EM>[メソッド]
 
 <DL COMPACT>
@@ -1978,7 +1978,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="33066"></A>
+<A NAME="33064"></A>
 <B>:reset-model-vertices</B> [メソッド]
 
 <DL COMPACT>
@@ -1989,7 +1989,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="33077"></A>
+<A NAME="33075"></A>
 <B>:newcoords</B> <EM>rot &amp;optional pos </EM>[メソッド]
 
 <DL COMPACT>
@@ -2002,7 +2002,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="33091"></A>
+<A NAME="33089"></A>
 <B>:vertices</B> [メソッド]
 
 <DL COMPACT>
@@ -2013,7 +2013,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="33102"></A>
+<A NAME="33100"></A>
 <B>:edges</B> [メソッド]
 
 <DL COMPACT>
@@ -2024,7 +2024,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="33113"></A>
+<A NAME="33111"></A>
 <B>:faces</B> [メソッド]
 
 <DL COMPACT>
@@ -2036,7 +2036,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="33124"></A>
+<A NAME="33122"></A>
 <B>:box</B> [メソッド]
 
 <DL COMPACT>
@@ -2047,7 +2047,7 @@ Euslispでは、どんな曲面もたくさんの平面で近似される。
 <BR>
 <BR>
 
-<A NAME="33136"></A>
+<A NAME="33134"></A>
 <B>:Euler</B> [メソッド]
 
 <DL COMPACT>
@@ -2109,7 +2109,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="33149"></A>
+<A NAME="33147"></A>
 <B>:perimeter</B> [メソッド]
 
 <DL COMPACT>
@@ -2121,7 +2121,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="33159"></A>
+<A NAME="33157"></A>
 <B>:volume</B> <EM>&amp;optional (reference-point #f(0 0 0)) </EM>[メソッド]
 
 <DL COMPACT>
@@ -2133,7 +2133,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="33170"></A>
+<A NAME="33168"></A>
 <B>:centroid</B> <EM>&amp;optional (point #f(0 0 0) </EM>[メソッド]
 
 <DL COMPACT>
@@ -2145,7 +2145,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="33181"></A>
+<A NAME="33179"></A>
 <B>:possibly-interfering-faces</B> <EM>box </EM>[メソッド]
 
 <DL COMPACT>
@@ -2156,7 +2156,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="33192"></A>
+<A NAME="33190"></A>
 <B>:common-box</B> <EM>body </EM>[メソッド]
 
 <DL COMPACT>
@@ -2170,7 +2170,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="33207"></A>
+<A NAME="33205"></A>
 <B>:insidep</B> <EM>point </EM>[メソッド]
 
 <DL COMPACT>
@@ -2186,7 +2186,7 @@ stereo-viewing\end{verbatim}
 
 <P>
 
-<A NAME="33224"></A>
+<A NAME="33222"></A>
 <B>:intersect-face</B> <EM>face </EM>[メソッド]
 
 <DL COMPACT>
@@ -2198,7 +2198,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="33236"></A>
+<A NAME="33234"></A>
 <B>:intersectp</B> <EM>body </EM>[メソッド]
 
 <DL COMPACT>
@@ -2210,7 +2210,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="33248"></A>
+<A NAME="33246"></A>
 <B>:evert</B> [メソッド]
 
 <DL COMPACT>
@@ -2222,7 +2222,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="33259"></A>
+<A NAME="33257"></A>
 <B>:faces-intersect-with-point-vector</B> <EM>point direction </EM>[メソッド]
 
 <DL COMPACT>
@@ -2234,7 +2234,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="33271"></A>
+<A NAME="33269"></A>
 <B>:distance</B> <EM>target </EM>[メソッド]
 
 <DL COMPACT>
@@ -2248,7 +2248,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="33284"></A>
+<A NAME="33282"></A>
 <B>:csg</B> [メソッド]
 
 <DL COMPACT>
@@ -2260,7 +2260,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="33296"></A>
+<A NAME="33294"></A>
 <B>:primitive-body</B> [メソッド]
 
 <DL COMPACT>
@@ -2272,7 +2272,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="33308"></A>
+<A NAME="33306"></A>
 <B>:primitive-body-p</B> [メソッド]
 
 <DL COMPACT>
@@ -2284,7 +2284,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="33321"></A>
+<A NAME="33319"></A>
 <B>:creation-form</B> [メソッド]
 
 <DL COMPACT>
@@ -2296,7 +2296,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="33332"></A>
+<A NAME="33330"></A>
 <B>:body-type</B> [メソッド]
 
 <DL COMPACT>
@@ -2309,7 +2309,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="33346"></A>
+<A NAME="33344"></A>
 <B>:primitive-groups</B> [メソッド]
 
 <DL COMPACT>
@@ -2323,7 +2323,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="33359"></A>
+<A NAME="33357"></A>
 <B>:get-face</B> <EM>body &amp;optional face id </EM>[メソッド]
 
 <DL COMPACT>
@@ -2344,7 +2344,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="33391"></A>
+<A NAME="33389"></A>
 <B>:init</B> <EM>&amp;key :faces :edges :vertices </EM>[メソッド]
 
 <DL COMPACT>
@@ -2362,7 +2362,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="33412"></A>
+<A NAME="33410"></A>
 <B>:constraint</B> <EM>b </EM>[メソッド]
 
 <DL COMPACT>
@@ -2386,7 +2386,7 @@ stereo-viewing\end{verbatim}
  <BR>
 <BR> <P>
 
-<A NAME="33426"></A>
+<A NAME="33424"></A>
 <B>make-plane</B> <EM>&amp;key :normal :point :distance </EM>[関数]
 
 <DL COMPACT>
@@ -2401,7 +2401,7 @@ stereo-viewing\end{verbatim}
 
 <P>
 
-<A NAME="33441"></A>
+<A NAME="33439"></A>
 <B>*xy-plane*</B> [変数]
 
 <DL COMPACT>
@@ -2412,7 +2412,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="33452"></A>
+<A NAME="33450"></A>
 <B>*yz-plane*</B> [変数]
 
 <DL COMPACT>
@@ -2423,7 +2423,7 @@ stereo-viewing\end{verbatim}
 <BR>
 <BR>
 
-<A NAME="33463"></A>
+<A NAME="33461"></A>
 <B>*zx-plane*</B> [変数]
 
 <DL COMPACT>
@@ -2436,7 +2436,7 @@ stereo-viewing\end{verbatim}
 
 <P>
 
-<DIV ALIGN="CENTER"><A NAME="31196"></A>
+<DIV ALIGN="CENTER"><A NAME="31194"></A>
 <TABLE>
 <CAPTION ALIGN="BOTTOM"><STRONG>Figure 10:</STRONG>
 基本body</CAPTION>
@@ -2450,7 +2450,7 @@ stereo-viewing\end{verbatim}
 
 <P>
 
-<A NAME="33474"></A>
+<A NAME="33472"></A>
 <B>make-cube</B> <EM>xsize ysize zsize &amp;key :name :color </EM>[関数]
 
 <DL COMPACT>
@@ -2465,7 +2465,7 @@ x,y,z軸の方向に大きさが<EM>xsize</EM>,<EM>ysize</EM>,<EM>zsize</EM>で�
 
 <P>
 
-<A NAME="33488"></A>
+<A NAME="33486"></A>
 <B>make-prism</B> <EM>bottom-points sweep-vector &amp;key :name :color </EM>[関数]
 
 <DL COMPACT>
@@ -2486,7 +2486,7 @@ x,y,z軸の方向に大きさが<EM>xsize</EM>,<EM>ysize</EM>,<EM>zsize</EM>で�
 
 <P>
 
-<A NAME="33504"></A>
+<A NAME="33502"></A>
 <B>make-cylinder</B> <EM>radius height &amp;key (:segments 12) :name :color </EM>[関数]
 
 <DL COMPACT>
@@ -2501,7 +2501,7 @@ x,y,z軸の方向に大きさが<EM>xsize</EM>,<EM>ysize</EM>,<EM>zsize</EM>で�
 
 <P>
 
-<A NAME="33516"></A>
+<A NAME="33514"></A>
 <B>make-cone</B> <EM>top bottom &amp;key (:segments 16) :color :name </EM>[関数]
 
 <DL COMPACT>
@@ -2520,7 +2520,7 @@ x,y,z軸の方向に大きさが<EM>xsize</EM>,<EM>ysize</EM>,<EM>zsize</EM>で�
 
 <P>
 
-<A NAME="33530"></A>
+<A NAME="33528"></A>
 <B>make-solid-of-revolution</B> <EM>points &amp;key (:segments 16) :name :color </EM>[関数]
 
 <DL COMPACT>
@@ -2542,7 +2542,7 @@ x,y,z軸の方向に大きさが<EM>xsize</EM>,<EM>ysize</EM>,<EM>zsize</EM>で�
 
 <P>
 
-<A NAME="33545"></A>
+<A NAME="33543"></A>
 <B>make-torus</B> <EM>points &amp;key (:segments 16) :name :color </EM>[関数]
 
 <DL COMPACT>
@@ -2557,7 +2557,7 @@ x,y,z軸の方向に大きさが<EM>xsize</EM>,<EM>ysize</EM>,<EM>zsize</EM>で�
 
 <P>
 
-<A NAME="33556"></A>
+<A NAME="33554"></A>
 <B>make-icosahedron</B> <EM>&amp;optional (radius 1.0) </EM>[関数]
 
 <DL COMPACT>
@@ -2571,7 +2571,7 @@ x,y,z軸の方向に大きさが<EM>xsize</EM>,<EM>ysize</EM>,<EM>zsize</EM>で�
 
 <P>
 
-<A NAME="33566"></A>
+<A NAME="33564"></A>
 <B>make-dodecahedron</B> <EM>&amp;optional (radius 1.0) </EM>[関数]
 
 <DL COMPACT>
@@ -2585,7 +2585,7 @@ x,y,z軸の方向に大きさが<EM>xsize</EM>,<EM>ysize</EM>,<EM>zsize</EM>で�
 
 <P>
 
-<A NAME="33576"></A>
+<A NAME="33574"></A>
 <B>make-gdome</B> <EM>abody </EM>[関数]
 
 <DL COMPACT>
@@ -2611,7 +2611,7 @@ x,y,z軸の方向に大きさが<EM>xsize</EM>,<EM>ysize</EM>,<EM>zsize</EM>で�
 
 <P>
 
-<A NAME="33590"></A>
+<A NAME="33588"></A>
 <B>grahamhull</B> <EM>vertices &amp;optional (normal #f(0 0 1)) </EM>[関数]
 
 <DL COMPACT>
@@ -2626,7 +2626,7 @@ Grahamのアルゴリズムを用いて，2次元上で凸状の覆いを計算�
 
 <P>
 
-<A NAME="33601"></A>
+<A NAME="33599"></A>
 <B>quickhull</B> <EM>vertices &amp;optional (normal #f(0 0 1)) </EM>[関数]
 
 <DL COMPACT>
@@ -2640,7 +2640,7 @@ Grahamのアルゴリズムを用いて，2次元上で凸状の覆いを計算�
 
 <P>
 
-<A NAME="33611"></A>
+<A NAME="33609"></A>
 <B>convex-hull-3d</B> <EM>vertices </EM>[関数]
 
 <DL COMPACT>
@@ -2652,7 +2652,7 @@ gift-wrapping法を用いて3次元上で凸面の覆いを計算する。
 <BR>
 <BR>
 
-<A NAME="33621"></A>
+<A NAME="33619"></A>
 <B>make-body-from-vertices</B> <EM>vertices-list </EM>[関数]
 
 <DL COMPACT>
@@ -2677,7 +2677,7 @@ bodyの合成関数
  <BR>
 <BR> <P>
 
-<A NAME="33632"></A>
+<A NAME="33630"></A>
 <B>face+</B> <EM>face1 face2 </EM>[関数]
 
 <DL COMPACT>
@@ -2688,7 +2688,7 @@ bodyの合成関数
 <BR>
 <BR>
 
-<A NAME="33643"></A>
+<A NAME="33641"></A>
 <B>face*</B> <EM>face1 face2 </EM>[関数]
 
 <DL COMPACT>
@@ -2705,7 +2705,7 @@ bodyの合成関数
 
 <P>
 
-<A NAME="33657"></A>
+<A NAME="33655"></A>
 <B>cut-body</B> <EM>body cutting-plane </EM>[関数]
 
 <DL COMPACT>
@@ -2719,7 +2719,7 @@ bodyの合成関数
 
 <P>
 
-<A NAME="33669"></A>
+<A NAME="33667"></A>
 <B>body+</B> <EM>body1 body2 &amp;rest more-bodies </EM>[関数]
 
 <DL COMPACT>
@@ -2730,7 +2730,7 @@ bodyの合成関数
 <BR>
 <BR>
 
-<A NAME="33680"></A>
+<A NAME="33678"></A>
 <B>body-</B> <EM>body1 body2 </EM>[関数]
 
 <DL COMPACT>
@@ -2741,7 +2741,7 @@ bodyの合成関数
 <BR>
 <BR>
 
-<A NAME="33691"></A>
+<A NAME="33689"></A>
 <B>body*</B> <EM>body1 body2 </EM>[関数]
 
 <DL COMPACT>
@@ -2763,7 +2763,7 @@ bodyの合成関数
 
 <P>
 
-<A NAME="33709"></A>
+<A NAME="33707"></A>
 <B>body/</B> <EM>body plane </EM>[関数]
 
 <DL COMPACT>
@@ -2778,7 +2778,7 @@ bodyの合成関数
 
 <P>
 
-<A NAME="33724"></A>
+<A NAME="33722"></A>
 <B>body-interference</B> <EM>&amp;rest bodies </EM>[関数]
 
 <DL COMPACT>
@@ -2809,7 +2809,7 @@ bodyの合成関数
 
  <BR>
 <BR> <BR> 
-<A NAME="33737"></A>
+<A NAME="33735"></A>
 <BIG CLASS="XLARGE"><B>coordinates-axes </B></BIG> [クラス]  <PRE><TT>
   :super   <B>cascaded-coords</B> 
 <BR>  :slots 		 (size model-points points lines) 
@@ -2841,7 +2841,7 @@ bodyの合成関数
  <BR>
 <BR> <P>
 
-<A NAME="36364"></A>
+<A NAME="36362"></A>
 <B>constrained-motion</B> <EM>c </EM>[関数]
 
 <DL COMPACT>
@@ -2855,7 +2855,7 @@ bodyの合成関数
 
 <P>
 
-<A NAME="36375"></A>
+<A NAME="36373"></A>
 <B>constrained-force</B> <EM>m </EM>[関数]
 
 <DL COMPACT>
@@ -2870,7 +2870,7 @@ bodyの合成関数
 
 <P>
 
-<A NAME="36389"></A>
+<A NAME="36387"></A>
 <B>draw-constraint</B> <EM>c </EM>[関数]
 
 <DL COMPACT>
@@ -2883,7 +2883,7 @@ bodyの合成関数
 
 <P>
 
-<A NAME="36400"></A>
+<A NAME="36398"></A>
 <B>draw-motion</B> <EM>m a b </EM>[関数]
 
 <DL COMPACT>
@@ -2930,7 +2930,7 @@ Example
 拘束の例を次の図で示す。図の小さな矢印は，ペグに対する拘束を示す。
 
 <BR>
-<DIV ALIGN="CENTER"><A NAME="fig:peg-in-hole"></A><A NAME="36345"></A>
+<DIV ALIGN="CENTER"><A NAME="fig:peg-in-hole"></A><A NAME="36343"></A>
 <TABLE>
 <CAPTION ALIGN="BOTTOM"><STRONG>Figure 11:</STRONG>
 Constraints for a peg in a hole.</CAPTION>
@@ -2944,7 +2944,7 @@ Constraints for a peg in a hole.</CAPTION>
 ペグを穴に入れる作業において取り得る動作の例を次の図で示す。
 この例は，上記のプログラムと一致している。
 
-<DIV ALIGN="CENTER"><A NAME="fig:peg-in-a-hole"></A><A NAME="36355"></A>
+<DIV ALIGN="CENTER"><A NAME="fig:peg-in-a-hole"></A><A NAME="36353"></A>
 <TABLE>
 <CAPTION ALIGN="BOTTOM"><STRONG>Figure 12:</STRONG>
 Possible motions of a peg in a hole</CAPTION>
@@ -3094,7 +3094,7 @@ eusx(Xwindowインターフェースを持つEuslisp)のもとでは，以下の
 <P>
 
  <BR>
-<BR> <A NAME="36520"></A>
+<BR> <A NAME="36518"></A>
 <B>pv</B> <EM>data </EM>[関数]
 
 <DL COMPACT>

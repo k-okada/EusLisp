@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2016.12.19)  19 DEC 2016 10:02
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2016.12.19)  19 DEC 2016 10:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -479,7 +479,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.391 \lthtmlpictureA{tex2html_wrap56003}
+l.391 \lthtmlpictureA{tex2html_wrap56336}
                                          %
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -491,7 +491,7 @@ Overfull \hbox (77.79134pt too wide) detected at line 394
  [] 
  []
 
-l2hSize :tex2html_wrap56003:212.9832pt::0.0pt::349.0pt.
+l2hSize :tex2html_wrap56336:212.9832pt::0.0pt::349.0pt.
 
 ! LaTeX Error: The font size command \normalsize is not defined:
                there is probably something wrong with the class file.
@@ -542,7 +542,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.398 \lthtmlpictureA{tex2html_wrap56005}
+l.398 \lthtmlpictureA{tex2html_wrap56338}
                                          %
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -550,7 +550,7 @@ or  <return>  to continue without it.
 
 File: fig/pointer.ps Graphic file (type eps)
 <fig/pointer.ps>
-l2hSize :tex2html_wrap56005:97.36374pt::0.0pt::349.0pt.
+l2hSize :tex2html_wrap56338:97.36374pt::0.0pt::349.0pt.
 
 ! LaTeX Error: The font size command \normalsize is not defined:
                there is probably something wrong with the class file.
@@ -614,7 +614,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.406 \lthtmlpictureA{tex2html_wrap56015}
+l.406 \lthtmlpictureA{tex2html_wrap56348}
                                          %
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -626,7 +626,7 @@ Overfull \hbox (49.48874pt too wide) detected at line 409
  [] 
  []
 
-l2hSize :tex2html_wrap56015:119.44624pt::0.0pt::349.0pt.
+l2hSize :tex2html_wrap56348:119.44624pt::0.0pt::349.0pt.
 
 ! LaTeX Error: The font size command \normalsize is not defined:
                there is probably something wrong with the class file.
@@ -677,7 +677,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.413 \lthtmlfigureA{figure751}
+l.413 \lthtmlfigureA{figure749}
                                %
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -732,7 +732,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-l2hSize :figure751:555.06749pt::0.0pt::349.0pt.
+l2hSize :figure749:555.06749pt::0.0pt::349.0pt.
 
 ! LaTeX Error: The font size command \normalsize is not defined:
                there is probably something wrong with the class file.
@@ -991,7 +991,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.497 \lthtmlfigureA{emtabbing3827}
+l.497 \lthtmlfigureA{emtabbing3825}
                                    %
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1065,7 +1065,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-l2hSize :emtabbing3827:44.12106pt::0.0pt::349.0pt.
+l2hSize :emtabbing3825:44.12106pt::0.0pt::349.0pt.
 
 ! LaTeX Error: The font size command \normalsize is not defined:
                there is probably something wrong with the class file.
@@ -1311,7 +1311,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.527 \lthtmlfigureA{emtabbing11575}
+l.527 \lthtmlfigureA{emtabbing11573}
                                     %
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1370,7 +1370,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-l2hSize :emtabbing11575:72.84526pt::0.0pt::349.0pt.
+l2hSize :emtabbing11573:72.84526pt::0.0pt::349.0pt.
 
 ! LaTeX Error: The font size command \normalsize is not defined:
                there is probably something wrong with the class file.
@@ -1499,7 +1499,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.551 \lthtmlfigureA{emtabbing15509}
+l.551 \lthtmlfigureA{emtabbing15507}
                                     %
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1554,7 +1554,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-l2hSize :emtabbing15509:47.28969pt::0.0pt::349.0pt.
+l2hSize :emtabbing15507:47.28969pt::0.0pt::349.0pt.
 
 ! LaTeX Error: The font size command \normalsize is not defined:
                there is probably something wrong with the class file.
@@ -1761,7 +1761,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.578 \lthtmlfigureA{emtabbing18848}
+l.578 \lthtmlfigureA{emtabbing18846}
                                     %
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1863,7 +1863,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-l2hSize :emtabbing18848:61.73415pt::0.0pt::349.0pt.
+l2hSize :emtabbing18846:61.73415pt::0.0pt::349.0pt.
 
 ! LaTeX Error: The font size command \normalsize is not defined:
                there is probably something wrong with the class file.
@@ -1914,7 +1914,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.595 \lthtmlfigureA{emtabbing18923}
+l.595 \lthtmlfigureA{emtabbing18921}
                                     %
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1968,7 +1968,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-l2hSize :emtabbing18923:57.56747pt::0.0pt::349.0pt.
+l2hSize :emtabbing18921:57.56747pt::0.0pt::349.0pt.
 
 ! LaTeX Error: The font size command \normalsize is not defined:
                there is probably something wrong with the class file.
