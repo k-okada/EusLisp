@@ -129,7 +129,7 @@ symbolやconsのようなオブジェクトは、これまでのEuslispのよう
 
 <P>
 
-<DIV ALIGN="CENTER"><A NAME="threadmodel"></A><A NAME="25538"></A>
+<DIV ALIGN="CENTER"><A NAME="threadmodel"></A><A NAME="25560"></A>
 <TABLE>
 <CAPTION ALIGN="BOTTOM"><STRONG>Figure 5:</STRONG>
 Solarisオペレーティングシステムのスレッドモデル</CAPTION>
@@ -193,7 +193,7 @@ EusLispは、すべての型のオブジェクトに対して単一のヒープ�
 
 <P>
 
-<DIV ALIGN="CENTER"><A NAME="parathreads"></A><A NAME="25550"></A>
+<DIV ALIGN="CENTER"><A NAME="parathreads"></A><A NAME="25572"></A>
 <TABLE>
 <CAPTION ALIGN="BOTTOM"><STRONG>Figure 6:</STRONG>
 並列スレッドのメモリ要求とガーベージコレクトに並列実行</CAPTION>
@@ -232,7 +232,7 @@ Euslispにおいて数ミリ秒かかる。
 
 <P>
 
-<DIV ALIGN="CENTER"><A NAME="threadobj"></A><A NAME="25745"></A>
+<DIV ALIGN="CENTER"><A NAME="threadobj"></A><A NAME="25767"></A>
 <TABLE>
 <CAPTION ALIGN="BOTTOM"><STRONG>Figure 7:</STRONG>
 スレッド間で制御やデータを受け渡すためのスレッドオブジェクト（左）とスレッドプール内に置かれたスレッドの集まり（右）</CAPTION>
@@ -283,7 +283,7 @@ Solarisのカーネルが時間分割スケージューリングを基本とし�
 
 <P>
 
-<DIV ALIGN="CENTER"><A NAME="synchports"></A><A NAME="25578"></A>
+<DIV ALIGN="CENTER"><A NAME="synchports"></A><A NAME="25600"></A>
 <TABLE>
 <CAPTION ALIGN="BOTTOM"><STRONG>Figure 8:</STRONG>
 同期障壁と同期メモリポート</CAPTION>
@@ -401,7 +401,7 @@ filter-imageは、フィルターの並列計算のために複数のスレッ�
 <DIV ALIGN="CENTER">
 
 <DIV ALIGN="CENTER">
-<A NAME="25746"></A>
+<A NAME="25768"></A>
 <TABLE CELLPADDING=3 BORDER="1">
 <CAPTION><STRONG>Table 3:</STRONG>
 マルチプロセッサ上で実行されたプログラムの並列度</CAPTION>
@@ -471,7 +471,7 @@ Euslispのスレッドは、<B>thread</B>クラスのインスタンスによっ
  <BR>
 <BR> <P>
 
-<A NAME="25770"></A>
+<A NAME="25792"></A>
 <B>sys:make-thread</B> <EM>num &amp;optional (lsize 32*1024) (csize lsize) </EM>[関数]
 
 <DL COMPACT>
@@ -493,7 +493,7 @@ Euslispのスレッドは、<B>thread</B>クラスのインスタンスによっ
 
 <P>
 
-<A NAME="25785"></A>
+<A NAME="25807"></A>
 <B>sys:*threads*</B> [変数]
 
 <DL COMPACT>
@@ -507,7 +507,7 @@ Euslispのスレッドは、<B>thread</B>クラスのインスタンスによっ
 
 <P>
 
-<A NAME="25796"></A>
+<A NAME="25818"></A>
 <B>sys::free-threads</B> [関数]
 
 <DL COMPACT>
@@ -525,7 +525,7 @@ Euslispのスレッドは、<B>thread</B>クラスのインスタンスによっ
 
 <P>
 
-<A NAME="25807"></A>
+<A NAME="25829"></A>
 <B>sys:thread</B> <EM>func &amp;rest args </EM>[関数]
 
 <DL COMPACT>
@@ -552,7 +552,7 @@ Euslispのスレッドは、<B>thread</B>クラスのインスタンスによっ
 
 <P>
 
-<A NAME="25824"></A>
+<A NAME="25846"></A>
 <B>sys:thread-no-wait</B> <EM>func &amp;rest args </EM>[関数]
 
 <DL COMPACT>
@@ -568,7 +568,7 @@ Euslispのスレッドは、<B>thread</B>クラスのインスタンスによっ
 
 <P>
 
-<A NAME="25835"></A>
+<A NAME="25857"></A>
 <B>sys:wait-thread</B> <EM>thread </EM>[関数]
 
 <DL COMPACT>
@@ -587,7 +587,7 @@ Euslispのスレッドは、<B>thread</B>クラスのインスタンスによっ
 
 <P>
 
-<A NAME="25849"></A>
+<A NAME="25871"></A>
 <B>sys:plist</B> <EM>&amp;rest forms </EM>[マクロ]
 
 <DL COMPACT>
@@ -621,7 +621,7 @@ reader-writer lockは実現されてない。
 <P>
 
  <BR>
-<BR> <A NAME="25862"></A>
+<BR> <A NAME="25884"></A>
 <B>sys:make-mutex-lock</B> [関数]
 
 <DL COMPACT>
@@ -636,7 +636,7 @@ mutex-lockは、6つの要素を持つ整数ベクトルで表現されている
 
 <P>
 
-<A NAME="25872"></A>
+<A NAME="25894"></A>
 <B>sys:mutex-lock</B> <EM>mlock </EM>[関数]
 
 <DL COMPACT>
@@ -652,7 +652,7 @@ mutex-lockの<EM>mlock</EM>をロックする。
 
 <P>
 
-<A NAME="25885"></A>
+<A NAME="25907"></A>
 <B>sys:mutex-unlock</B> <EM>mlock </EM>[関数]
 
 <DL COMPACT>
@@ -666,7 +666,7 @@ mutex-lockの<EM>mlock</EM>をロックする。
 
 <P>
 
-<A NAME="25896"></A>
+<A NAME="25918"></A>
 <B>sys:mutex</B> <EM>mlock &amp;rest forms </EM>[マクロ]
 
 <DL COMPACT>
@@ -694,7 +694,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 
 <P>
 
-<A NAME="25911"></A>
+<A NAME="25933"></A>
 <B>sys:make-cond</B> [関数]
 
 <DL COMPACT>
@@ -709,7 +709,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 
 <P>
 
-<A NAME="25921"></A>
+<A NAME="25943"></A>
 <B>sys:cond-wait</B> <EM>condvar mlock </EM>[関数]
 
 <DL COMPACT>
@@ -725,7 +725,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 
 <P>
 
-<A NAME="25935"></A>
+<A NAME="25957"></A>
 <B>sys:cond-signal</B> <EM>condvar </EM>[関数]
 
 <DL COMPACT>
@@ -737,7 +737,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 <BR>
 <BR>
 
-<A NAME="25946"></A>
+<A NAME="25968"></A>
 <B>sys:make-semaphore</B> [関数]
 
 <DL COMPACT>
@@ -749,7 +749,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 <BR>
 <BR>
 
-<A NAME="25956"></A>
+<A NAME="25978"></A>
 <B>sys:sema-post</B> <EM>sem </EM>[関数]
 
 <DL COMPACT>
@@ -760,7 +760,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 <BR>
 <BR>
 
-<A NAME="25967"></A>
+<A NAME="25989"></A>
 <B>sys:sema-wait</B> <EM>sem </EM>[関数]
 
 <DL COMPACT>
@@ -774,7 +774,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 
 <P>
 	<BR> 
-<A NAME="25979"></A>
+<A NAME="26001"></A>
 <BIG CLASS="XLARGE"><B>sys:barrier-synch </B></BIG> [クラス]  <PRE><TT>
   :super   <B>propertied-object</B> 
 <BR>  :slots 		 threads n-threads count barrier-cond threads-lock count-lock 
@@ -805,7 +805,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 
 <P>
 
-<A NAME="26008"></A>
+<A NAME="26030"></A>
 <B>:init</B> [メソッド]
 
 <DL COMPACT>
@@ -817,7 +817,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 <BR>
 <BR>
 
-<A NAME="26018"></A>
+<A NAME="26040"></A>
 <B>:add</B> <EM>thr </EM>[メソッド]
 
 <DL COMPACT>
@@ -828,7 +828,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 <BR>
 <BR>
 
-<A NAME="26030"></A>
+<A NAME="26052"></A>
 <B>:remove</B> <EM>thr </EM>[メソッド]
 
 <DL COMPACT>
@@ -839,7 +839,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 <BR>
 <BR>
 
-<A NAME="26042"></A>
+<A NAME="26064"></A>
 <B>:wait</B> [メソッド]
 
 <DL COMPACT>
@@ -853,7 +853,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 
 <P>
 	<BR> 
-<A NAME="26055"></A>
+<A NAME="26077"></A>
 <BIG CLASS="XLARGE"><B>sys:synch-memory-port </B></BIG> [クラス]  <PRE><TT>
   :super   <B>propertied-object</B> 
 <BR>  :slots 		 sema-in sema-out buf empty lock 
@@ -873,7 +873,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 
 <P>
 
-<A NAME="26072"></A>
+<A NAME="26094"></A>
 <B>:read</B> [メソッド]
 
 <DL COMPACT>
@@ -888,7 +888,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 
 <P>
 
-<A NAME="26084"></A>
+<A NAME="26106"></A>
 <B>:write</B> <EM>datum </EM>[メソッド]
 
 <DL COMPACT>
@@ -905,7 +905,7 @@ mutex-lockとmutex-unlockは、組みで使用されなければならない。
 
 <P>
 
-<A NAME="26097"></A>
+<A NAME="26119"></A>
 <B>:init</B> [メソッド]
 
 <DL COMPACT>

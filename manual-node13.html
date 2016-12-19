@@ -108,20 +108,20 @@ Predefined streams are following:
  <BR>
 <BR> <P>
 
-<A NAME="15757"></A>
+<A NAME="15769"></A>
 <B>streamp</B> <EM>object </EM>[function]
 
 <DL COMPACT>
 <DT> 
 <DD> 
-Any object created from <A NAME="15769"></A><B>s</B>tream, <A NAME="15771"></A><B>i</B>o-stream,
+Any object created from <A NAME="15781"></A><B>s</B>tream, <A NAME="15783"></A><B>i</B>o-stream,
 or their subclasses returns T.
 </DD>
 </DL>
 <BR>
 <BR>
 
-<A NAME="15773"></A>
+<A NAME="15785"></A>
 <B>input-stream-p</B> <EM>object </EM>[function]
 
 <DL COMPACT>
@@ -133,7 +133,7 @@ T if <EM>object</EM> is a stream and capable of reading.
 <BR>
 <BR>
 
-<A NAME="15784"></A>
+<A NAME="15796"></A>
 <B>output-stream-p</B> <EM>object </EM>[function]
 
 <DL COMPACT>
@@ -145,7 +145,7 @@ T if <EM>object</EM> is a stream and capable of writing.
 <BR>
 <BR>
 
-<A NAME="15795"></A>
+<A NAME="15807"></A>
 <B>io-stream-p</B> <EM>object </EM>[function]
 
 <DL COMPACT>
@@ -159,7 +159,7 @@ T if <EM>object</EM> is a two-way stream.
 
 <P>
 
-<A NAME="15806"></A>
+<A NAME="15818"></A>
 <BR>
 <IMG
  WIDTH="553" HEIGHT="92" ALIGN="BOTTOM" BORDER="0"
@@ -201,7 +201,7 @@ SunOS4 allows to open as many as sixty files at the same time.
 
 <P>
 
-<A NAME="15837"></A>
+<A NAME="15849"></A>
 <B>with-open-file</B> <EM>(svar path . open-options) &amp;rest forms </EM>[macro]
 
 <DL COMPACT>
@@ -221,7 +221,7 @@ in its clean-up forms.
 
 <P>
 
-<A NAME="15857"></A>
+<A NAME="15869"></A>
 <B>close</B> <EM>stream </EM>[function]
 
 <DL COMPACT>
@@ -237,7 +237,7 @@ that stream object.
 
 <P>
 
-<A NAME="15868"></A>
+<A NAME="15880"></A>
 <B>make-string-input-stream</B> <EM>string </EM>[function]
 
 <DL COMPACT>
@@ -251,7 +251,7 @@ makes an input stream from a string.
 
 <P>
 
-<A NAME="15878"></A>
+<A NAME="15890"></A>
 <B>make-string-output-stream</B> <EM>size </EM>[function]
 
 <DL COMPACT>
@@ -267,7 +267,7 @@ advisory information to allocate string at initialization.
 
 <P>
 
-<A NAME="15890"></A>
+<A NAME="15902"></A>
 <B>get-output-stream-string</B> <EM>string-stream </EM>[function]
 
 <DL COMPACT>
@@ -281,7 +281,7 @@ gets a string out of a <EM>string-stream</EM>.
 
 <P>
 
-<A NAME="15901"></A>
+<A NAME="15913"></A>
 <B>make-broadcast-stream</B> <EM>&amp;rest output-streams </EM>[function]
 
 <DL COMPACT>
@@ -557,7 +557,7 @@ the internal table for reading forms labeled by <TT>#n=</TT> and <TT>#n#</TT>.
  <BR>
 <BR> <P>
 
-<A NAME="15912"></A>
+<A NAME="15924"></A>
 <B>read</B> <EM>&amp;optional stream (eof-error-p t) (eof-value nil) recursive-p </EM>[function]
 
 <DL COMPACT>
@@ -571,7 +571,7 @@ reads one S-expression.
 
 <P>
 
-<A NAME="15922"></A>
+<A NAME="15934"></A>
 <B>read-delimited-list</B> <EM>delim-char &amp;optional stream recursive-p </EM>[function]
 
 <DL COMPACT>
@@ -593,7 +593,7 @@ terminated by a special character like <TT>#<!-- MATH
 
 <P>
 
-<A NAME="15934"></A>
+<A NAME="15946"></A>
 <B>read-line</B> <EM>&amp;optional stream (eof-error-p t) (eof-value nil) </EM>[function]
 
 <DL COMPACT>
@@ -614,7 +614,7 @@ The string returned does not contain the last newline character.
 
 <P>
 
-<A NAME="15945"></A>
+<A NAME="15957"></A>
 <B>read-char</B> <EM>&amp;optional stream (eof-error-p t) (eof-value nil) </EM>[function]
 
 <DL COMPACT>
@@ -628,7 +628,7 @@ reads one character and returns its integer representation.
 
 <P>
 
-<A NAME="15955"></A>
+<A NAME="15967"></A>
 <B>read-from-string</B> <EM>string &amp;optional (eof-error-p t) (eof-value nil) </EM>[function]
 
 <DL COMPACT>
@@ -638,7 +638,7 @@ reads one s-expression from <EM>string</EM>.
 Only the first s-expression can be read.
 If successive read operations need to be performed on a string
 containing more than one expression,
-use string-stream made by <A NAME="15967"></A><B>m</B>ake-string-input-stream.
+use string-stream made by <A NAME="15979"></A><B>m</B>ake-string-input-stream.
 </DD>
 </DL>
 <BR>
@@ -646,7 +646,7 @@ use string-stream made by <A NAME="15967"></A><B>m</B>ake-string-input-stream.
 
 <P>
 
-<A NAME="15969"></A>
+<A NAME="15981"></A>
 <B>unread-char</B> <EM>char &amp;optional stream </EM>[function]
 
 <DL COMPACT>
@@ -661,7 +661,7 @@ More than one characters cannot be put back successively.
 
 <P>
 
-<A NAME="15981"></A>
+<A NAME="15993"></A>
 <B>peek-char</B> <EM>&amp;optional stream (eof-error-p t) (eof-value nil) </EM>[function]
 
 <DL COMPACT>
@@ -677,7 +677,7 @@ This is equivalent to a <EM>read-char</EM> followed by a <EM>unread-char</EM>.
 
 <P>
 
-<A NAME="15995"></A>
+<A NAME="16007"></A>
 <B>y-or-n-p</B> <EM>&amp;optional format-string &amp;rest args </EM>[function]
 
 <DL COMPACT>
@@ -694,7 +694,7 @@ and returns T or NIL. Case does not matter.
 
 <P>
 
-<A NAME="16007"></A>
+<A NAME="16019"></A>
 <B>yes-or-no-p</B> <EM>&amp;optional stream </EM>[function]
 
 <DL COMPACT>
@@ -720,7 +720,7 @@ is the value of the global variable <B>*readtable*</B>.
  <BR>
 <BR> <P>
 
-<A NAME="16019"></A>
+<A NAME="16031"></A>
 <B>readtable-p</B> <EM>x </EM>[function]
 
 <DL COMPACT>
@@ -731,7 +731,7 @@ is the value of the global variable <B>*readtable*</B>.
 <BR>
 <BR>
 
-<A NAME="16030"></A>
+<A NAME="16042"></A>
 <B>copy-readtable</B> <EM>&amp;optional from-readtable to-readtable </EM>[function]
 
 <DL COMPACT>
@@ -748,7 +748,7 @@ dispatch-macro table, each of which has 256 elements.
 
 <P>
 
-<A NAME="16043"></A>
+<A NAME="16055"></A>
 <B>set-syntax-from-char</B> <EM>to-char to-char [to-readtable from-readtable] </EM>[function]
 
 <DL COMPACT>
@@ -762,7 +762,7 @@ dispatch-macro table, each of which has 256 elements.
 
 <P>
 
-<A NAME="16057"></A>
+<A NAME="16069"></A>
 <B>set-macro-character</B> <EM>char func [non-teminating-p readtable] </EM>[function]
 
 <DL COMPACT>
@@ -774,7 +774,7 @@ defines <EM>func</EM> as the read-macro function for <EM>char</EM>.
 <BR>
 <BR>
 
-<A NAME="16069"></A>
+<A NAME="16081"></A>
 <B>get-macro-character</B> <EM>char [readtable] </EM>[function]
 
 <DL COMPACT>
@@ -786,7 +786,7 @@ returns the read-macro function for <EM>char</EM>.
 <BR>
 <BR>
 
-<A NAME="16080"></A>
+<A NAME="16092"></A>
 <B>set-dispatch-macro-character</B> <EM>dispchar char func [readtable] </EM>[function]
 
 <DL COMPACT>
@@ -799,7 +799,7 @@ the combination of <EM>dispchar</EM> and <EM>char</EM>.
 <BR>
 <BR>
 
-<A NAME="16093"></A>
+<A NAME="16105"></A>
 <B>get-dispatch-macro-character</B> <EM>dispchar char [readtable] </EM>[function]
 
 <DL COMPACT>
@@ -873,7 +873,7 @@ damages the consistency among symbols.
  <BR>
 <BR> <P>
 
-<A NAME="16105"></A>
+<A NAME="16117"></A>
 <B>print</B> <EM>obj &amp;optional stream </EM>[function]
 
 <DL COMPACT>
@@ -887,7 +887,7 @@ is <B>prin1</B> followed by <B>terpri</B>.
 
 <P>
 
-<A NAME="16117"></A>
+<A NAME="16129"></A>
 <B>prin1</B> <EM>obj &amp;optional stream </EM>[function]
 
 <DL COMPACT>
@@ -903,7 +903,7 @@ The format includes slashes (escapes) and quotation marks.
 
 <P>
 
-<A NAME="16128"></A>
+<A NAME="16140"></A>
 <B>princ</B> <EM>obj &amp;optional stream </EM>[function]
 
 <DL COMPACT>
@@ -920,7 +920,7 @@ For example, the output of <TT>(princ 'abc)</TT> is identical with that of
 
 <P>
 
-<A NAME="16143"></A>
+<A NAME="16155"></A>
 <B>terpri</B> <EM>&amp;optional stream </EM>[function]
 
 <DL COMPACT>
@@ -940,7 +940,7 @@ flush <EM>stream</EM>.
 
 <P>
 
-<A NAME="16154"></A>
+<A NAME="16166"></A>
 <B>finish-output</B> <EM>&amp;optional stream </EM>[function]
 
 <DL COMPACT>
@@ -953,7 +953,7 @@ flush <EM>stream</EM>.
 
 <P>
 
-<A NAME="16164"></A>
+<A NAME="16176"></A>
 <B>princ-to-string</B> <EM>x &amp;optional (l 16) </EM>[function]
 
 <DL COMPACT>
@@ -964,7 +964,7 @@ flush <EM>stream</EM>.
 <BR>
 <BR>
 
-<A NAME="16175"></A>
+<A NAME="16187"></A>
 <B>prin1-to-string</B> <EM>x &amp;optional (l 16) </EM>[function]
 
 <DL COMPACT>
@@ -977,7 +977,7 @@ flush <EM>stream</EM>.
 
 <P>
 
-<A NAME="16185"></A>
+<A NAME="16197"></A>
 <B>format</B> <EM>stream format-string &amp;rest args </EM>[function]
 
 <DL COMPACT>
@@ -1036,7 +1036,7 @@ flush <EM>stream</EM>.
 
 <P>
 
-<A NAME="16196"></A>
+<A NAME="16208"></A>
 <B>pprint</B> <EM>obj &amp;optional (stream *standard-output*) (tab 0) (platen 75) </EM>[function]
 
 <DL COMPACT>
@@ -1049,7 +1049,7 @@ flush <EM>stream</EM>.
 
 <P>
 
-<A NAME="16207"></A>
+<A NAME="16219"></A>
 <B>print-functions</B> <EM>file &amp;rest fns </EM>[function]
 
 <DL COMPACT>
@@ -1063,7 +1063,7 @@ write the "defun" forms of function definitions of <EM>fns</EM> out to <EM>file<
 
 <P>
 
-<A NAME="16219"></A>
+<A NAME="16231"></A>
 <B>write-byte</B> <EM>integer stream </EM>[function]
 
 <DL COMPACT>
@@ -1074,7 +1074,7 @@ write the "defun" forms of function definitions of <EM>fns</EM> out to <EM>file<
 <BR>
 <BR>
 
-<A NAME="16230"></A>
+<A NAME="16242"></A>
 <B>write-word</B> <EM>integer stream </EM>[function]
 
 <DL COMPACT>
@@ -1085,7 +1085,7 @@ write the "defun" forms of function definitions of <EM>fns</EM> out to <EM>file<
 <BR>
 <BR>
 
-<A NAME="16241"></A>
+<A NAME="16253"></A>
 <B>write-long</B> <EM>integer stream </EM>[function]
 
 <DL COMPACT>
@@ -1099,7 +1099,7 @@ write <EM>integer</EM> as a one-, two- or four-byte binary.
 
 <P>
 
-<A NAME="16252"></A>
+<A NAME="16264"></A>
 <B>spaces</B> <EM>n &amp;optional stream </EM>[function]
 
 <DL COMPACT>
@@ -1113,7 +1113,7 @@ outputs spaces <EM>n</EM> times.
 
 <P>
 
-<A NAME="16263"></A>
+<A NAME="16275"></A>
 <B>pf</B> <EM>func &amp;optional stream *standard-output*) </EM>[macro]
 
 <DL COMPACT>
@@ -1127,7 +1127,7 @@ pretty-prints a function. Compiled function cannot be printed.
 
 <P>
 
-<A NAME="16273"></A>
+<A NAME="16285"></A>
 <B>pp-method</B> <EM>class selector &amp;optional (stream *standard-output*) </EM>[function]
 
 <DL COMPACT>
@@ -1142,7 +1142,7 @@ pretty-prints the method defined in <EM>class</EM> by the name of
 
 <P>
 
-<A NAME="16285"></A>
+<A NAME="16297"></A>
 <B>tprint</B> <EM>obj tab &amp;optional (indent 0) (platen 79) (cpos 0) </EM>[function]
 
 <DL COMPACT>
@@ -1155,7 +1155,7 @@ pretty-prints the method defined in <EM>class</EM> by the name of
 
 <P>
 
-<A NAME="16296"></A>
+<A NAME="16308"></A>
 <B>print-size</B> <EM>obj </EM>[function]
 
 <DL COMPACT>
@@ -1181,7 +1181,7 @@ InterProcess Communication and Network
 EusLisp provides four kinds of IPC facilities,
 <EM>shared memory, message-queue, FIFO</EM> and <EM>socket</EM>.
 <A NAME="tex2html8"
-  HREF="manual-footnode.html#foot15716"><SUP><SPAN CLASS="arabic">2</SPAN></SUP></A>Normally,  efficiency decreases in this order.
+  HREF="manual-footnode.html#foot15728"><SUP><SPAN CLASS="arabic">2</SPAN></SUP></A>Normally,  efficiency decreases in this order.
 If you are using multithread facility, synchronization functions
 described in the section <A HREF="manual-node17.html#mthread">14</A> are also used for communications.
 Availability of these facilities depends on the configuration and
@@ -1235,7 +1235,7 @@ Writing to a foreign string can be made by
 <P>
 
  <BR>
-<BR> <A NAME="16306"></A>
+<BR> <A NAME="16318"></A>
 <B>map-file</B> <EM>filename &amp;key (direction :input) length (offset 0) (share t)
 (address 0) </EM>[function]
 
@@ -1245,7 +1245,7 @@ Writing to a foreign string can be made by
 maps the file named <EM>filename</EM> to memory space.
 <EM>Filename</EM> can be either of a local file, an NFS-mounted remote file,
 or a memory device in <TT>/dev</TT>.
-A <A NAME="16323"></A><B>f</B>oreign-string, whose elements can be accessed by <B>aref</B>,
+A <A NAME="16335"></A><B>f</B>oreign-string, whose elements can be accessed by <B>aref</B>,
 is returned.
 Writing data into a foreign-string mapped by <TT>map-file</TT> with 
 <EM>direction=:input</EM> will result a segmentation fault.
@@ -1282,7 +1282,7 @@ is needed to delete them.
 <P>
 
  <BR>
-<BR> <A NAME="16325"></A>
+<BR> <A NAME="16337"></A>
 <B>make-msgq-input-stream</B> <EM>key &amp;optional (buffer-size 128) </EM>[function]
 
 <DL COMPACT>
@@ -1297,7 +1297,7 @@ identified by <EM>key</EM>.
 
 <P>
 
-<A NAME="16336"></A>
+<A NAME="16348"></A>
 <B>make-msgq-output-stream</B> <EM>key &amp;optional (buffer-size 128) </EM>[function]
 
 <DL COMPACT>
@@ -1434,7 +1434,7 @@ Messages are transferred by the <B>unix:sendto</B> and <B>unix:recvfrom</B>.
  <BR>
 <BR> <P>
 
-<A NAME="16347"></A>
+<A NAME="16359"></A>
 <B>make-socket-address</B> <EM>&amp;key domain pathname host port proto service </EM>[function]
 
 <DL COMPACT>
@@ -1448,7 +1448,7 @@ makes a sockaddr structure.
 
 <P>
 
-<A NAME="16357"></A>
+<A NAME="16369"></A>
 <B>make-socket-port</B> <EM>sockaddr </EM>[function]
 
 <DL COMPACT>
@@ -1462,7 +1462,7 @@ which is used to establish a connection with a client.
 
 <P>
 
-<A NAME="16367"></A>
+<A NAME="16379"></A>
 <B>make-server-socket-stream</B> <EM>sockport &amp;optional (size 100) </EM>[function]
 
 <DL COMPACT>
@@ -1476,7 +1476,7 @@ accepts a connection from a client and returns a two-way stream.
 
 <P>
 
-<A NAME="16377"></A>
+<A NAME="16389"></A>
 <B>make-client-socket-stream</B> <EM>sockaddr &amp;optional (size 100) </EM>[function]
 
 <DL COMPACT>
@@ -1490,7 +1490,7 @@ connects to a server port and returns a two-way stream.
 
 <P>
 
-<A NAME="16387"></A>
+<A NAME="16399"></A>
 <B>open-server</B> <EM>port remote-func </EM>[function]
 
 <DL COMPACT>
@@ -1510,7 +1510,7 @@ is invoked with the socket port as the argument.
 
 <P>
 
-<A NAME="16399"></A>
+<A NAME="16411"></A>
 <B>connect-server</B> <EM>host port </EM>[function]
 
 <DL COMPACT>
@@ -1538,7 +1538,7 @@ Asynchronous Input/Output</A>
  <BR>
 <BR> <P>
 
-<A NAME="16411"></A>
+<A NAME="16423"></A>
 <B>select-stream</B> <EM>stream-list timeout </EM>[function]
 
 <DL COMPACT>
@@ -1565,7 +1565,7 @@ select-stream aborts and returns NIL.
 
 <P>
 
-<A NAME="16426"></A>
+<A NAME="16438"></A>
 <B>def-async</B> <EM>stream function </EM>[macro]
 
 <DL COMPACT>
@@ -1608,7 +1608,7 @@ is printed as a string prefixed by <TT>#P</TT>.
  <BR>
 <BR> <P>
 
-<A NAME="16444"></A>
+<A NAME="16456"></A>
 <B>pathnamep</B> <EM>name </EM>[function]
 
 <DL COMPACT>
@@ -1622,7 +1622,7 @@ returns T if <EM>name</EM> is a pathname.
 
 <P>
 
-<A NAME="16455"></A>
+<A NAME="16467"></A>
 <B>pathname</B> <EM>name </EM>[function]
 
 <DL COMPACT>
@@ -1639,7 +1639,7 @@ The inverse conversion is performed by <EM>namestring</EM>.
 
 <P>
 
-<A NAME="16468"></A>
+<A NAME="16480"></A>
 <B>pathname-directory</B> <EM>path </EM>[function]
 
 <DL COMPACT>
@@ -1655,7 +1655,7 @@ Root directory (/) is represented by :ROOT.
 
 <P>
 
-<A NAME="16480"></A>
+<A NAME="16492"></A>
 <B>pathname-name</B> <EM>path </EM>[function]
 
 <DL COMPACT>
@@ -1670,7 +1670,7 @@ returns the file-name portion of <EM>path</EM>.
 
 <P>
 
-<A NAME="16492"></A>
+<A NAME="16504"></A>
 <B>pathname-type</B> <EM>path </EM>[function]
 
 <DL COMPACT>
@@ -1685,7 +1685,7 @@ extracts the file-type portion out of <EM>path</EM>.
 
 <P>
 
-<A NAME="16504"></A>
+<A NAME="16516"></A>
 <B>make-pathname</B> <EM>&amp;key host device directory name type version
 defaults </EM>[function]
 
@@ -1701,7 +1701,7 @@ On unix, other parameters are ignored.
 
 <P>
 
-<A NAME="16517"></A>
+<A NAME="16529"></A>
 <B>merge-pathnames</B> <EM>name
 &amp;optional (defaults *default-pathname-defaults*)) </EM>[function]
 
@@ -1713,7 +1713,7 @@ On unix, other parameters are ignored.
 <BR>
 <BR>
 
-<A NAME="16528"></A>
+<A NAME="16540"></A>
 <B>namestring</B> <EM>path </EM>[function]
 
 <DL COMPACT>
@@ -1725,7 +1725,7 @@ returns string representation of <EM>path</EM>.
 <BR>
 <BR>
 
-<A NAME="16539"></A>
+<A NAME="16551"></A>
 <B>parse-namestring</B> <EM>name </EM>[function]
 
 <DL COMPACT>
@@ -1736,7 +1736,7 @@ returns string representation of <EM>path</EM>.
 <BR>
 <BR>
 
-<A NAME="16550"></A>
+<A NAME="16562"></A>
 <B>truename</B> <EM>path </EM>[function]
 
 <DL COMPACT>
@@ -1768,7 +1768,7 @@ protocol, server, port, directories, filename, and file-type, like
  <BR>
 <BR> <P>
 
-<A NAME="16561"></A>
+<A NAME="16573"></A>
 <B>url-pathname</B> <EM>name </EM>[function]
 
 <DL COMPACT>
@@ -1795,7 +1795,7 @@ File-name generation</A>
  <BR>
 <BR> <P>
 
-<A NAME="16574"></A>
+<A NAME="16586"></A>
 <B>digits-string</B> <EM>n digits &amp;optional (base 10)) </EM>[function]
 
 <DL COMPACT>
@@ -1811,7 +1811,7 @@ in digits.
 
 <P>
 
-<A NAME="16585"></A>
+<A NAME="16597"></A>
 <B>sequential-file-name</B> <EM>head num extension &amp;optional (digits 4)) </EM>[function]
 
 <DL COMPACT>
@@ -1826,7 +1826,7 @@ and the result is a string.
 
 <P>
 
-<A NAME="16595"></A>
+<A NAME="16607"></A>
 <B>timed-file-name</B> <EM>head extension &amp;optional (dt (unix:localtime))) </EM>[function]
 
 <DL COMPACT>
@@ -1841,7 +1841,7 @@ and extension. For example, (timed-file-name "img" "jpg") generates
 
 <P>
 
-<A NAME="16605"></A>
+<A NAME="16617"></A>
 <B>dated-file-name</B> <EM>head extension &amp;optional (dt (unix:localtime))) </EM>[function]
 
 <DL COMPACT>
@@ -1865,7 +1865,7 @@ File System Interface</A>
  <BR>
 <BR> <P>
 
-<A NAME="16615"></A>
+<A NAME="16627"></A>
 <B>probe-file</B> <EM>path </EM>[function]
 
 <DL COMPACT>
@@ -1876,7 +1876,7 @@ File System Interface</A>
 <BR>
 <BR>
 
-<A NAME="16626"></A>
+<A NAME="16638"></A>
 <B>file-size</B> <EM>path </EM>[function]
 
 <DL COMPACT>
@@ -1888,7 +1888,7 @@ in bytes.
 <BR>
 <BR>
 
-<A NAME="16637"></A>
+<A NAME="16649"></A>
 <B>directory-p</B> <EM>path </EM>[function]
 
 <DL COMPACT>
@@ -1900,7 +1900,7 @@ NIL otherwise even <EM>path</EM> does not exist.
 <BR>
 <BR>
 
-<A NAME="16649"></A>
+<A NAME="16661"></A>
 <B>find-executable</B> <EM>file </EM>[function]
 
 <DL COMPACT>
@@ -1916,7 +1916,7 @@ Unix's 'which' command that searches the executable file in your path list.
 
 <P>
 
-<A NAME="16661"></A>
+<A NAME="16673"></A>
 <B>file-write-date</B> <EM>file </EM>[function]
 
 <DL COMPACT>
@@ -1933,7 +1933,7 @@ String representation can be obtained by
 
 <P>
 
-<A NAME="16674"></A>
+<A NAME="16686"></A>
 <B>file-newer</B> <EM>new old </EM>[function]
 
 <DL COMPACT>
@@ -1948,7 +1948,7 @@ the <EM>old</EM> file.
 
 <P>
 
-<A NAME="16685"></A>
+<A NAME="16697"></A>
 <B>object-file-p</B> <EM>file </EM>[function]
 
 <DL COMPACT>
@@ -1962,7 +1962,7 @@ an object file by looking at the file's magic number in the header.
 
 <P>
 
-<A NAME="16696"></A>
+<A NAME="16708"></A>
 <B>directory</B> <EM>&amp;optional (path ".") </EM>[function]
 
 <DL COMPACT>
@@ -1976,7 +1976,7 @@ makes a list of all the files in the <EM>path</EM>.
 
 <P>
 
-<A NAME="16707"></A>
+<A NAME="16719"></A>
 <B>dir</B> <EM>&amp;optional (dir ".") </EM>[function]
 
 <DL COMPACT>

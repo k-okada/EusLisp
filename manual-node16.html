@@ -182,7 +182,7 @@ and are useful for dynamic debugging.
  <BR>
 <BR> <P>
 
-<A NAME="21886"></A>
+<A NAME="21898"></A>
 <B>sys:gc</B> [function]
 
 <DL COMPACT>
@@ -197,7 +197,7 @@ of free words and total words allocated.
 
 <P>
 
-<A NAME="21896"></A>
+<A NAME="21908"></A>
 <B>sys:*gc-hook*</B> [variable]
 
 <DL COMPACT>
@@ -211,7 +211,7 @@ Defines a function that is called upon the completion of a GC.
 
 <P>
 
-<A NAME="21906"></A>
+<A NAME="21918"></A>
 <B>sys:gctime</B> [function]
 
 <DL COMPACT>
@@ -227,7 +227,7 @@ and the time elapsed for reclamation (unmarking and merging).
 
 <P>
 
-<A NAME="21916"></A>
+<A NAME="21928"></A>
 <B>sys:alloc</B> <EM>size </EM>[function]
 
 <DL COMPACT>
@@ -242,7 +242,7 @@ and returns the number of words really allocated.
 
 <P>
 
-<A NAME="21927"></A>
+<A NAME="21939"></A>
 <B>sys:newstack</B> <EM>size </EM>[function]
 
 <DL COMPACT>
@@ -257,7 +257,7 @@ and allocates a new stack of <EM>size</EM> words.
 
 <P>
 
-<A NAME="21938"></A>
+<A NAME="21950"></A>
 <B>sys:*gc-merge*</B> [variable]
 
 <DL COMPACT>
@@ -279,7 +279,7 @@ bigger cells like float-vectors, edges, faces, etc.
 
 <P>
 
-<A NAME="21949"></A>
+<A NAME="21961"></A>
 <B>sys:*gc-margin*</B> [variable]
 
 <DL COMPACT>
@@ -298,7 +298,7 @@ maintained at every GC.
 
 <P>
 
-<A NAME="21960"></A>
+<A NAME="21972"></A>
 <B>sys:reclaim</B> <EM>object </EM>[function]
 
 <DL COMPACT>
@@ -313,7 +313,7 @@ It must be guaranteed that it is no longer referenced from any other objects.
 
 <P>
 
-<A NAME="21971"></A>
+<A NAME="21983"></A>
 <B>sys:reclaim-tree</B> <EM>object </EM>[function]
 
 <DL COMPACT>
@@ -327,7 +327,7 @@ reclaims all the objects except symbols traversable from <EM>object</EM>.
 
 <P>
 
-<A NAME="21982"></A>
+<A NAME="21994"></A>
 <B>sys:btrace</B> <EM>num </EM>[function]
 
 <DL COMPACT>
@@ -341,7 +341,7 @@ prints the back-trace information of <EM>num</EM> depth on the Lisp stack.
 
 <P>
 
-<A NAME="21993"></A>
+<A NAME="22005"></A>
 <B>sys:memory-report</B> <EM>&amp;optional strm </EM>[function]
 
 <DL COMPACT>
@@ -356,7 +356,7 @@ to the <I>strm</I> stream.
 
 <P>
 
-<A NAME="22004"></A>
+<A NAME="22016"></A>
 <B>sys:room</B> <EM>output-stream </EM>[function]
 
 <DL COMPACT>
@@ -370,7 +370,7 @@ outputs memory allocation information ordered by classes.
 
 <P>
 
-<A NAME="22014"></A>
+<A NAME="22026"></A>
 <B>sys:address</B> <EM>object </EM>[function]
 
 <DL COMPACT>
@@ -385,7 +385,7 @@ returns the address of <I>object</I> in the process memory space.
 
 <P>
 
-<A NAME="22025"></A>
+<A NAME="22037"></A>
 <B>sys:peek</B> <EM>[vector] address type </EM>[function]
 
 <DL COMPACT>
@@ -421,7 +421,7 @@ at odd address may cause bus error by most CPU architectures.
 
 <P>
 
-<A NAME="22048"></A>
+<A NAME="22060"></A>
 <B>sys:poke</B> <EM>value [vector] address value-type </EM>[function]
 
 <DL COMPACT>
@@ -440,7 +440,7 @@ at odd address causes bus error.
 
 <P>
 
-<A NAME="22060"></A>
+<A NAME="22072"></A>
 <B>sys:list-all-chunks</B> [function]
 
 <DL COMPACT>
@@ -454,7 +454,7 @@ list up all allocated heap chunks. Not useful for other than the implementor.
 
 <P>
 
-<A NAME="22070"></A>
+<A NAME="22082"></A>
 <B>sys:object-size</B> <EM>obj </EM>[function]
 
 <DL COMPACT>
@@ -499,7 +499,7 @@ Times</A>
 </H3>
 
  <BR>
-<BR> <A NAME="22081"></A>
+<BR> <A NAME="22093"></A>
 <B>unix:ptimes</B> [function]
 
 <DL COMPACT>
@@ -516,7 +516,7 @@ This function is obsolete and use of <B>unix:getrusage</B> is recommended.
 
 <P>
 
-<A NAME="22092"></A>
+<A NAME="22104"></A>
 <B>unix:runtime</B> [function]
 
 <DL COMPACT>
@@ -531,7 +531,7 @@ Unit is 1/60 second.
 
 <P>
 
-<A NAME="22102"></A>
+<A NAME="22114"></A>
 <B>unix:localtime</B> [function]
 
 <DL COMPACT>
@@ -549,7 +549,7 @@ Elements are second, minute, hour, day-of-a-month, month (zero-based), year (the
 
 <P>
 
-<A NAME="22113"></A>
+<A NAME="22125"></A>
 <B>unix:asctime</B> <EM>tm_intvector </EM>[function]
 
 <DL COMPACT>
@@ -571,7 +571,7 @@ Process</A>
 </H3>
 
  <BR>
-<BR> <A NAME="22124"></A>
+<BR> <A NAME="22136"></A>
 <B>unix:getpid</B> [function]
 
 <DL COMPACT>
@@ -585,7 +585,7 @@ returns the process id (16bit integer) of this process.
 
 <P>
 
-<A NAME="22134"></A>
+<A NAME="22146"></A>
 <B>unix:getppid</B> [function]
 
 <DL COMPACT>
@@ -599,7 +599,7 @@ returns the process id of the parent process.
 
 <P>
 
-<A NAME="22144"></A>
+<A NAME="22156"></A>
 <B>unix:getpgrp</B> <EM>integer </EM>[function]
 
 <DL COMPACT>
@@ -613,7 +613,7 @@ returns the process group id.
 
 <P>
 
-<A NAME="22154"></A>
+<A NAME="22166"></A>
 <B>unix:setpgrp</B> <EM>integer </EM>[function]
 
 <DL COMPACT>
@@ -627,7 +627,7 @@ sets a new process group id.
 
 <P>
 
-<A NAME="22164"></A>
+<A NAME="22176"></A>
 <B>unix:getuid</B> [function]
 
 <DL COMPACT>
@@ -640,7 +640,7 @@ sets a new process group id.
 
 <P>
 
-<A NAME="22174"></A>
+<A NAME="22186"></A>
 <B>unix:geteuid</B> [function]
 
 <DL COMPACT>
@@ -654,7 +654,7 @@ returns the effective user id of this process.
 
 <P>
 
-<A NAME="22184"></A>
+<A NAME="22196"></A>
 <B>unix:getgid</B> [function]
 
 <DL COMPACT>
@@ -668,7 +668,7 @@ returns the group id of this process.
 
 <P>
 
-<A NAME="22194"></A>
+<A NAME="22206"></A>
 <B>unix:getegid</B> [function]
 
 <DL COMPACT>
@@ -682,7 +682,7 @@ returns the effective group id of this process.
 
 <P>
 
-<A NAME="22204"></A>
+<A NAME="22216"></A>
 <B>unix:setuid</B> <EM>integer </EM>[function]
 
 <DL COMPACT>
@@ -696,7 +696,7 @@ sets effective user id of this process.
 
 <P>
 
-<A NAME="22214"></A>
+<A NAME="22226"></A>
 <B>unix:setgid</B> <EM>integer </EM>[function]
 
 <DL COMPACT>
@@ -710,7 +710,7 @@ sets the effective group id of this process.
 
 <P>
 
-<A NAME="22224"></A>
+<A NAME="22236"></A>
 <B>unix:fork</B> [function]
 
 <DL COMPACT>
@@ -727,7 +727,7 @@ to make a process connected via pipes.
 
 <P>
 
-<A NAME="22236"></A>
+<A NAME="22248"></A>
 <B>unix:vfork</B> [function]
 
 <DL COMPACT>
@@ -742,7 +742,7 @@ until the new EusLisp process terminates.
 
 <P>
 
-<A NAME="22246"></A>
+<A NAME="22258"></A>
 <B>unix:exec</B> <EM>path </EM>[function]
 
 <DL COMPACT>
@@ -756,7 +756,7 @@ replaces executing EusLisp with another program.
 
 <P>
 
-<A NAME="22256"></A>
+<A NAME="22268"></A>
 <B>unix:wait</B> [function]
 
 <DL COMPACT>
@@ -770,7 +770,7 @@ waits for the completion of one of subprocesses.
 
 <P>
 
-<A NAME="22266"></A>
+<A NAME="22278"></A>
 <B>unix:exit</B> <EM>code </EM>[function]
 
 <DL COMPACT>
@@ -785,7 +785,7 @@ Zero means normal termination.
 
 <P>
 
-<A NAME="22277"></A>
+<A NAME="22289"></A>
 <B>sys:*exit-hook*</B> [variable]
 
 <DL COMPACT>
@@ -799,7 +799,7 @@ Defines a function that is called just before the process is exited.
 
 <P>
 
-<A NAME="22287"></A>
+<A NAME="22299"></A>
 <B>unix:getpriority</B> <EM>which who </EM>[function]
 
 <DL COMPACT>
@@ -814,7 +814,7 @@ returns the highest priority (nice value) enjoyed by this process.
 
 <P>
 
-<A NAME="22298"></A>
+<A NAME="22310"></A>
 <B>unix:setpriority</B> <EM>which who priority </EM>[function]
 
 <DL COMPACT>
@@ -848,7 +848,7 @@ Bigger nice value makes your process get less favored.
 
 <P>
 
-<A NAME="22314"></A>
+<A NAME="22326"></A>
 <B>unix:getrusage</B> <EM>who </EM>[function]
 
 <DL COMPACT>
@@ -883,7 +883,7 @@ More comprehensive display is obtained by <B>lisp:rusage</B>.
 
 <P>
 
-<A NAME="22326"></A>
+<A NAME="22338"></A>
 <B>unix:system</B> <EM>[command] </EM>[function]
 
 <DL COMPACT>
@@ -898,7 +898,7 @@ executes <EM>command</EM> in a sub shell.
 
 <P>
 
-<A NAME="22338"></A>
+<A NAME="22350"></A>
 <B>unix:getenv</B> <EM>env-var </EM>[function]
 
 <DL COMPACT>
@@ -912,7 +912,7 @@ gets the value for the environment variable <EM>env-var</EM>.
 
 <P>
 
-<A NAME="22349"></A>
+<A NAME="22361"></A>
 <B>unix:putenv</B> <EM>env </EM>[function]
 
 <DL COMPACT>
@@ -928,7 +928,7 @@ like <TT>"VARIABLE=value"</TT>.
 
 <P>
 
-<A NAME="22362"></A>
+<A NAME="22374"></A>
 <B>unix:sleep</B> <EM>time </EM>[function]
 
 <DL COMPACT>
@@ -942,7 +942,7 @@ suspends execution of this process for <EM>time</EM> seconds.
 
 <P>
 
-<A NAME="22373"></A>
+<A NAME="22385"></A>
 <B>unix:usleep</B> <EM>time </EM>[function]
 
 <DL COMPACT>
@@ -966,7 +966,7 @@ File Systems and I/O</A>
  <BR>
 <BR> <P>
 
-<A NAME="22386"></A>
+<A NAME="22398"></A>
 <B>unix:uread</B> <EM>stream [buffer] [size] </EM>[function]
 
 <DL COMPACT>
@@ -986,7 +986,7 @@ Therefore, if <EM>stream</EM> is fd, <EM>buffer</EM> must be given.
 
 <P>
 
-<A NAME="22405"></A>
+<A NAME="22417"></A>
 <B>unix:write</B> <EM>stream string &amp;optional size </EM>[function]
 
 <DL COMPACT>
@@ -1001,7 +1001,7 @@ If <EM>size</EM> is omitted, the full length of <EM>string</EM> is output.
 
 <P>
 
-<A NAME="22420"></A>
+<A NAME="22432"></A>
 <B>unix:fcntl</B> <EM>stream command argument </EM>[function]
 
 <DL COMPACT>
@@ -1012,7 +1012,7 @@ If <EM>size</EM> is omitted, the full length of <EM>string</EM> is output.
 <BR>
 <BR>
 
-<A NAME="22431"></A>
+<A NAME="22443"></A>
 <B>unix:ioctl</B> <EM>stream command buffer </EM>[function]
 
 <DL COMPACT>
@@ -1023,7 +1023,7 @@ If <EM>size</EM> is omitted, the full length of <EM>string</EM> is output.
 <BR>
 <BR>
 
-<A NAME="22442"></A>
+<A NAME="22454"></A>
 <B>unix:ioctl_</B> <EM>stream command1 command2 </EM>[function]
 
 <DL COMPACT>
@@ -1034,7 +1034,7 @@ If <EM>size</EM> is omitted, the full length of <EM>string</EM> is output.
 <BR>
 <BR>
 
-<A NAME="22453"></A>
+<A NAME="22465"></A>
 <B>unix:ioctl_R</B> <EM>stream command1 command2 buffer [size] </EM>[function]
 
 <DL COMPACT>
@@ -1045,7 +1045,7 @@ If <EM>size</EM> is omitted, the full length of <EM>string</EM> is output.
 <BR>
 <BR>
 
-<A NAME="22464"></A>
+<A NAME="22476"></A>
 <B>unix:ioctl_W</B> <EM>stream command1 command2 buffer [size] </EM>[function]
 
 <DL COMPACT>
@@ -1056,7 +1056,7 @@ If <EM>size</EM> is omitted, the full length of <EM>string</EM> is output.
 <BR>
 <BR>
 
-<A NAME="22475"></A>
+<A NAME="22487"></A>
 <B>unix:ioctl_WR</B> <EM>stream command1 command2 buffer [size] </EM>[function]
 
 <DL COMPACT>
@@ -1067,7 +1067,7 @@ If <EM>size</EM> is omitted, the full length of <EM>string</EM> is output.
 <BR>
 <BR>
 
-<A NAME="22486"></A>
+<A NAME="22498"></A>
 <B>unix:close</B> <EM>fd </EM>[function]
 
 <DL COMPACT>
@@ -1079,7 +1079,7 @@ close a file specifying its file descriptor <EM>fd</EM>.
 <BR>
 <BR>
 
-<A NAME="22497"></A>
+<A NAME="22509"></A>
 <B>unix:dup</B> <EM>fd </EM>[function]
 
 <DL COMPACT>
@@ -1091,7 +1091,7 @@ returns the duplicated file descriptor for <EM>fd</EM>.
 <BR>
 <BR>
 
-<A NAME="22508"></A>
+<A NAME="22520"></A>
 <B>unix:pipe</B> [function]
 
 <DL COMPACT>
@@ -1103,7 +1103,7 @@ An io-stream for this pipe is returned.
 <BR>
 <BR>
 
-<A NAME="22518"></A>
+<A NAME="22530"></A>
 <B>unix:lseek</B> <EM>stream position [whence 0] </EM>[function]
 
 <DL COMPACT>
@@ -1118,7 +1118,7 @@ from <EM>whence</EM>.
 
 <P>
 
-<A NAME="22531"></A>
+<A NAME="22543"></A>
 <B>unix:link</B> <EM>path1 path2 </EM>[function]
 
 <DL COMPACT>
@@ -1131,7 +1131,7 @@ from <EM>whence</EM>.
 
 <P>
 
-<A NAME="22541"></A>
+<A NAME="22553"></A>
 <B>unix:unlink</B> <EM>path </EM>[function]
 
 <DL COMPACT>
@@ -1145,7 +1145,7 @@ If no reference to the file lefts, it is deleted.
 
 <P>
 
-<A NAME="22552"></A>
+<A NAME="22564"></A>
 <B>unix:mknod</B> <EM>path mode </EM>[function]
 
 <DL COMPACT>
@@ -1157,7 +1157,7 @@ If no reference to the file lefts, it is deleted.
 <BR>
 <BR>
 
-<A NAME="22563"></A>
+<A NAME="22575"></A>
 <B>unix:mkdir</B> <EM>path mode </EM>[function]
 
 <DL COMPACT>
@@ -1169,7 +1169,7 @@ If no reference to the file lefts, it is deleted.
 <BR>
 <BR>
 
-<A NAME="22574"></A>
+<A NAME="22586"></A>
 <B>unix:access</B> <EM>path mode </EM>[function]
 
 <DL COMPACT>
@@ -1181,7 +1181,7 @@ checks the access rights to <EM>path</EM>.
 <BR>
 <BR>
 
-<A NAME="22585"></A>
+<A NAME="22597"></A>
 <B>unix:stat</B> <EM>path </EM>[function]
 
 <DL COMPACT>
@@ -1208,7 +1208,7 @@ returns a list of integers  described below.
   st_mode	; file mode
 </PRE>
 
-<A NAME="22596"></A>
+<A NAME="22608"></A>
 <B>unix:chdir</B> <EM>path </EM>[function]
 
 <DL COMPACT>
@@ -1219,7 +1219,7 @@ returns a list of integers  described below.
 <BR>
 <BR>
 
-<A NAME="22607"></A>
+<A NAME="22619"></A>
 <B>unix:getwd</B> [function]
 
 <DL COMPACT>
@@ -1232,7 +1232,7 @@ returns a list of integers  described below.
 
 <P>
 
-<A NAME="22617"></A>
+<A NAME="22629"></A>
 <B>unix:chmod</B> <EM>path integer </EM>[function]
 
 <DL COMPACT>
@@ -1244,7 +1244,7 @@ changes access mode (permission) for <EM>path</EM>.
 <BR>
 <BR>
 
-<A NAME="22628"></A>
+<A NAME="22640"></A>
 <B>unix:chown</B> <EM>path integer </EM>[function]
 
 <DL COMPACT>
@@ -1258,7 +1258,7 @@ changes the owner of the file <EM>path</EM>.
 
 <P>
 
-<A NAME="22639"></A>
+<A NAME="22651"></A>
 <B>unix:isatty</B> <EM>(stream <SPAN CLASS="MATH"><IMG
  WIDTH="9" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
  SRC="manual-img5.png"
@@ -1276,7 +1276,7 @@ device (a serial port or a pseudo tty) .
 
 <P>
 
-<A NAME="22650"></A>
+<A NAME="22662"></A>
 <B>unix:msgget</B> <EM>key mode </EM>[function]
 
 <DL COMPACT>
@@ -1288,7 +1288,7 @@ creates or allocates a message queue which is addressed by <EM>key</EM>.
 <BR>
 <BR>
 
-<A NAME="22661"></A>
+<A NAME="22673"></A>
 <B>unix:msgsnd</B> <EM>qid buf [mtype [flag]] </EM>[function]
 
 <DL COMPACT>
@@ -1299,7 +1299,7 @@ creates or allocates a message queue which is addressed by <EM>key</EM>.
 <BR>
 <BR>
 
-<A NAME="22672"></A>
+<A NAME="22684"></A>
 <B>unix:msgrcv</B> <EM>qid buf [size [mtype [flag]]] </EM>[function]
 
 <DL COMPACT>
@@ -1312,7 +1312,7 @@ creates or allocates a message queue which is addressed by <EM>key</EM>.
 
 <P>
 
-<A NAME="22683"></A>
+<A NAME="22695"></A>
 <B>unix:socket</B> <EM>domain type &amp;optional proto </EM>[function]
 
 <DL COMPACT>
@@ -1326,7 +1326,7 @@ whose name is defined in <I>domain</I> and whose abstract type is <EM>type</EM>.
 <BR>
 <BR>
 
-<A NAME="22696"></A>
+<A NAME="22708"></A>
 <B>unix:bind</B> <EM>socket name </EM>[function]
 
 <DL COMPACT>
@@ -1339,7 +1339,7 @@ associates <EM>name</EM> to <EM>socket</EM>.
 <BR>
 <BR>
 
-<A NAME="22709"></A>
+<A NAME="22721"></A>
 <B>unix:connect</B> <EM>socket addr </EM>[function]
 
 <DL COMPACT>
@@ -1351,7 +1351,7 @@ connects <EM>socket</EM> to another socket specified by <EM>addr</EM>.
 <BR>
 <BR>
 
-<A NAME="22721"></A>
+<A NAME="22733"></A>
 <B>unix:listen</B> <EM>socket &amp;optional backlog </EM>[function]
 
 <DL COMPACT>
@@ -1365,7 +1365,7 @@ of connection.
 <BR>
 <BR>
 
-<A NAME="22733"></A>
+<A NAME="22745"></A>
 <B>unix:accept</B> <EM>socket </EM>[function]
 
 <DL COMPACT>
@@ -1378,7 +1378,7 @@ bidirectionally.
 <BR>
 <BR>
 
-<A NAME="22744"></A>
+<A NAME="22756"></A>
 <B>unix:recvfrom</B> <EM>socket &amp;optional mesg from flag </EM>[function]
 
 <DL COMPACT>
@@ -1395,7 +1395,7 @@ and returned.
 <BR>
 <BR>
 
-<A NAME="22759"></A>
+<A NAME="22771"></A>
 <B>unix:sendto</B> <EM>socket addr mesg &amp;optional len flag </EM>[function]
 
 <DL COMPACT>
@@ -1414,7 +1414,7 @@ If omitted, whole string is sent.
 
 <P>
 
-<A NAME="22773"></A>
+<A NAME="22785"></A>
 <B>unix:getservbyname</B> <EM>servicename </EM>[function]
 
 <DL COMPACT>
@@ -1429,7 +1429,7 @@ in <TT>/etc/services</TT> or in NIS database.
 
 <P>
 
-<A NAME="22785"></A>
+<A NAME="22797"></A>
 <B>unix:gethostbyname</B> <EM>hostname </EM>[function]
 
 <DL COMPACT>
@@ -1444,7 +1444,7 @@ returns the list  of ip address of <EM>hostname</EM> and its address type
 
 <P>
 
-<A NAME="22796"></A>
+<A NAME="22808"></A>
 <B>unix:syserrlist</B> <EM>errno </EM>[function]
 
 <DL COMPACT>
@@ -1467,7 +1467,7 @@ Signals</A>
 <P>
 
  <BR>
-<BR> <A NAME="22807"></A>
+<BR> <A NAME="22819"></A>
 <B>unix:signal</B> <EM>signal func [option] </EM>[function]
 
 <DL COMPACT>
@@ -1488,7 +1488,7 @@ which causes the system call to fail.
 
 <P>
 
-<A NAME="22820"></A>
+<A NAME="22832"></A>
 <B>unix:kill</B> <EM>pid signal </EM>[function]
 
 <DL COMPACT>
@@ -1502,7 +1502,7 @@ sends a signal to a process named by <EM>pid</EM>.
 
 <P>
 
-<A NAME="22831"></A>
+<A NAME="22843"></A>
 <B>unix:pause</B> [function]
 
 <DL COMPACT>
@@ -1516,7 +1516,7 @@ suspends execution of this process until a signal arrives.
 
 <P>
 
-<A NAME="22841"></A>
+<A NAME="22853"></A>
 <B>unix:alarm</B> <EM>time </EM>[function]
 
 <DL COMPACT>
@@ -1531,7 +1531,7 @@ Calling <B>unix:alarm</B> with <EM>time</EM>=0 resets the alarm clock.
 
 <P>
 
-<A NAME="22854"></A>
+<A NAME="22866"></A>
 <B>unix:ualarm</B> <EM>time </EM>[function]
 
 <DL COMPACT>
@@ -1546,7 +1546,7 @@ same as <B>unix:alarm</B> except that the unit of <EM>time</EM> is micro seconds
 
 <P>
 
-<A NAME="22867"></A>
+<A NAME="22879"></A>
 <B>unix:getitimer</B> <EM>timer </EM>[function]
 
 <DL COMPACT>
@@ -1568,7 +1568,7 @@ and the interval. Both are floating-point numbers.
 
 <P>
 
-<A NAME="22881"></A>
+<A NAME="22893"></A>
 <B>unix:setitimer</B> <EM>timer value interval </EM>[function]
 
 <DL COMPACT>
@@ -1587,7 +1587,7 @@ or 2(<TT>ITIMER_PROF</TT>).
 
 <P>
 
-<A NAME="22902"></A>
+<A NAME="22914"></A>
 <B>unix:select</B> <EM>inlist outlist exceptlist timeout </EM>[function]
 
 <DL COMPACT>
@@ -1616,7 +1616,7 @@ in each of <EM>inlist, outlist and exceptlist</EM>.
 
 <P>
 
-<A NAME="22924"></A>
+<A NAME="22936"></A>
 <B>unix:select-read-fd</B> <EM>read-fdset timeout </EM>[function]
 
 <DL COMPACT>
@@ -1645,7 +1645,7 @@ On Solaris2, the main top-level runs in a separated thread.
 <P>
 
  <BR>
-<BR> <A NAME="22937"></A>
+<BR> <A NAME="22949"></A>
 <B>unix:thr-self</B> [function]
 
 <DL COMPACT>
@@ -1659,7 +1659,7 @@ running.
 
 <P>
 
-<A NAME="22947"></A>
+<A NAME="22959"></A>
 <B>unix:thr-getprio</B> <EM>id </EM>[function]
 
 <DL COMPACT>
@@ -1671,7 +1671,7 @@ specified by <EM>id</EM>.
 <BR>
 <BR>
 
-<A NAME="22958"></A>
+<A NAME="22970"></A>
 <B>unix:thr-setprio</B> <EM>id newprio </EM>[function]
 
 <DL COMPACT>
@@ -1690,7 +1690,7 @@ the process's nice value, which is usually 0.
 
 <P>
 
-<A NAME="22972"></A>
+<A NAME="22984"></A>
 <B>unix:thr-getconcurrency</B> [function]
 
 <DL COMPACT>
@@ -1703,7 +1703,7 @@ of threads that can run concurrently.
 <BR>
 <BR>
 
-<A NAME="22982"></A>
+<A NAME="22994"></A>
 <B>unix:thr-setconcurrency</B> <EM>concurrency </EM>[function]
 
 <DL COMPACT>
@@ -1725,7 +1725,7 @@ equal to the number of processors.
 
 <P>
 
-<A NAME="22994"></A>
+<A NAME="23006"></A>
 <B>unix:thr-create</B> <EM>func arg-list &amp;optional (size 64*1024) </EM>[function]
 
 <DL COMPACT>
@@ -1749,7 +1749,7 @@ Low-Level Memory Management</A>
 </H3>
 
  <BR>
-<BR> <A NAME="23008"></A>
+<BR> <A NAME="23020"></A>
 <B>unix:malloc</B> <EM>integer </EM>[function]
 
 <DL COMPACT>
@@ -1761,7 +1761,7 @@ allocates memory outside EusLisp memory space.
 <BR>
 <BR>
 
-<A NAME="23018"></A>
+<A NAME="23030"></A>
 <B>unix:free</B> <EM>integer </EM>[function]
 
 <DL COMPACT>
@@ -1773,7 +1773,7 @@ deallocates a  memory block allocated by <EM>unix:malloc</EM>.
 <BR>
 <BR>
 
-<A NAME="23029"></A>
+<A NAME="23041"></A>
 <B>unix:valloc</B> <EM>integer </EM>[function]
 
 <DL COMPACT>
@@ -1784,7 +1784,7 @@ deallocates a  memory block allocated by <EM>unix:malloc</EM>.
 <BR>
 <BR>
 
-<A NAME="23040"></A>
+<A NAME="23052"></A>
 <B>unix:mmap</B> <EM>address length protection share stream offset </EM>[function]
 
 <DL COMPACT>
@@ -1795,7 +1795,7 @@ deallocates a  memory block allocated by <EM>unix:malloc</EM>.
 <BR>
 <BR>
 
-<A NAME="23051"></A>
+<A NAME="23063"></A>
 <B>unix:munmap</B> <EM>address length </EM>[function]
 
 <DL COMPACT>
@@ -1806,7 +1806,7 @@ deallocates a  memory block allocated by <EM>unix:malloc</EM>.
 <BR>
 <BR>
 
-<A NAME="23062"></A>
+<A NAME="23074"></A>
 <B>unix:vadvise</B> <EM>integer </EM>[function]
 
 <DL COMPACT>
@@ -1849,7 +1849,7 @@ Basically, BSD supports TIOC* io-controls and Sys5 supports TC*.
  <BR>
 <BR> <P>
 
-<A NAME="23073"></A>
+<A NAME="23085"></A>
 <B>unix:tiocgetp</B> <EM>stream [sgttybuf] </EM>[function]
 
 <DL COMPACT>
@@ -1860,7 +1860,7 @@ Basically, BSD supports TIOC* io-controls and Sys5 supports TC*.
 <BR>
 <BR>
 
-<A NAME="23083"></A>
+<A NAME="23095"></A>
 <B>unix:tiocsetp</B> <EM>stream sgttybuf </EM>[function]
 
 <DL COMPACT>
@@ -1871,7 +1871,7 @@ Basically, BSD supports TIOC* io-controls and Sys5 supports TC*.
 <BR>
 <BR>
 
-<A NAME="23093"></A>
+<A NAME="23105"></A>
 <B>unix:tiocsetn</B> <EM>stream [sgttybuf] </EM>[function]
 
 <DL COMPACT>
@@ -1882,7 +1882,7 @@ Basically, BSD supports TIOC* io-controls and Sys5 supports TC*.
 <BR>
 <BR>
 
-<A NAME="23104"></A>
+<A NAME="23116"></A>
 <B>unix:tiocgetd</B> <EM>stream [sgttybuf] </EM>[function]
 
 <DL COMPACT>
@@ -1893,7 +1893,7 @@ Basically, BSD supports TIOC* io-controls and Sys5 supports TC*.
 <BR>
 <BR>
 
-<A NAME="23115"></A>
+<A NAME="23127"></A>
 <B>unix:tiocflush</B> <EM>stream </EM>[function]
 
 <DL COMPACT>
@@ -1904,7 +1904,7 @@ Basically, BSD supports TIOC* io-controls and Sys5 supports TC*.
 <BR>
 <BR>
 
-<A NAME="23125"></A>
+<A NAME="23137"></A>
 <B>unix:tiocgpgrp</B> <EM>stream integer </EM>[function]
 
 <DL COMPACT>
@@ -1915,7 +1915,7 @@ Basically, BSD supports TIOC* io-controls and Sys5 supports TC*.
 <BR>
 <BR>
 
-<A NAME="23135"></A>
+<A NAME="23147"></A>
 <B>unix:tiocspgrp</B> <EM>stream integer </EM>[function]
 
 <DL COMPACT>
@@ -1926,7 +1926,7 @@ Basically, BSD supports TIOC* io-controls and Sys5 supports TC*.
 <BR>
 <BR>
 
-<A NAME="23145"></A>
+<A NAME="23157"></A>
 <B>unix:tiocoutq</B> <EM>stream integer </EM>[function]
 
 <DL COMPACT>
@@ -1937,7 +1937,7 @@ Basically, BSD supports TIOC* io-controls and Sys5 supports TC*.
 <BR>
 <BR>
 
-<A NAME="23156"></A>
+<A NAME="23168"></A>
 <B>unix:fionread</B> <EM>stream integer </EM>[function]
 
 <DL COMPACT>
@@ -1948,7 +1948,7 @@ Basically, BSD supports TIOC* io-controls and Sys5 supports TC*.
 <BR>
 <BR>
 
-<A NAME="23167"></A>
+<A NAME="23179"></A>
 <B>unix:tiocsetc</B> <EM>stream buf </EM>[function]
 
 <DL COMPACT>
@@ -1959,7 +1959,7 @@ Basically, BSD supports TIOC* io-controls and Sys5 supports TC*.
 <BR>
 <BR>
 
-<A NAME="23178"></A>
+<A NAME="23190"></A>
 <B>unix:tioclbis</B> <EM>stream buf </EM>[function]
 
 <DL COMPACT>
@@ -1970,7 +1970,7 @@ Basically, BSD supports TIOC* io-controls and Sys5 supports TC*.
 <BR>
 <BR>
 
-<A NAME="23189"></A>
+<A NAME="23201"></A>
 <B>unix:tioclbic</B> <EM>stream buf </EM>[function]
 
 <DL COMPACT>
@@ -1981,7 +1981,7 @@ Basically, BSD supports TIOC* io-controls and Sys5 supports TC*.
 <BR>
 <BR>
 
-<A NAME="23200"></A>
+<A NAME="23212"></A>
 <B>unix:tioclset</B> <EM>stream buf </EM>[function]
 
 <DL COMPACT>
@@ -1992,7 +1992,7 @@ Basically, BSD supports TIOC* io-controls and Sys5 supports TC*.
 <BR>
 <BR>
 
-<A NAME="23211"></A>
+<A NAME="23223"></A>
 <B>unix:tioclget</B> <EM>stream buf </EM>[function]
 
 <DL COMPACT>
@@ -2005,7 +2005,7 @@ Basically, BSD supports TIOC* io-controls and Sys5 supports TC*.
 
 <P>
 
-<A NAME="23222"></A>
+<A NAME="23234"></A>
 <B>unix:tcseta</B> <EM>stream buffer </EM>[function]
 
 <DL COMPACT>
@@ -2016,7 +2016,7 @@ Basically, BSD supports TIOC* io-controls and Sys5 supports TC*.
 <BR>
 <BR>
 
-<A NAME="23232"></A>
+<A NAME="23244"></A>
 <B>unix:tcsets</B> <EM>stream buffer </EM>[function]
 
 <DL COMPACT>
@@ -2027,7 +2027,7 @@ Basically, BSD supports TIOC* io-controls and Sys5 supports TC*.
 <BR>
 <BR>
 
-<A NAME="23242"></A>
+<A NAME="23254"></A>
 <B>unix:tcsetsw</B> <EM>stream buffer </EM>[function]
 
 <DL COMPACT>
@@ -2039,7 +2039,7 @@ characters queued for output have been transmitted.
 <BR>
 <BR>
 
-<A NAME="23252"></A>
+<A NAME="23264"></A>
 <B>unix:tcsetsf</B> <EM>stream buffer </EM>[function]
 
 <DL COMPACT>
@@ -2052,7 +2052,7 @@ queued for input are discarded.
 <BR>
 <BR>
 
-<A NAME="23262"></A>
+<A NAME="23274"></A>
 <B>unix:tiocsetc</B> <EM>stream buffer </EM>[function]
 
 <DL COMPACT>
@@ -2063,7 +2063,7 @@ queued for input are discarded.
 <BR>
 <BR>
 
-<A NAME="23273"></A>
+<A NAME="23285"></A>
 <B>unix:tcsetaf</B> <EM>stream buffer </EM>[function]
 
 <DL COMPACT>
@@ -2074,7 +2074,7 @@ queued for input are discarded.
 <BR>
 <BR>
 
-<A NAME="23284"></A>
+<A NAME="23296"></A>
 <B>unix:tcsetaw</B> <EM>stream buffer </EM>[function]
 
 <DL COMPACT>
@@ -2085,7 +2085,7 @@ queued for input are discarded.
 <BR>
 <BR>
 
-<A NAME="23295"></A>
+<A NAME="23307"></A>
 <B>unix:tcgeta</B> <EM>stream buffer </EM>[function]
 
 <DL COMPACT>
@@ -2096,7 +2096,7 @@ queued for input are discarded.
 <BR>
 <BR>
 
-<A NAME="23306"></A>
+<A NAME="23318"></A>
 <B>unix:tcgets</B> <EM>stream buffer </EM>[function]
 
 <DL COMPACT>
@@ -2107,7 +2107,7 @@ queued for input are discarded.
 <BR>
 <BR>
 
-<A NAME="23317"></A>
+<A NAME="23329"></A>
 <B>unix:tcgetattr</B> <EM>stream buffer </EM>[function]
 
 <DL COMPACT>
@@ -2118,7 +2118,7 @@ queued for input are discarded.
 <BR>
 <BR>
 
-<A NAME="23328"></A>
+<A NAME="23340"></A>
 <B>unix:tcsetattr</B> <EM>stream buffer </EM>[function]
 
 <DL COMPACT>
@@ -2145,7 +2145,7 @@ and loaded into EusLisp by <TT>(load "clib/ndbm" :ld-option "-lc")</TT>.
 <P>
 
  <BR>
-<BR> <A NAME="23339"></A>
+<BR> <A NAME="23351"></A>
 <B>dbm-open</B> <EM>dbname mode flag </EM>[function]
 
 <DL COMPACT>
@@ -2171,7 +2171,7 @@ In other words, you can open several data bases at the same time.
 
 <P>
 
-<A NAME="23358"></A>
+<A NAME="23370"></A>
 <B>dbm-store</B> <EM>db key datum mode </EM>[function]
 
 <DL COMPACT>
@@ -2188,7 +2188,7 @@ stores <EM>key-datum</EM> association in <EM>db</EM>.
 
 <P>
 
-<A NAME="23373"></A>
+<A NAME="23385"></A>
 <B>dbm-fetch</B> <EM>db key </EM>[function]
 
 <DL COMPACT>
@@ -2245,7 +2245,7 @@ Similar function is available on emacs by M-X run-lisp command.
 <P>
 
  <BR>
-<BR> <A NAME="23385"></A>
+<BR> <A NAME="23397"></A>
 <B>cd</B> <EM>&amp;optional (dir (unix:getenv "HOME")) </EM>[function]
 
 <DL COMPACT>
@@ -2259,7 +2259,7 @@ changes the current working directory.
 
 <P>
 
-<A NAME="23395"></A>
+<A NAME="23407"></A>
 <B>ez</B> <EM>&amp;optional key </EM>[function]
 
 <DL COMPACT>
@@ -2274,7 +2274,7 @@ them.
 
 <P>
 
-<A NAME="23405"></A>
+<A NAME="23417"></A>
 <B>piped-fork</B> <EM>&amp;optional (exec) &amp;rest args </EM>[function]
 
 <DL COMPACT>
@@ -2292,7 +2292,7 @@ If no exec is given, another euslisp is created as the subprocess.
 
 <P>
 
-<A NAME="23415"></A>
+<A NAME="23427"></A>
 <B>xfork</B> <EM>exec &amp;key (stdin *standard-input*) (stdout *standard-output*) 
 <BR>(stderr *error-output*) (args nil) </EM>[function]
 
@@ -2316,7 +2316,7 @@ comes from the stdin.
 
 <P>
 
-<A NAME="23425"></A>
+<A NAME="23437"></A>
 <B>rusage</B> [function]
 
 <DL COMPACT>
@@ -2541,7 +2541,7 @@ For example, following struct definition is represented by the next defcstruct.
  <BR>
 <BR> <P>
 
-<A NAME="23435"></A>
+<A NAME="23447"></A>
 <B>load-foreign</B> <EM>objfile &amp;key symbol-input symbol-output (symbol-file objfile) ld-option) </EM>[macro]
 
 <DL COMPACT>
@@ -2603,7 +2603,7 @@ See <TT>*eusdir*/llib/linpack.l</TT> for more complete examples of
 
 <P>
 
-<A NAME="23470"></A>
+<A NAME="23482"></A>
 <B>defforeign</B> <EM>funcname module cname paramspec resulttype </EM>[macro]
 
 <DL COMPACT>
@@ -2660,7 +2660,7 @@ in a integer-vector or a float-vector before it is passed to Fortran.
 
 <P>
 
-<A NAME="23498"></A>
+<A NAME="23510"></A>
 <B>defun-c-callable</B> <EM>funcname paramspec resulttype . body </EM>[macro]
 
 <DL COMPACT>
@@ -2681,7 +2681,7 @@ called from C.
 The function defined by <B>defun-c-callable</B> can be called from Lisp
 expressions, too.
 <B>Defun-c-callable</B> returns <EM>funcname</EM>.
-It looks like a symbol, but it is not, but an instance of <A NAME="23522"></A><B>f</B>oreign-pod
+It looks like a symbol, but it is not, but an instance of <A NAME="23534"></A><B>f</B>oreign-pod
 which is a subclass of symbol.
 </DD>
 </DL>
@@ -2690,7 +2690,7 @@ which is a subclass of symbol.
 
 <P>
 
-<A NAME="23524"></A>
+<A NAME="23536"></A>
 <B>pod-address</B> <EM>funcname </EM>[function]
 
 <DL COMPACT>
@@ -2707,7 +2707,7 @@ location of a Lisp function.
 
 <P>
 
-<A NAME="23536"></A>
+<A NAME="23548"></A>
 <B>array-entity</B> <EM>array-of-more-than-one-dimension </EM>[macro]
 
 <DL COMPACT>
@@ -2724,7 +2724,7 @@ although a simple vector can be passed directly.
 
 <P>
 
-<A NAME="23546"></A>
+<A NAME="23558"></A>
 <B>float2double</B> <EM>float-vector [doublevector] </EM>[function]
 
 <DL COMPACT>
@@ -2740,7 +2740,7 @@ first argument.
 
 <P>
 
-<A NAME="23556"></A>
+<A NAME="23568"></A>
 <B>double2float</B> <EM>doublevector [float-vector] </EM>[function]
 
 <DL COMPACT>
