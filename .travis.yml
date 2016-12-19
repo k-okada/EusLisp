@@ -70,6 +70,7 @@ after_success:
   - sudo apt-get install -qq -y texlive-latex-base ptex-bin latex2html nkf poppler-utils
   - (cd doc/latex;  make; make html)
   - (cd doc/jlatex; make; make html)
+  - git checkout doc/html/index.html # do not overwrite
 deploy:
   provider: releases
   api_key: "$GH_TOKEN"
@@ -85,9 +86,11 @@ after_deploy:
   - git config --global user.email k-okada@jsk.t.u--tokyo.ac.jp
   - git config --global user.name "Kei Okada"
   # recover from detached
-  - git checkout $(git name-rev --name-only $(git rev-parse $TRAVIS_BRANCH))
+  - git remote add upstream https://github.com/$TRAVIS_REPO_SLUG
+  - git fetch --all
+  - git checkout $(git name-rev --name-only $(git rev-parse $TRAVIS_BRANCH) | sed 's@/remotes/upstream/@@')
   # send doc to current repo
-  - git rm -f doc/{latex,jlatex,html}/*{pdf,ps,dvi,html,png}
+  - git rm -f doc/{latex,jlatex,html}/*.{pdf,ps,dvi,html,png}
   - git add doc/{latex,jlatex}/*.{pdf,ps,dvi} doc/html/*.{html,png}
   - git status
   - git branch
