@@ -88,7 +88,7 @@ after_deploy:
   # recover from detached
   - git remote add upstream https://github.com/$TRAVIS_REPO_SLUG
   - git fetch --all
-  - git checkout -b $(git name-rev --name-only $(git rev-parse $TRAVIS_BRANCH) | sed 's@/remotes/upstream/@@')
+  - git checkout -b $(git name-rev --name-only $(git rev-parse $TRAVIS_BRANCH) | sed 's@remotes/upstream/@@')
   # send doc to current repo
   - git rm -f doc/{latex,jlatex,html}/*.{pdf,ps,dvi,html,png}
   - git add doc/{latex,jlatex}/*.{pdf,ps,dvi} doc/html/*.{html,png}
