@@ -65,7 +65,7 @@ HTTP Client</A>
  <BR>
 <BR> <P>
 	<BR> 
-<A NAME="51105"></A>
+<A NAME="51110"></A>
 <BIG CLASS="XLARGE"><B>URL-pathname </B></BIG> [class]  <PRE><TT>
   :super   <B>pathname</B> 
 <BR>  :slots 		 server port protocol 
@@ -83,7 +83,7 @@ HTTP Client</A>
 
 <P>
 
-<A NAME="51122"></A>
+<A NAME="51127"></A>
 <B>url-pathname</B> <EM>name </EM>[function]
 
 <DL COMPACT>
@@ -97,7 +97,7 @@ instantiates url-pathname class object from url string or url-pathname class obj
 
 <P>
 
-<A NAME="51132"></A>
+<A NAME="51137"></A>
 <B>escape-url</B> <EM>url &amp;optional (ss *standard-output*) (queryp t) </EM>[function]
 
 <DL COMPACT>
@@ -113,7 +113,7 @@ This option is convenient for sending url query to server with separation.
 
 <P>
 
-<A NAME="51150"></A>
+<A NAME="51155"></A>
 <B>escaped-url-string-from-namestring</B> <EM>url-string &amp;optional (queryp t) </EM>[function]
 
 <DL COMPACT>
@@ -127,7 +127,7 @@ returns result of <TT>escape-url</TT> as string.
 
 <P>
 
-<A NAME="51161"></A>
+<A NAME="51166"></A>
 <B>unescape-url</B> <EM>url &amp;optional (ss *standard-output*) (queryp t) </EM>[function]
 
 <DL COMPACT>
@@ -141,7 +141,7 @@ unescapes percent-escaped <TT>url</TT> and writes unescaped url to stream <TT>ss
 
 <P>
 
-<A NAME="51173"></A>
+<A NAME="51178"></A>
 <B>unescaped-url-string-from-namestring</B> <EM>url-string &amp;optional (queryp t) </EM>[function]
 
 <DL COMPACT>
@@ -155,7 +155,7 @@ returns result of <TT>unescape-url</TT> as string.
 
 <P>
 
-<A NAME="51184"></A>
+<A NAME="51189"></A>
 <B>read-http</B> <EM>url &amp;key (timeout 10) (retry 5) </EM>[function]
 
 <DL COMPACT>
@@ -208,7 +208,7 @@ reflects how the original argument is described.
 
 <P>
 
-<A NAME="51194"></A>
+<A NAME="51199"></A>
 <B>extract-html</B> <EM>tag html-list </EM>[function]
 
 <DL COMPACT>
@@ -222,7 +222,7 @@ returns a list of strings (and tags) sandwitched by tag and /tag.
 
 <P>
 
-<A NAME="51204"></A>
+<A NAME="51209"></A>
 <B>remove-html-tags</B> <EM>html-list </EM>[function]
 
 <DL COMPACT>
@@ -291,7 +291,7 @@ should be sent.
  <BR>
 <BR> <P>
 
-<A NAME="51214"></A>
+<A NAME="51219"></A>
 <B>gen</B> <EM>string </EM>[function]
 
 <DL COMPACT>
@@ -305,7 +305,7 @@ which is then forwarded to to the client (browser).
 
 <P>
 
-<A NAME="51224"></A>
+<A NAME="51229"></A>
 <B>html</B> <EM>args ... </EM>[function]
 
 <DL COMPACT>
@@ -318,7 +318,7 @@ which is then forwarded to to the client (browser).
 
 <P>
 
-<A NAME="51234"></A>
+<A NAME="51239"></A>
 <B>html-table</B> <EM>lst &amp;key heading (table-option "") </EM>[function]
 
 <DL COMPACT>
@@ -332,7 +332,7 @@ generates an html table.
 
 <P>
 
-<A NAME="51244"></A>
+<A NAME="51249"></A>
 <B>get-cgi-query</B> [function]
 
 <DL COMPACT>
@@ -349,7 +349,7 @@ Anyways, the result is returned in one string.
 
 <P>
 
-<A NAME="51254"></A>
+<A NAME="51259"></A>
 <B>parse-http-query</B> <EM>query-string </EM>[function]
 
 <DL COMPACT>
@@ -361,7 +361,7 @@ Anyways, the result is returned in one string.
 <BR>
 <BR>
 
-<A NAME="51264"></A>
+<A NAME="51269"></A>
 <B>html-header</B> [function]
 
 <DL COMPACT>
@@ -376,7 +376,7 @@ usually a simple string of two lines,
 
 <P>
 
-<A NAME="51274"></A>
+<A NAME="51279"></A>
 <B>qval</B> <EM>arg query </EM>[function]
 
 <DL COMPACT>
@@ -417,7 +417,7 @@ The httpd process communicates with a fast-cgi process via a TCP connection.
 
  <BR>
 <BR> <BR> 
-<A NAME="51285"></A>
+<A NAME="51290"></A>
 <BIG CLASS="XLARGE"><B>fcgi-connection </B></BIG> [class]  <PRE><TT>
   :super   <B>propertied-object</B> 
 <BR>  :slots 		 cookie host 
@@ -435,7 +435,7 @@ The httpd process communicates with a fast-cgi process via a TCP connection.
 
 <P>
 
-<A NAME="51302"></A>
+<A NAME="51307"></A>
 <B>fcgi-loop</B> <EM>&amp;rest forms </EM>[macro]
 
 <DL COMPACT>
