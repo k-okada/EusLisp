@@ -62,7 +62,7 @@ install:
   - if [[ "$DOCKER_IMAGE" == *"arm"* ]]; then git clone http://github.com/euslisp/jskeus ${HOME}/jskeus; fi
 script:
   - echo "Testing branch $TRAVIS_BRANCH of $REPOSITORY_NAME"
-  - if [ "$TRAVIS_OS_NAME" == "linux" ]; then docker run --rm -i -v $HOME:$HOME -e "TRAVIS_OS_NAME=$TRAVIS_OS_NAME" -e "CI_SOURCE_PATH=$CI_SOURCE_PATH" -e "HOME=$HOME" -e "MAKEFLAGS=$MAKEFLAGS" -t $DOCKER_IMAGE sh -c "cd $CI_SOURCE_PATH; ./.travis.sh"; fi
+#- if [ "$TRAVIS_OS_NAME" == "linux" ]; then docker run --rm -i -v $HOME:$HOME -e "TRAVIS_OS_NAME=$TRAVIS_OS_NAME" -e "CI_SOURCE_PATH=$CI_SOURCE_PATH" -e "HOME=$HOME" -e "MAKEFLAGS=$MAKEFLAGS" -t $DOCKER_IMAGE sh -c "cd $CI_SOURCE_PATH; ./.travis.sh"; fi
   - if [ "$TRAVIS_OS_NAME" == "osx"   ]; then  source ./.travis.sh; fi
 after_failure:
   - echo "failure"
@@ -71,12 +71,23 @@ after_success:
   - (cd doc/latex;  make; make html)
   - (cd doc/jlatex; make; make html)
 deploy:
+  provider: releases
+  api_key: "$GH_TOKEN"
+  file:
+    - doc/latex/manual.pdf
+    - doc/jlatex/jmanual.pdf
   skip_cleanup: true
   on:
     tags: true
+    condition: "$DOCKER_IMAGE = ubuntu:trusty"
 after_deploy:
-  - echo "OK"
-  - if [ "$DOCKER_IMAGE" == "ubuntu:trusty" ]; then git config --global user.email k-okada@jsk.t.u--tokyo.ac.jp; fi
-  - if [ "$DOCKER_IMAGE" == "ubuntu:trusty" ]; then git config --global user.name "Kei Okada"; fi
-  - if [ "$DOCKER_IMAGE" == "ubuntu:trusty" ]; then git clone --branch gh-pages https://github.com/$TRAVIS_REPO_SLUG gh-pages;     fi
-  - if [ "$DOCKER_IMAGE" == "ubuntu:trusty" ]; then cd gh-pages; git rm -f *; cp $CI_SOURCE_PATH/doc/html/* ./; git add -f .; git commit -m "Build documents from $TRAVIS_TAG@$TRAVIS_COMMIT" .; git push --quiet https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG.git gh-pages; fi
+  # set user info
+  - git config --global user.email k-okada@jsk.t.u--tokyo.ac.jp
+  - git config --global user.name "Kei Okada"
+  # send doc to current repo
+  - git rm -f doc/*/*; git add doc/latex/* doc/jlatex/* doc/html/*; git status
+  - git commit -m "Build documents from $TRAVIS_TAG@$TRAVIS_COMMIT" doc/; git push --quiet https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG.git $TRAVIS_BRANCH
+  # send html to gh-pages
+  - git clone --branch gh-pages https://github.com/$TRAVIS_REPO_SLUG gh-pages
+  - cd gh-pages; git rm -f *; cp $CI_SOURCE_PATH/doc/html/* ./; git add -f .; git commit -m "Build documents from $TRAVIS_TAG@$TRAVIS_COMMIT" .; git push --quiet https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG.git gh-pages
+
