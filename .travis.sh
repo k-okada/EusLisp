@@ -75,6 +75,9 @@ travis_time_start euslisp.test
 
 if [[ "`uname -m`" != "arm"* && "`uname -m`" != "aarch"* ]]; then
     # run test in EusLisp/test
+    pwd
+    ls -al ../test/*.l
+    ls -al ../
     export EXIT_STATUS=0; for test_l in ../test/*.l; do eusgl $test_l; export EXIT_STATUS=`expr $? + $EXIT_STATUS`; done;echo "Exit status : $EXIT_STATUS"; [ $EXIT_STATUS == 0 ] || exit 1
 fi
 
