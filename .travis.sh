@@ -66,8 +66,20 @@ set +e
 if [[ "`uname -m`" == "arm"* || "`uname -m`" == "aarch"* ]]; then
     export EXIT_STATUS=0; for test_l in irteus/test/*.l; do [[ $test_l =~ geo.l|interpolator.l|irteus-demo.l|test-irt-motion.l|object.l|coords.l|bignum.l|mathtest.l ]] && continue; irteusgl $test_l; export EXIT_STATUS=`expr $? + $EXIT_STATUS`; done;echo "Exit status : $EXIT_STATUS"; [ $EXIT_STATUS == 0 ] || exit 1
 else
+    # run test in jskeus/irteus
     export EXIT_STATUS=0; for test_l in irteus/test/*.l; do irteusgl $test_l; export EXIT_STATUS=`expr $? + $EXIT_STATUS`; done;echo "Exit status : $EXIT_STATUS"; [ $EXIT_STATUS == 0 ] || exit 1
 fi
+
+travis_time_end
+travis_time_start euslisp.test
+
+if [[ "`uname -m`" != "arm"* && "`uname -m`" != "aarch"* ]]; then
+    # run test in EusLisp/test
+    export EXIT_STATUS=0; for test_l in ../test/*.l; do eusgl $test_l; export EXIT_STATUS=`expr $? + $EXIT_STATUS`; done;echo "Exit status : $EXIT_STATUS"; [ $EXIT_STATUS == 0 ] || exit 1
+fi
+
+travis_time_end
+travis_time_start eus64.test
 
 if [[ "$TRAVIS_OS_NAME" == "osx" || "`uname -m`" == "arm"* ]]; then
     uname -a
