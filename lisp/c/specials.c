@@ -513,7 +513,7 @@ pointer arg;
 
   tag=carof(arg,E_MISMATCHARG); tag=eval(ctx,tag);
   body=ccdr(arg);
-  mkcatchframe(ctx,tag,catchbuf);
+  mkcatchframe(ctx,tag,&catchbuf);
   if ((val=(pointer)eussetjmp(catchbuf))==0) val=progn(ctx,body);
   else if ((eusinteger_t)val==1) val=makeint(0);	/*longjmp cannot return 0*/
   ctx->callfp=ctx->catchfp->cf;
@@ -775,7 +775,7 @@ pointer arg;
     if (ctx->blkfp->kind==TAGBODYFRAME &&
 	(body=(pointer)assq(tag,ctx->blkfp->name))!=NIL) {
       unwind(ctx,(pointer *)ctx->blkfp);
-      euslongjmp(ctx->blkfp->jbp,body);}/* ???? */
+      euslongjmp(*(ctx->blkfp->jbp),body);}/* ???? */
       /* euslongjmp(*(ctx->blkfp->jbp),body);} *//* ??? eus_rbar */
     ctx->blkfp=ctx->blkfp->lexklink;}
   error(E_USER,(pointer)"go tag not found");}
