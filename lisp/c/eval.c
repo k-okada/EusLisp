@@ -1156,7 +1156,7 @@ register int noarg;
   register eusinteger_t addr;
   pointer tmp;
   addr=(eusinteger_t)(func->c.code.entry);
-#if (defined x86_64) || (defined aarch64)
+#if (WORD_SIZE == 64)
   addr &= ~3L;  /*0xfffffffc; ???? */
 #else
   addr &= ~3;  /*0xfffffffc; ???? */
