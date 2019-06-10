@@ -37,8 +37,16 @@ RSTFILES=$(TEXFILES:%.tex=%.rst)
 %.rst : %.tex
 	python3 latex.py -2 -L preamble.tex $< > /tmp/tmp.tex
 	pandoc /tmp/tmp.tex -o $@ -V documentclass=ltjarticle --latex-engine=lualatex
+	sed -i 's@.. figure:: \(.*\).ps@.. figure:: \1.png@g' $@
+
+PSFILES=$(wildcard fig/*.ps)
+PNGFILES=$(PSFILES:%.ps=%.png)
+%.png : %.ps
+	ps2png $^ $@
 
 rst: manual.rst
-manual.rst: latex.py $(RSTFILES)
-	echo $(TEXFILES)
-	echo "done"
+manual.rst: latex.py $(RSTFILES) $(PNGFILES)
+	sed 's@\\input{\(.*\)}@.. include:: \1.rst\n@g' manual.tex | sed 's@part@section@' > /tmp/manual.tex
+	pandoc -s  /tmp/manual.tex -o manual.rst -V documentclass=ltjarticle --latex-engine=lualatex
+	sed -i 's@:Author:@:Authors:@' manual.rst
+#sed -i 's@{\\emx \(.*\)}@\\emx{\1}@g'
