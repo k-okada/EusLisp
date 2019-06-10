@@ -32,10 +32,13 @@ latex.py:
 	wget https://raw.githubusercontent.com/jobh/latex.py/master/latex.py
 
 #
-TEXFILES=(*.tex)
-rst:
-	for texfile in *.tex; do\
-	    python3 latex.py -L preamble.tex $$texfile > /tmp/tmp.tex; \
-	    pandoc /tmp/tmp.tex -o $$texfile.rst -V documentclass=ltjarticle --latex-engine=lualatex; \
-	done
+TEXFILES=$(filter-out manual.tex, $(wildcard *.tex))
+RSTFILES=$(TEXFILES:%.tex=%.rst)
+%.rst : %.tex
+	python3 latex.py -2 -L preamble.tex $< > /tmp/tmp.tex
+	pandoc /tmp/tmp.tex -o $@ -V documentclass=ltjarticle --latex-engine=lualatex
 
+rst: manual.rst
+manual.rst: latex.py $(RSTFILES)
+	echo $(TEXFILES)
+	echo "done"
