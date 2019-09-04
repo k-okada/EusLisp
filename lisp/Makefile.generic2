@@ -358,9 +358,18 @@ doc/latex/manual.dvi:	$(DOC)
 	(cd doc/latex; jlatex manual ; makeindex manual.idx ; jlatex manual)
 
 install:
-	(rm -f $(PUBBINDIR)/eus $(PUBBINDIR)/eusx $(PUBBINDIR)/euscomp;\
+	(rm -f $(PUBLIBDIR)/$(LIBEUSX) $(PUBLIBDIR)/$(LIBEUSGEO) $(PUBLIBDIR)/$(LIBEUSGL); \
+	 cp $(ADLIBDIR)/$(LIBEUSX) $(PUBLIBDIR);\
+	 cp $(ADLIBDIR)/$(LIBEUSGEO) $(PUBLIBDIR);\
+	 cp $(ADLIBDIR)/$(LIBEUSGL) $(PUBLIBDIR);)
+	(rm -f $(PUBBINDIR)/eus $(PUBBINDIR)/eus0 $(PUBBINDIR)/eus1 $(PUBBINDIR)/eus2 $(PUBBINDIR)/eusg $(PUBBINDIR)/eusx $(PUBBINDIR)/eusgl $(PUBBINDIR)/euscomp; \
 	 cp $(BINDIR)/eus $(PUBBINDIR);\
+	 cp $(BINDIR)/eus0 $(PUBBINDIR);\
+	 cp $(BINDIR)/eus1 $(PUBBINDIR);\
+	 cp $(BINDIR)/eus2 $(PUBBINDIR);\
+	 cp $(BINDIR)/eusg $(PUBBINDIR);\
 	 cp $(BINDIR)/eusx $(PUBBINDIR);\
+	 cp $(BINDIR)/eusgl $(PUBBINDIR);\
 	 ln -sf eus $(PUBBINDIR)/euscomp)
 clean:
 	-rm -fr $(EUSDIR)/data/* 

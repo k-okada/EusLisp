@@ -7,6 +7,7 @@
 # the directory where resulted executables should be installed
 
 PUBBINDIR=/usr/local/bin
+PUBLIBDIR=/usr/local/lib
 
 # directories under EUSDIR
 # All architecture dependent object files go to OBJDIR.
